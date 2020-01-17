@@ -1,0 +1,47 @@
+@media (max-width: 999px) {
+
+    header{
+           nav{
+              height:75px;
+              border-bottom:#b9d6f6 solid 4px;
+                
+                
+              &::before{
+                content: "Меню";
+                display:block;
+                margin:auto;
+                width:auto;
+                cursor:pointer;
+                text-align:center;
+                font-size:22px;
+                background:url(../img/gamburger.png) no-repeat left 4px;
+                padding-left:22px;
+                box-sizing:border-box;
+              }
+              
+            
+              ul{
+                width: 100%;
+                background:#ddedff;
+                display:none;
+                position:absolute;
+                top:75px;
+                z-index:20;
+                margin:auto;
+                
+                
+                li{
+                    background:#ddedff;
+                    width:100%;
+                    height:60px;
+                    text-align:center;
+                }
+              }
+              
+              ul.menu-show{
+                display:block;
+              }
+            }
+    }
+
+}

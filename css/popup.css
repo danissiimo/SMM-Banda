@@ -1,0 +1,30 @@
+.popup{
+    background:white;
+    width:486px;
+}
+
+.popup .container{
+    padding: 30px;
+    text-align:center;
+}
+
+.popup .container h2{
+    font-size:36px;
+    margin:0px;
+}
+
+.popup .container p{
+    font-size: 20px;
+    line-height:30px;
+}
+
+@media (max-width: 479px) {
+    .popup{
+        width:320px;
+        overflow-x:hidden;
+    }
+    
+    .popup .container{
+        padding: 10px;
+    }
+}

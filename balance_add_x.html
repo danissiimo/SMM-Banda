@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SMM BANDA</title>
+    
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/popup.css"/>
+    <link rel="stylesheet" href="css/radio-img.css"/>
+    <link rel="stylesheet" href="css/wnoty.css"/>
+    
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.popupoverlay.js"></script>
+    <script src="js/input_number.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wnoty.js"></script>
+    <script src="js/custom_range.js"></script>
+    
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <ul>
+     <li><a href="news.html">Новости</a></li>
+     <li><a href="feedback.html">Отзывы</a></li>
+     <li><a href="faq.html">Faq</a></li>
+     <li><a href="refs.html">Рефералы</a></li>
+     <li><a href="orders.html">История заказов</a></li>
+     <li><a href="blog.html">Блог</a></li>
+     <li><a href="profile.html">Личный кабинет</a></li>
+     <li><a href="auth.html">Выйти</a></li>
+    </ul>
+  </nav>
+  
+  <div class="header-main-wrapper">
+   <div class="header-main">
+    <div class="header-main-box logo">
+     <a href="index.html"><img src='img/logo.svg' width="300" height="81"></a>
+    </div>
+    
+    <div class="header-main-box profile">
+     <div class="container">
+       <div class="info">
+         <div class="name"><a href="notify.html" onclick="">Уведомления: 4</a></div>
+         <div class="balance">Ваш баланс: 7 200 руб</div>
+         <div class="balance-add"><a href="balance.html">Пополнить баланс</a></div>
+       </div>
+     </div>
+     
+    </div>
+    <div class="header-main-box cart">
+        <div class="container">
+          <div class="cart-usl-count">3</div>
+          <div class="info">
+            <div class="cart-sum">18 400 руб.</div>
+            <div class="cart-sum-o">Цена за все</div>
+            <div class="cart-order"><a href="cart.html">Оформить заказ</a></div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="header-main-box support">
+        <a href="tickets.html" class="link-button ask_popup_open">Техподдержка</a>
+    </div>
+    
+    
+   </div>
+   
+   
+  </div>
+</header>
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div><a href="index.html">SMM Banda</a></div>
+        <div><a href="balance.html">Пополнение баланса</a></div>
+        <div>На произвольную сумму: </div>
+    </div>
+</div>
+
+
+
+<div class="content-wrapper">
+    <div class="content">
+    
+        <div class="page-product balance-add-x">
+         <form action="checkout.html"  value="1" id="payments_form">
+            <div class="container">
+                <div class="product-img">
+                    <img src='img/add_balance_card.svg'>
+                </div>
+                
+                <div class="product-info content-box">
+                    <h1>Пополнение баланса</h1>
+                    
+                    <div class="count field-box">
+                        Сумма:
+                        <hr>
+                        <div class="input_number value"><input type="number" id="order_cnt" value="0"></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="content-box payments">
+                <h2>Способы оплаты:</h2>
+                
+                
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_1">
+                  <label for="pay_1"><img src='img/payments/Visa.png'><span>Visa</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_2">
+                  <label for="pay_2"><img src='img/payments/MasterCard.png'><span>MasterCard</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_3">
+                  <label for="pay_3"><img src='img/payments/Robokassa.png'><span>Robokassa</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_4">
+                  <label for="pay_4"><img src='img/payments/Sberbank.png'><span>Sberbank</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_5">
+                  <label for="pay_5"><img src='img/payments/alfabank.png'><span>Альфа банк</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_6">
+                  <label for="pay_6"><img src='img/payments/Webmoney.png'><span>Webmoney</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_66">
+                  <label for="pay_66"><img src='img/payments/qiwi.png'><span>Qiwi</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_7">
+                  <label for="pay_7"><img src='img/payments/Crypto.png'><span>Crypto</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_8">
+                  <label for="pay_8"><img src='img/payments/yandex_money.png'><span>Yandex money</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_9">
+                  <label for="pay_9"><img src='img/payments/Payeer.png'><span>Payeer</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_10">
+                  <label for="pay_10"><img src='img/payments/Mir.png'><span>Mir</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_11">
+                  <label for="pay_11"><img src='img/payments/erip.png'><span>Ерип расчет</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_12">
+                  <label for="pay_12"><img src='img/payments/Exmo.png'><span>Exmo</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_13">
+                  <label for="pay_13"><img src='img/payments/Interkassa.png'><span>Interkassa</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_14">
+                  <label for="pay_14"><img src='img/payments/Samsung Pay.png'><span>Samsung Pay</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_15">
+                  <label for="pay_15"><img src='img/payments/Advcash.png'><span>Advcash</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_16">
+                  <label for="pay_16"><img src='img/payments/Apple pay.png'><span>Apple pay</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_17">
+                  <label for="pay_17"><img src='img/payments/privatbank.png'><span>Приватбанк</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_18">
+                  <label for="pay_18"><img src='img/payments/Sms.png'><span>Sms</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_19">
+                  <label for="pay_19"><img src='img/payments/Perfect money.png'><span>Perfect money PAY</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_20">
+                  <label for="pay_20"><img src='img/payments/Unitpay.png'><span>Unitpay Мобильные</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_21">
+                  <label for="pay_21"><img src='img/payments/SmmBanda.png'><span>SmmBanda</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_22">
+                  <label for="pay_22"><img src='img/payments/mts.png'><span>Mts</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_23">
+                  <label for="pay_23"><img src='img/payments/Megafon.png'><span>Megafon</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_24">
+                  <label for="pay_24"><img src='img/payments/Tele2.png'><span>Tele2</span></label>
+                 </div>
+                 
+                 <div class="radio-img payment-box">
+                  <input type="radio" name="payment" value="1" id="pay_25">
+                  <label for="pay_25"><img src='img/payments/Maestro.png'><span>Maestro Кредитная карта</span></label>
+                 </div>
+                 
+                 <div><input type="submit" value="Перейти к оплате"></div>
+                 
+                
+            </div>
+          </form>  
+        </div>
+        
+        
+    </div>
+</div>
+
+
+<footer>
+ <div class="container space-between">
+     <div>Copyright ©  2010-2019 Smm Banda. All rights reserved</div>
+     <div>Дизайн - Худобин Роман</div>
+ </div>
+</footer>
+
+</body>
+</html>
+
+<script>
+$('#payments_form').submit(function(){
+    payment_selected=$('input[type=radio]:checked').val();
+    
+    if(payment_selected==undefined){
+        //// Вызов флешки, types: error,warning,info,success
+        $.wnoty({
+          type: 'error',
+          message: 'Не выбран способ оплаты',
+          autohideDelay: 5000
+        });
+        
+        return false;
+    }
+});
+</script>

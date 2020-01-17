@@ -1,0 +1,37 @@
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"]+ label::before {
+    content: "";
+    background:url(../img/unchecked.png) left top no-repeat;
+    display:inline-block;
+    width:24px;
+    height:24px;
+    position:relative;
+    top:5px;
+    left:-15px;
+    flex-grow:0;
+    flex-shrink:0;
+}
+
+input[type="checkbox"]:checked+ label::before{
+    content: "";
+    background:url(../img/checked.png) left top no-repeat;
+    display:inline-block;
+    width:24px;
+    height:24px;
+    position:relative;
+    z-index:2;
+    top:5px;
+    left:-15px;
+    flex-grow:0;
+    flex-shrink:0;
+    
+}
+
+input[type="checkbox"]+ label{
+    padding-left: 15px;
+    display:flex;
+    flex-wrap:nowrap;
+}

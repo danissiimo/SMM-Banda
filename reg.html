@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SMM BANDA</title>
+    
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/popup.css"/>
+    <link rel="stylesheet" href="css/radio-img.css"/>
+    <link rel="stylesheet" href="css/wnoty.css"/>
+    
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.popupoverlay.js"></script>
+    <script src="js/input_number.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wnoty.js"></script>
+    
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <ul>
+     <li><a href="news.html">Новости</a></li>
+     <li><a href="feedback.html">Отзывы</a></li>
+     <li><a href="faq.html">Faq</a></li>
+     <li><a href="refs.html">Рефералы</a></li>
+     <li><a href="orders.html">История заказов</a></li>
+     <li><a href="blog.html">Блог</a></li>
+     <li><a href="auth.html">Личный кабинет</a></li>
+     <li><a href="auth.html">Войти</a></li>
+    </ul>
+  </nav>
+  
+  <div class="header-main-wrapper">
+   <div class="header-main">
+    <div class="header-main-box logo">
+     <a href="index.html"><img src='img/logo.svg' width="300" height="81"></a>
+    </div>
+    
+    <div class="header-main-box profile">
+     <div class="container">
+       <div class="info">
+         <div class="name"><a href="auth.html" onclick="">Уведомления: 0</a></div>
+         <div class="balance">Ваш баланс: 0 руб.</div>
+         <div class="balance-add"><a href="auth.html">Пополнить баланс</a></div>
+       </div>
+     </div>
+     
+    </div>
+    <div class="header-main-box cart">
+        <div class="container">
+          <div class="cart-usl-count">3</div>
+          <div class="info">
+            <div class="cart-sum">18 400 руб.</div>
+            <div class="cart-sum-o">Цена за все</div>
+            <div class="cart-order"><a href="cart.html">Оформить заказ</a></div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="header-main-box support">
+        <a href="tickets.html" class="link-button ask_popup_open">Техподдержка</a>
+    </div>
+    
+    
+   </div>
+   
+   
+  </div>
+</header>
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div><a href="index.html">SMM Banda</a></div>
+        <div>Регистрация:</div>
+    </div>
+</div>
+
+<div class="content-wrapper">
+    <div class="content">
+    
+        <div class="page-reg">
+        
+            <div class="content-box">
+                <h1>Зарегистрируйтесь и получите доступ к новым возможностям :)</h1>
+                
+                
+                <form method="post" id="reg_form" action="reg.html">
+                    
+                    <div class="reg-fields">
+                        <div class="field-box">
+                            <div class="field-star">Электронная почта: </div>
+                            <input type="email" id="auth_email" name="auth_email" placeholder="Электронная почта">
+                        </div>
+                        
+                        <div class="field-box">
+                            <div class="field-star">Логин: </div>
+                            <input type="text" id="auth_login" name="auth_email" placeholder="Логин">
+                        </div>
+                        
+                        <div class="field-box">
+                            <div class="field-star">Пароль: </div>
+                            <input type="password" id="auth_pass" name="auth_pass" placeholder="Пароль">
+                        </div>
+                        
+                        <div class="field-box">
+                            <div class="field-star">Повторите пароль: </div>
+                            <input type="password" id="auth_pass_rep" name="auth_pass_rep" placeholder="Повторите пароль">
+                        </div>
+                        
+                        <div class="field-box">
+                            Средство связи: 
+                            <input type="password" id="auth_pass_rep" name="auth_pass_rep" placeholder="Skype, Viber, Telegram">
+                        </div>
+                    </div>
+                    
+                    <div class="auth-reg-submit">
+                        <a href="auth.html">Уже зарегистрированы?</a>
+                        <input type="submit" value="Регистрация">
+                    </div>
+                </form>
+            </div>
+            
+            
+            <div class="content-box">
+                    <p>
+                        Создав учетную запись, можно производить покупки быстрее и всегда быть в курсе о статусе заказа, а также отслеживать заказы, сделанные ранее.
+                    </p>
+            </div>
+             
+        </div>
+        
+        
+    </div>
+</div>
+
+
+<footer>
+ <div class="container space-between">
+     <div>Copyright ©  2010-2019 Smm Banda. All rights reserved</div>
+     <div>Дизайн - Худобин Роман</div>
+ </div>
+</footer>
+
+</body>
+</html>
+
+<script>
+$('#reg_form').submit(function(e) {
+    inp_auth_email=$('#auth_email').val();
+    inp_auth_login=$('#auth_login').val();
+    inp_auth_pass=$('#auth_pass').val();
+    inp_auth_rep=$('#auth_pass_rep').val();
+    
+
+    if(inp_auth_email.length<5){
+        //// Вызов флешки, types: error,warning,info,success
+        $.wnoty({
+          type: 'error',
+          message: 'Заполните email',
+          autohideDelay: 5000
+        });
+        
+        return false;
+    }
+    
+    
+    if(inp_auth_pass.length<4){
+        $.wnoty({
+          type: 'error',
+          message: 'Введите пароль',
+          autohideDelay: 5000
+        });
+        
+        return false;
+    }
+    
+    
+    if(inp_auth_login.length<4){
+        $.wnoty({
+          type: 'error',
+          message: 'Введите логин',
+          autohideDelay: 5000
+        });
+        
+        return false;
+    }
+    
+    
+    if(inp_auth_pass!=inp_auth_rep){
+        $.wnoty({
+          type: 'error',
+          message: 'Пароли не совпадают',
+          autohideDelay: 5000
+        });
+        
+        return false;
+    }
+});
+
+</script>

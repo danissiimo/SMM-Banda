@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SMM BANDA</title>
+    
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/popup.css"/>
+    <link rel="stylesheet" href="css/radio-img.css"/>
+    <link rel="stylesheet" href="css/wnoty.css"/>
+    
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.popupoverlay.js"></script>
+    <script src="js/input_number.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wnoty.js"></script>
+    <script src="js/custom_range.js"></script>
+    
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <ul>
+     <li><a href="news.html">Новости</a></li>
+     <li><a href="feedback.html">Отзывы</a></li>
+     <li><a href="faq.html">Faq</a></li>
+     <li><a href="refs.html">Рефералы</a></li>
+     <li><a href="orders.html">История заказов</a></li>
+     <li><a href="blog.html">Блог</a></li>
+     <li><a href="profile.html">Личный кабинет</a></li>
+     <li><a href="#">Выйти</a></li>
+    </ul>
+  </nav>
+  
+  <div class="header-main-wrapper">
+   <div class="header-main">
+    <div class="header-main-box logo">
+     <a href="index.html"><img src='img/logo.svg' width="300" height="81"></a>
+    </div>
+    
+    <div class="header-main-box profile">
+     <div class="container">
+       <div class="info">
+         <div class="name"><a href="notify.html" onclick="">Уведомления: 4</a></div>
+         <div class="balance">Ваш баланс: 7 200 руб</div>
+         <div class="balance-add"><a href="balance.html">Пополнить баланс</a></div>
+       </div>
+     </div>
+     
+    </div>
+    <div class="header-main-box cart">
+        <div class="container">
+          <div class="cart-usl-count">3</div>
+          <div class="info">
+            <div class="cart-sum">18 400 руб.</div>
+            <div class="cart-sum-o">Цена за все</div>
+            <div class="cart-order"><a href="cart.html">Оформить заказ</a></div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="header-main-box support">
+        <a href="tickets.html" class="link-button ask_popup_open">Техподдержка</a>
+    </div>
+    
+    
+   </div>
+   
+   
+  </div>
+</header>
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div><a href="/">SMM Banda</a></div>
+        <div><a href="profile.html">Личный кабинет</a></div>
+        <div>История заказов</div>
+    </div>
+</div>
+
+<div class="content-wrapper">
+    <div class="content">
+    
+        <div class="page-orders">
+            <div class="content-box profile-menu">
+                <div><a href="profile.html">Личные данные</a></div>
+                <div><a href="profile_balance.html">Баланс</a></div>
+                <div><a href="profile_favorites.html">Мои закладки</a></div>
+                <div><a href="profile_adreses.html">Мои адреса</a></div>
+                <div><a href="orders.html" class="current">История заказов</a></div>
+                <div><a href="refs.html">Рефералы</a></div>
+            </div>
+        
+        
+            <div class="content-box">
+                <h1>Статус заказа</h1>
+                
+                <div class="filter">
+                    <input type="checkbox" id="ch1" checked> <label for="ch1">В обработке</label>
+                    <input type="checkbox" id="ch2" > <label for="ch2">Выполняется</label>
+                    <input type="checkbox" id="ch3" checked> <label for="ch3">Выполнен</label>
+                    <input type="checkbox" id="ch4" > <label for="ch4">Отменен</label>
+                    <input type="checkbox" id="ch5" checked> <label for="ch5">Все</label>
+                </div>
+            </div>
+            
+            
+            <div class="content-box order-info">
+                <div class="order-img"><img src='img/socials/YouTube.png'></div>
+                
+                <div class="field-box order-usl-name">
+                    Живые просмотры YouTube:
+                    <div class="value bold">Просмотры в результатах поиска YouTube </div>
+                </div>
+                
+                <div class="fields">
+                    <div class="field-box">
+                        ID:
+                        <div class="value bg id">7682</div>
+                    </div>
+                    
+                    <div class="field-box">
+                        Дата:
+                        <div class="value bg date">04.12.19</div>
+                    </div>
+                
+                    <div class="field-box">
+                        Ссылка:
+                        <input type="text" value="watch?v=pwYt-cXE" readonly>
+                    </div>
+                    
+                    <div class="field-box">
+                        Количество:
+                        <div class="value bg cnt">5000</div>
+                    </div>
+                    
+                    <div class="field-box">
+                        Сумма:
+                        <div class="value bg sum">156 000 руб.</div>
+                    </div>
+                    
+                    <div class="field-box">
+                        Статус:
+                        <div class="value bg status" style="background: #8d8d8d;">В обработке</div>
+                    </div>
+                </div>
+                
+                <div class="progress-wrapper">
+                    <progress value="3200" max="5000"></progress>
+                    <div class="progress-info">Выполнено 3200 из 5000</div>
+                </div>
+            </div>
+            
+            
+            <div class="content-box order-info">
+                <div class="order-img"><img src='img/socials/YouTube.png'></div>
+                
+                <div class="field-box order-usl-name">
+                    Живые просмотры YouTube:
+                    <div class="value bold">Просмотры в результатах поиска YouTube </div>
+                </div>
+                
+                <div class="fields">
+                    <div class="field-box">
+                        ID:
+                        <div class="value bg id">7682</div>
+                    </div>
+                    
+                    <div class="field-box">
+                        Дата:
+                        <div class="value bg date">04.12.19</div>
+                    </div>
+                
+                    <div class="field-box">
+                        Ссылка:
+                        <input type="text" value="watch?v=pwYt-cXE" readonly>
+                    </div>
+                    
+                    <div class="field-box">
+                        Количество:
+                        <div class="value bg cnt">5000</div>
+                    </div>
+                    
+                    <div class="field-box">
+                        Сумма:
+                        <div class="value bg sum">156 000 руб.</div>
+                    </div>
+                    
+                    <div class="field-box">
+                        Статус:
+                        <div class="value bg status" style="background: #76b827;">Выполнен</div>
+                    </div>
+                </div>
+                
+                <div class="progress-wrapper">
+                    <progress value="5000" max="5000"></progress>
+                    <div class="progress-info">Выполнено</div>
+                </div>
+            </div>
+            
+            
+            <div class="content-box order-info">
+                <div class="order-img"><img src='img/socials/YouTube.png'></div>
+                
+                <div class="field-box order-usl-name">
+                    Живые просмотры YouTube:
+                    <div class="value bold">Просмотры в результатах поиска YouTube </div>
+                </div>
+                
+                <div class="fields">
+                    <div class="field-box">
+                        ID:
+                        <div class="value bg id">7682</div>
+                    </div>
+                    
+                    <div class="field-box">
+                        Дата:
+                        <div class="value bg date">04.12.19</div>
+                    </div>
+                
+                    <div class="field-box">
+                        Ссылка:
+                        <input type="text" value="watch?v=pwYt-cXE" readonly>
+                    </div>
+                    
+                    <div class="field-box">
+                        Количество:
+                        <div class="value bg cnt">5000</div>
+                    </div>
+                    
+                    <div class="field-box">
+                        Сумма:
+                        <div class="value bg sum">156 000 руб.</div>
+                    </div>
+                    
+                    <div class="field-box">
+                        Статус:
+                        <div class="value bg status" style="background: #d42428;">Отменен</div>
+                    </div>
+                </div>
+            </div>
+            
+                
+        </div>
+    
+        
+        
+        
+        
+        
+    </div>
+</div>
+
+
+<footer>
+ <div class="container space-between">
+     <div>Copyright ©  2010-2019 Smm Banda. All rights reserved</div>
+     <div>Дизайн - Худобин Роман</div>
+ </div>
+</footer>
+
+</body>
+</html>

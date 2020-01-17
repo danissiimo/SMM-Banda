@@ -1,0 +1,41 @@
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+  -moz-appearance: textfield;
+  
+  width:180px;
+}
+
+
+
+div.input_number{
+    position:relative;
+    display:inline-block;
+}
+
+input[type=button].inp_num_minus,input[type=button].inp_num_plus{
+    position:absolute !important;
+    width:49px !important;
+    height: 59px !important;
+    bottom:0px !important;
+}
+
+
+.inp_num_minus{
+    left:0px  !important;
+    border-top-right-radius: 0px  !important;
+    border-bottom-right-radius: 0px  !important;
+}
+
+.inp_num_plus{
+    right:0px;
+    border-top-left-radius: 0px  !important;
+    border-bottom-left-radius: 0px  !important;
+}

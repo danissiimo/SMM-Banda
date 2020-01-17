@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SMM BANDA</title>
+    
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/popup.css"/>
+    <link rel="stylesheet" href="css/radio-img.css"/>
+    <link rel="stylesheet" href="css/wnoty.css"/>
+    
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.popupoverlay.js"></script>
+    <script src="js/input_number.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wnoty.js"></script>
+    <script src="js/custom_range.js"></script>
+    
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <ul>
+     <li><a href="news.html">Новости</a></li>
+     <li><a href="feedback.html">Отзывы</a></li>
+     <li><a href="faq.html">Faq</a></li>
+     <li><a href="refs.html">Рефералы</a></li>
+     <li><a href="orders.html">История заказов</a></li>
+     <li><a href="blog.html">Блог</a></li>
+     <li><a href="profile.html">Личный кабинет</a></li>
+     <li><a href="#">Выйти</a></li>
+    </ul>
+  </nav>
+  
+  <div class="header-main-wrapper">
+   <div class="header-main">
+    <div class="header-main-box logo">
+     <a href="index.html"><img src='img/logo.svg' width="300" height="81"></a>
+    </div>
+    
+    <div class="header-main-box profile">
+     <div class="container">
+       <div class="info">
+         <div class="name"><a href="notify.html" onclick="">Уведомления: 4</a></div>
+         <div class="balance">Ваш баланс: 7 200 руб</div>
+         <div class="balance-add"><a href="balance.html">Пополнить баланс</a></div>
+       </div>
+     </div>
+     
+    </div>
+    <div class="header-main-box cart">
+        <div class="container">
+          <div class="cart-usl-count">3</div>
+          <div class="info">
+            <div class="cart-sum">18 400 руб.</div>
+            <div class="cart-sum-o">Цена за все</div>
+            <div class="cart-order"><a href="cart.html">Оформить заказ</a></div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="header-main-box support">
+        <a href="tickets.html" class="link-button ask_popup_open">Техподдержка</a>
+    </div>
+    
+    
+   </div>
+   
+   
+  </div>
+</header>
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div><a href="/">SMM Banda</a></div>
+        <div>Личный кабинет</div>
+    </div>
+</div>
+
+<div class="content-wrapper">
+    <div class="content">
+    
+        <div class="page-profile">
+            <div class="content-box profile-menu">
+                <div><a href="profile.html">Личные данные</a></div>
+                <div><a href="profile_balance.html">Баланс</a></div>
+                <div><a href="profile_favorites.html">Мои закладки</a></div>
+                <div><a href="profile_adreses.html" class="current">Мои адреса</a></div>
+                <div><a href="orders.html">История заказов</a></div>
+                <div><a href="refs.html">Рефералы</a></div>
+            </div>
+        
+            <div class="content-box profile-adreses">
+                <h1>Мои адреса</h1>
+                
+                <div class="adres-item">
+                    <form>
+                        <div class="field-box adres_name">
+                            Электронная почта:
+                            <input type="text" name="adres_1" id="adres_1" value="roman.hudobin@mail.ru">
+                        </div>
+                        
+                        <input type="submit" class="save" value="Сохранить">
+                        <a href="profile_adreses.html?del_adres=1" class="link-button red del">Удалить</a>
+                    </form>
+                </div>
+                
+                
+                <div class="adres-item">
+                    <form>
+                        <div class="field-box adres_name">
+                            Электронная почта:
+                            <input type="text" name="adres_2" id="adres_2" value="roman.hudobin@yandex.ru">
+                        </div>
+                        
+                        <input type="submit" class="save" value="Сохранить">
+                        <a href="profile_adreses.html?del_adres=2" class="link-button red del">Удалить</a>
+                    </form>
+                </div>
+                
+                
+                <div class="adres-item">
+                    <form>
+                        <div class="field-box adres_name">
+                            Электронная почта:
+                            <input type="text" name="adres_add" id="adres_add" placeholder="Добавить адрес">
+                        </div>
+                        
+                        <input type="submit" class="add" value="Добавить">
+                    </form>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+</div>
+
+
+<footer>
+ <div class="container space-between">
+     <div>Copyright ©  2010-2019 Smm Banda. All rights reserved</div>
+     <div>Дизайн - Худобин Роман</div>
+ </div>
+</footer>
+
+</body>
+</html>
+
+
+<script>
+$('.adres-item form').submit(function(){
+    adres = $(this).find(".adres_name input").val();
+    
+    if(adres.length<5){
+        $.wnoty({
+          type: 'error',
+          message: 'Адрес введен неверно',
+          autohideDelay: 5000
+        });
+        
+        return false;
+    }
+});
+</script>

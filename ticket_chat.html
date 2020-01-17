@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SMM BANDA</title>
+    
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/popup.css"/>
+    <link rel="stylesheet" href="css/radio-img.css"/>
+    <link rel="stylesheet" href="css/wnoty.css"/>
+    <link rel="stylesheet" href="css/redactor.css"/>
+    
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.popupoverlay.js"></script>
+    <script src="js/input_number.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wnoty.js"></script>
+    <script src="js/redactor.js"></script>
+    
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <ul>
+     <li><a href="news.html">Новости</a></li>
+     <li><a href="feedback.html">Отзывы</a></li>
+     <li><a href="faq.html">Faq</a></li>
+     <li><a href="refs.html">Рефералы</a></li>
+     <li><a href="orders.html">История заказов</a></li>
+     <li><a href="blog.html">Блог</a></li>
+     <li><a href="profile.html">Личный кабинет</a></li>
+     <li><a href="auth.html">Выйти</a></li>
+    </ul>
+  </nav>
+  
+  <div class="header-main-wrapper">
+   <div class="header-main">
+    <div class="header-main-box logo">
+     <a href="index.html"><img src='img/logo.svg' width="300" height="81"></a>
+    </div>
+    
+    <div class="header-main-box profile">
+     <div class="container">
+       <div class="info">
+         <div class="name"><a href="notify.html" onclick="">Уведомления: 4</a></div>
+         <div class="balance">Ваш баланс: 7 200 руб</div>
+         <div class="balance-add"><a href="balance.html">Пополнить баланс</a></div>
+       </div>
+     </div>
+     
+    </div>
+    <div class="header-main-box cart">
+        <div class="container">
+          <div class="cart-usl-count">3</div>
+          <div class="info">
+            <div class="cart-sum">18 400 руб.</div>
+            <div class="cart-sum-o">Цена за все</div>
+            <div class="cart-order"><a href="cart.html">Оформить заказ</a></div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="header-main-box support">
+        <a href="tickets.html" class="link-button ask_popup_open">Техподдержка</a>
+    </div>
+    
+    
+   </div>
+   
+   
+  </div>
+</header>
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div><a href="index.html">SMM Banda</a></div>
+        <div>Техподдержка:</div>
+    </div>
+</div>
+
+<div class="content-wrapper">
+    <div class="content">
+    
+        <div class="page-ticket-chat">
+        
+            <div class="content-box">
+                <h1>Вывод средств</h1>
+                
+                
+                <div class="messages">
+                    <div class="message user">
+                        <img src='img/profile.png'>
+                        
+                        <div class="name-message">
+                            <div class="name">Худобин Роман</div>
+                            <div class="message-text">Здравствуйте! Почему не могу вывести средства? Я буду жаловаться!</div>
+                            <div class="date">12 дек. 2:27</div>
+                            <div class="admin-icons">
+                                <a href="#"><img src='img/edit.png'></a>
+                                <a href="#"><img src='img/del.png'></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="message manager">
+                        <img src='img/admin_avatar.png'>
+                        
+                        <div class="name-message">
+                            <div class="name">Михаил Пореченков</div>
+                            <div class="message-text">Здравствуйте, Роман! Приносим свои извенения. У нас возникли технические неполадки, над которыми уже ведутся работы. Как только все наладится, мы Вам сообщим в данном тикете.</div>
+                            <div class="date">12 дек. 2:31</div>
+                            <div class="admin-icons">
+                                <a href="#"><img src='img/edit.png'></a>
+                                <a href="#"><img src='img/del.png'></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="message user">
+                        <img src='img/profile.png'>
+                        
+                        <div class="name-message">
+                            <div class="name">Худобин Роман</div>
+                            <div class="message-text">Понял, спасибо! Буду ждать.</div>
+                            <div class="date">12 дек. 2:34</div>
+                            <div class="admin-icons">
+                                <a href="#"><img src='img/edit.png'></a>
+                                <a href="#"><img src='img/del.png'></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                     
+                     
+                     
+                <form method="post" id="ticket_add_form" class="ticket-add-message">
+                    <div class="field-box">
+                        <div class="field-star">Сообщение: </div>
+                        <div class="redactor-wrapper">
+                            <textarea name="text" id="text" placeholder="Опишите Ваш вопрос как можно подробнее"></textarea>
+                        </div>
+                    </div>
+                    
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+             
+        </div>
+        
+        
+    </div>
+</div>
+
+
+<footer>
+ <div class="container space-between">
+     <div>Copyright ©  2010-2019 Smm Banda. All rights reserved</div>
+     <div>Дизайн - Худобин Роман</div>
+ </div>
+</footer>
+
+</body>
+</html>
+
+<script>
+$('#ticket_add_form').submit(function(e) {
+    inp_text=$('#text').val();
+    
+    
+    if(inp_text.length<5){
+        //// Вызов флешки, types: error,warning,info,success
+        $.wnoty({
+          type: 'error',
+          message: 'Не заполнен текст вопроса',
+          autohideDelay: 5000
+        });
+        
+        return false;
+    }
+});
+
+
+$(document).ready(
+	function()
+	{
+		$('#text').redactor({
+			imageUpload: 'lib/image_upload.php',
+			fileUpload: 'lib/file_upload.php'
+		});
+	}
+);
+
+</script>
