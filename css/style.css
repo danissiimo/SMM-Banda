@@ -921,10 +921,6 @@ footer .container {
   margin-left: 50px;
   margin-top: 30px;
 }
-.page-cart .cart-clear a,
-.page-checkout .cart-clear a {
-  width: 100%;
-}
 .page-cart .info .info-field,
 .page-checkout .info .info-field {
   display: -webkit-box;
