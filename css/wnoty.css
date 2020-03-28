@@ -62,11 +62,11 @@
     text-decoration: none;
 }
 
-.wnoty-notification a:hover,.wnoty-notification a:focus {
+/*.wnoty-notification a:hover,.wnoty-notification a:focus {
     color: #fff!important;
     opacity: 1;
 }
-
+*/
 .wnoty-close {
     width: 27px;
     height: 27px;

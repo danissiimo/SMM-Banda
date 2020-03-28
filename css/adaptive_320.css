@@ -62,7 +62,7 @@
   .conscience h2 {
     margin: 15px 0 40px 0;
   }
-  .conscience div {
+  .conscience ul.conscience-list li {
     width: 200px;
     height: auto;
     margin-bottom: 20px;

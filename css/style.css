@@ -426,7 +426,12 @@ header .main-page-socials-link {
 .conscience {
   margin-bottom: 30px;
 }
-.conscience div {
+.conscience ul.conscience-list {
+  list-style: none;
+  width: 100%;
+  padding: 0px;
+}
+.conscience ul.conscience-list li {
   width: 350px;
   height: 90px;
   display: inline-block;
@@ -1776,7 +1781,7 @@ div.field-star::after {
   .conscience {
     margin: 30px 20px;
   }
-  .conscience div {
+  .conscience ul.conscience-list li {
     width: 427px;
   }
   .content-box {
@@ -2151,7 +2156,7 @@ div.field-star::after {
   .conscience {
     margin: 30px 30px;
   }
-  .conscience div {
+  .conscience ul.conscience-list li {
     width: 610px;
   }
   .content-box {
@@ -2568,7 +2573,7 @@ div.field-star::after {
   .conscience {
     margin: 30px 20px;
   }
-  .conscience div {
+  .conscience ul.conscience-list li {
     width: 360px;
   }
   .content-box {
@@ -3187,7 +3192,7 @@ div.field-star::after {
   .conscience h2 {
     margin: 15px 0 40px 0;
   }
-  .conscience div {
+  .conscience ul.conscience-list li {
     width: 200px;
     height: auto;
     margin-bottom: 20px;

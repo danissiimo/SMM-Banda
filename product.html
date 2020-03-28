@@ -225,4 +225,22 @@ $(".js-range-slider").ionRangeSlider({  //// Параметры можно по�
         max: 15,
         grid: true
     });
+    
+    
+function add_to_cart(){
+    $.wnoty({
+      type: 'success',
+      message: 'Товар добавлен в корзину',
+      autohideDelay: 5000,
+      link: 'cart.html'
+    });
+
+}
+
+
+$('.add-to-cart').click(function(){
+   add_to_cart();
+   
+   return false; 
+})
 </script>

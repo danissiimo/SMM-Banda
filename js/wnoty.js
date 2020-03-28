@@ -100,6 +100,10 @@
             $("." + notify + "-notification:last").remove();
         }
         initialize(settings);
+        
+        if(settings.link!=undefined && settings.link.length>5){
+            $('.wnoty-block').css('cursor','pointer').click(function(){location.href=settings.link;});
+        }
     };
     PrefixedEvent($("." + notify + "-notification"), "AnimationEnd", function() {
         $(".wnoty-notification.wnoty-hide").remove();
