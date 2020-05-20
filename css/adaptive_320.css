@@ -539,4 +539,23 @@
   nav::before {
     width: 160px !important;
   }
+  .auth-popup-tab-header {
+    width: 160px;
+  }
+  #auth_popup {
+    width: 320px;
+  }
+  #auth_popup input {
+    width: 100%;
+  }
+  #auth_popup .space-between {
+    display: block;
+  }
+  #auth_popup .space-between input {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #auth_popup .space-between button {
+    width: 100%;
+  }
 }

@@ -33,9 +33,84 @@
      <li><a href="orders.html">История заказов</a></li>
      <li><a href="blog.html">Блог</a></li>
      <li><a href="auth.html">Личный кабинет</a></li>
-     <li><a href="auth.html">Войти</a></li>
+     <li><a href="javascript:" class="auth_popup_open">Войти</a></li>
     </ul>
   </nav>
+  
+  
+  <!--- Содержимое попапа авторизации/регистрации --->
+    <div id="auth_popup" class="popup" style="display: none;">
+    
+    <div class="auth-popup-tab-header tab-auth sel" data-body-id="auth-popup-auth-body">Войти</div><div class="auth-popup-tab-header tab-reg" data-body-id="auth-popup-reg-body">Регистрация</div>
+    
+    
+     <div class="container">
+        <div class="auth-popup-body" id="auth-popup-auth-body">
+        
+         <form id="auth_form_popup" action="auth.err"> 
+            <div class="pass-email">
+                <div class="field-box">
+                <div class="field-star">Электронная почта: </div>
+                    <input type="email" id="auth_email_popup" name="auth_email" placeholder="Электронная почта">
+                </div>
+                
+                <div class="field-box">
+                    <div class="field-star">Пароль: </div>
+                    <input type="password" id="auth_pass_popup" name="auth_pass" placeholder="Пароль">
+                </div>
+            </div>
+            
+            <div class="space-between">
+                <input type="submit" value="Войти">
+                <button class="auth_popup_close red">Я передумал :(</button>
+            </div>
+          </form>
+
+          <a href="pass_rem.html" class="rem-pass-link">Забыли пароль?</a>
+        </div>
+        
+        
+        
+        
+        
+        <div  class="auth-popup-body" id="auth-popup-reg-body">
+         <form method="post" id="reg_form_popup" action="reg.html">
+                <div class="reg-fields">
+                    <div class="field-box">
+                        <div class="field-star">Электронная почта: </div>
+                        <input type="email" id="reg_email_popup" name="auth_email" placeholder="Электронная почта">
+                    </div>
+                    
+                    <div class="field-box">
+                        <div class="field-star">Логин: </div>
+                        <input type="text" id="reg_login_popup" name="auth_email" placeholder="Логин">
+                    </div>
+                    
+                    <div class="field-box">
+                        <div class="field-star">Пароль: </div>
+                        <input type="password" id="reg_pass_popup" name="auth_pass" placeholder="Пароль">
+                    </div>
+                    
+                    <div class="field-box">
+                        <div class="field-star">Повторите пароль: </div>
+                        <input type="password" id="reg_pass_rep_popup" name="auth_pass_rep" placeholder="Повторите пароль">
+                    </div>
+                    
+                    <div class="field-box">
+                        Средство связи: 
+                        <input type="text" name="contacts" placeholder="Skype, Viber, Telegram">
+                    </div>
+                </div>
+                
+                <div class="space-between">
+                    <input type="submit" value="Регистрация">
+                    <button class="auth_popup_close red">Я передумал :(</button>
+                </div>
+           </form>
+        </div>
+      
+     </div>
+    </div>
   
   <div class="header-main-wrapper">
    <div class="header-main">
