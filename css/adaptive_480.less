@@ -122,23 +122,6 @@
     }
     
     
-    footer{
-        .container{
-            width:@site_width;
-            display:flex;
-            flex-direction:column;
-            align-items:center;
-            height:190px;
-            justify-content:space-evenly;
-            
-            
-            div{
-                text-align:center;
-            }
-        }
-    }
-    
-    
     
     .main-bottom{
         display:block;
@@ -429,7 +412,7 @@
         
     } 
     
-    .payments{
+    .payments,.page-payments{
         .payment-box{
             margin-left:38px !important;
             
@@ -758,6 +741,78 @@
     }
     
     
+    .page-price{
+        .price-item{
+            display:flex;
+            justify-content: space-between;
+            padding:50px;
+            flex-wrap:wrap;
+            
+            .usl-name{
+                width:100% !important;
+                max-width:100% !important;
+                margin-bottom:20px;
+                padding:0px;
+                
+               .param{
+                    width:100%;
+                    display: block;
+                    overflow-x:hidden;
+                    
+                    img{
+                        display:block;
+                        float:none;
+                        margin-bottom:20px;
+                    }
+                } 
+            }
+            
+            .price-minmax-orders .value,.price-id .value,button.opis,.field-box{
+                width: 162px;
+            }
+            
+            .field-box{
+                margin-left:0px !important;
+            }
+            
+            button.opis{
+                top: 36px;
+            }
+        }
+        
+        
+        .price-opt-banner{
+            background-image:none;
+            
+            padding-right:30px;
+        }
+    }
+    
+    
+    footer{
+        .container{
+            width:@site_width !important;
+            flex-direction:column;
+            
+            .footer-box{
+                width:300px;
+                margin-left: 50px;
+            }
+            
+            div{
+                margin-bottom:30px;
+            }
+        }
+    }
+    
+    .page-vaks{
+        .ajax-file-upload-statusbar{
+            width:340px !important;
+            margin-left: 0px !important;
+        }
+    }
+    
+    
     
 }
 
@@ -840,5 +895,71 @@
             }
         }
     }
+    
+    
+    .page-affiliates{
+        .content-box{
+            background-position:300px -105px;
+            
+            padding-right:80px;
+        }
+    }
+    
+    
+    .page-help-orders{
+        .content-box{
+            h2{
+                font-size:24px;
+            }
+            
+            flex-direction:column;
+        }
+        
+        .help-orders-img{
+            width:100%;
+            max-width:100%;
+            text-align:center;
+            
+            img{
+                display:inline-block;
+            }
+        }
+    }
+    
+    
+    .page-bonuses{
+        .content-box{
+            height:auto;
+            display:block;
+            width:440px;
+            
+            .bonus-img{
+                width:440px;
+                
+                img{
+                    border-top-left-radius: 6px;
+                    border-top-right-radius: 6px;
+                    border-bottom-left-radius: 0px;
+                }
+                
+            }
+            
+            .bonus-info{
+                .bonus-text{
+                    height:auto;
+                    margin-top:10px;
+                }
+                
+                .bonus-name{
+                    
+                }
+                
+                .bonus-date{
+                    margin-top:10px;
+                }
+            }
+        }
+    }
+    
 }
 

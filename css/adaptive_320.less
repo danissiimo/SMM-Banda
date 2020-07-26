@@ -120,23 +120,6 @@
     }
     
     
-    footer{
-        .container{
-            width:@site_width;
-            display:flex;
-            flex-direction:column;
-            align-items:center;
-            height:190px;
-            justify-content:space-evenly;
-            
-            
-            div{
-                text-align:center;
-            }
-        }
-    }
-    
-    
     
     .main-bottom{
         display:block;
@@ -423,7 +406,7 @@
     }
     
     
-    .payments{
+    .payments,.page-payments{
         .payment-box{
             width:220px !important;
             margin-left:0px !important;
@@ -781,6 +764,103 @@
             
             button{
                 width:100%;
+            }
+        }
+    }
+    
+    
+    .page-affiliates{
+        .content-box{
+            background-image:none;
+            
+            padding-right:20px;
+        }
+    }
+    
+    
+    .page-price{
+        .price-item{
+            padding:20px;
+            
+            .usl-name{
+                width:100% !important;
+                max-width:100% !important;
+                margin-bottom:20px;
+                
+                
+               .param{
+                    width:100%;
+                    display:block;
+                    
+                    img{
+                        display:block;
+                        float:none;
+                        margin-bottom:20px;
+                    }
+                } 
+            }
+            
+            .price-minmax-orders .value,.price-id .value,button.opis,.field-box{
+                width: 100%;
+            }
+            
+            .field-box{
+                margin:0px !important;
+                margin-top:20px !important;
+            }
+            
+            button.opis{
+                float:none;
+                position:static;
+                margin-top:40px;
+            }
+        }
+        
+        
+        .price-opt-banner{
+            background-image:none;
+            
+            padding-right:20px;
+        }
+    }
+    
+    
+    footer{
+        .container{
+            width:@site_width !important;
+            flex-direction:column;
+            
+            .footer-box{
+                width:280px;
+                margin-left: 20px;
+            }
+            
+            div{
+                margin-bottom:30px;
+            }
+        }
+    }
+    
+    
+    
+    .page-vaks{
+        .ajax-file-upload-statusbar{
+            width:220px !important;
+            margin-left: 0px !important;
+            
+            .ajax-file-upload-progress{
+                width:180px !important;
+            }
+        }
+    }
+    
+    
+    .page-bonuses{
+        .content-box{
+            width:280px;
+            
+            .bonus-img{
+                width:280px;
             }
         }
     }

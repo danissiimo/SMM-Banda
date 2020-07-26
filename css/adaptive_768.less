@@ -120,6 +120,12 @@
     footer{
         .container{
             width:@site_width;
+            flex-wrap:wrap;
+            
+            .footer-box{
+                width:50%;
+                margin-bottom:30px;
+            }
         }
     }
     
@@ -344,7 +350,7 @@
     }
     
     
-    .payments{
+    .payments,.page-payments{
         .payment-box{
             margin-left:24px !important;
             width:183px;
@@ -595,6 +601,85 @@
             margin-bottom:30px;
             width:auto;
             display:block;
+        }
+    }
+    
+    
+    .page-affiliates{
+        .content-box{
+            background-position:330px -105px;
+            
+            padding-right:280px;
+        }
+    }
+    
+    
+    .page-price{
+        .price-item{
+            .usl-name{
+                width:100% !important;
+                max-width:100% !important;
+                margin-bottom:20px;
+                
+               .param{
+                    width:100%;
+                    
+                    overflow-x:hidden;
+                } 
+            }
+            
+            
+            .price-id .value{
+                width: 80px;
+            }
+            
+            .price-id{
+               margin-left:50px !important; 
+            }
+            
+            .price-minmax-orders .value{
+                width: 120px;
+            }
+        }
+        
+        
+        .price-opt-banner{
+            background-position:470px center;
+            
+            padding-right:280px;
+            
+            h1{
+                width:470px;
+            }
+        }
+    }
+    
+    
+    .page-vaks{
+        .ajax-file-upload-statusbar{
+            width:289px !important;
+            margin-left: 30px !important;
+        }
+        
+        .ajax-file-upload-statusbar:nth-child(2n-1){
+            margin-left: 0px !important;
+        }
+    }
+    
+    
+    .page-bonuses{
+        .content-box{
+            height:214px;
+            
+            .bonus-img{
+                width:280px;
+            }
+            
+            .bonus-info{
+                .bonus-text{
+                    height:90px;
+                }
+            }
         }
     }
 }

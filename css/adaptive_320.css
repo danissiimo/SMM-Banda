@@ -84,17 +84,6 @@
     font-size: 26px;
     line-height: 32px;
   }
-  footer .container {
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 190px;
-    justify-content: space-evenly;
-  }
-  footer .container div {
-    text-align: center;
-  }
   .main-bottom {
     display: block;
   }
@@ -312,7 +301,8 @@
   .page-checkout .info .info-field {
     display: block;
   }
-  .payments .payment-box {
+  .payments .payment-box,
+  .page-payments .payment-box {
     width: 220px !important;
     margin-left: 0px !important;
   }
@@ -557,5 +547,69 @@
   }
   #auth_popup .space-between button {
     width: 100%;
+  }
+  .page-affiliates .content-box {
+    background-image: none;
+    padding-right: 20px;
+  }
+  .page-price .price-item {
+    padding: 20px;
+  }
+  .page-price .price-item .usl-name {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .page-price .price-item .usl-name .param {
+    width: 100%;
+    display: block;
+  }
+  .page-price .price-item .usl-name .param img {
+    display: block;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .page-price .price-item .price-minmax-orders .value,
+  .page-price .price-item .price-id .value,
+  .page-price .price-item button.opis,
+  .page-price .price-item .field-box {
+    width: 100%;
+  }
+  .page-price .price-item .field-box {
+    margin: 0px !important;
+    margin-top: 20px !important;
+  }
+  .page-price .price-item button.opis {
+    float: none;
+    position: static;
+    margin-top: 40px;
+  }
+  .page-price .price-opt-banner {
+    background-image: none;
+    padding-right: 20px;
+  }
+  footer .container {
+    width: 320px !important;
+    flex-direction: column;
+  }
+  footer .container .footer-box {
+    width: 280px;
+    margin-left: 20px;
+  }
+  footer .container div {
+    margin-bottom: 30px;
+  }
+  .page-vaks .ajax-file-upload-statusbar {
+    width: 220px !important;
+    margin-left: 0px !important;
+  }
+  .page-vaks .ajax-file-upload-statusbar .ajax-file-upload-progress {
+    width: 180px !important;
+  }
+  .page-bonuses .content-box {
+    width: 280px;
+  }
+  .page-bonuses .content-box .bonus-img {
+    width: 280px;
   }
 }

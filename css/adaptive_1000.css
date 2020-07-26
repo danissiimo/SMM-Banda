@@ -204,10 +204,30 @@
     width: 778px;
     margin-left: 50px;
   }
-  .payments .payment-box {
+  .page-price .price-item .usl-name {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .page-price .price-item .usl-name .param {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .page-price .price-item .price-id .value {
+    width: 150px;
+  }
+  .page-price .price-item .price-id {
+    margin-left: 50px !important;
+  }
+  .page-price .price-item .price-minmax-orders .value {
+    width: 205px;
+  }
+  .payments .payment-box,
+  .page-payments .payment-box {
     margin-left: 24px !important;
   }
-  .payments .payment-box:nth-child(5n-4) {
+  .payments .payment-box:nth-child(5n-4),
+  .page-payments .payment-box:nth-child(5n-4) {
     margin-left: 0px !important;
   }
   .page-product .content-box {
@@ -334,5 +354,28 @@
     margin-bottom: 30px;
     width: auto;
     display: block;
+  }
+  .page-vaks .ajax-file-upload-statusbar {
+    width: 266px !important;
+    margin-left: 30px !important;
+  }
+  .page-vaks .ajax-file-upload-statusbar:nth-child(3n-2) {
+    margin-left: 0px !important;
+  }
+  .page-price .price-opt-banner {
+    background-position: 500px center;
+    padding-right: 480px;
+  }
+  .page-price .price-opt-banner h1 {
+    width: 530px;
+  }
+  .page-bonuses .content-box {
+    height: 214px;
+  }
+  .page-bonuses .content-box .bonus-img {
+    width: 310px;
+  }
+  .page-bonuses .content-box .bonus-info .bonus-text {
+    height: 90px;
   }
 }

@@ -22,6 +22,10 @@
 
 h1,h2,h3{
     margin:0;
+    
+    span.green{
+        color:#76b827;
+    }
 }
 
 body{
@@ -267,7 +271,7 @@ header{
 .content-wrapper{
      background:@body_bg_color;
      height:auto;
-     min-height:580px;
+     min-height:380px;
      
      .content{
         width:@site_width;
@@ -377,7 +381,7 @@ header{
     background:white;
     border-radius:6px;
     padding: 40px 50px 50px 50px;
-    line-height:32px;
+    line-height:30px;
     
     h1,h2{
         font-size:32px;
@@ -395,7 +399,7 @@ header{
     }
     
     p{
-        line-height:32px;
+        line-height:30px;
     }
 }
 
@@ -486,12 +490,70 @@ header{
 
 footer{
     background:white;
+    padding-top:40px;
     
     .container{
         width:@site_width;
         margin:auto;
-        height:90px;
+        min-height:200px;
         align-items:center;
+        padding:0px 10px;
+        align-items:flex-start;
+    }
+    
+    
+    .copyright{
+        color: #aaaaaa;
+        margin-bottom:10px;
+        min-height:30px;
+        margin-top:10px;
+    }
+    
+    .footer-box{
+        font-size:28px;
+        font-weight:600;
+        width:33%;
+        
+        ul{
+            font-size:22px;
+            font-weight:normal;
+            list-style-type:none;
+            position: relative;
+            left:-40px;
+        }
+        
+        li{
+            color:#76b827;
+            margin-top:25px;
+            
+            a{
+                color:black;
+                &:before{
+                    content: "\2022";
+                    color: #76b827;
+                    font-size:30px;
+                    margin-right: 4px;
+                }
+            }
+        }
+        
+        li:hover{
+            color:#d42428;
+            position:relative;
+            
+            a{
+               font-size:22px;
+               color:#d42428; 
+               
+               &:before{
+                  color: #d42428;
+               }
+            }
+            
+            animation: slide_right  300ms 1 linear;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
     }
 }
 
@@ -773,6 +835,13 @@ footer{
             border-radius:6px;
         }
     }
+    
+    
+    .filter{
+        label{
+            width:214px;
+        }
+    }
 }
 
 
@@ -782,7 +851,7 @@ footer{
     flex-wrap:wrap;
     margin-top:20px;
     
-    a{
+    a,label{
         width:280px;
         margin-bottom:20px;
     }
@@ -919,6 +988,79 @@ footer{
 }
 
 
+.page-price{
+    .content-box{
+        margin-bottom:30px;
+    }
+    
+    .price-opt-banner{
+        min-height:290px;
+        background-image:url(../img/banners/Partner_image.png);
+        background-repeat:no-repeat;
+        background-position:right center;
+        
+        padding-right:516px; 
+        
+        p{
+            margin-bottom:0px;
+        }
+    }
+    
+    .price-item{
+        padding-left:0px;
+        
+        div.field-box{
+            display:inline-block;
+            vertical-align:top;
+            margin-left:25px;
+            max-width:460px;
+            
+            &:first-child{
+                margin-left:50px;
+            }
+        }
+    }
+    
+    
+    .usl-name{
+       .param{
+            width:460px;
+            overflow-x:hidden;
+            display:flex;
+            
+            img{
+                width:32px;
+                height:32px;
+                border-radius:66px;
+                margin-right:10px;
+                float:left;
+            }
+        }
+        
+        .value{
+            color:black;
+        } 
+    }
+    
+    
+    .price-id .value{
+        width: 70px;
+    }
+    
+    .price-minmax-orders .value{
+        width: 111px;
+    }
+    
+    
+    button.opis{
+        vertical-align: middle;
+        float:right;
+        position:relative;
+        top:40px;
+    }
+}
+
+
 .page-cart,.page-checkout{
     .content-box{
         margin-bottom:30px;
@@ -988,9 +1130,6 @@ footer{
             margin-left:50px;
             margin-top:30px;
         }
-        
-        
-        
     }
     
     
@@ -1055,6 +1194,34 @@ footer{
     
     
     
+}
+
+.page-payments{
+    .payment-box{
+        position:relative;
+        background:#ddedff;
+        display:inline-flex;
+        justify-content:center;
+        align-items:center;
+        border-radius:6px;
+        width:148px;
+        height:96px;
+        vertical-align:top;
+        margin-bottom:22px;
+        
+        span{
+            position:absolute;
+            top:96px;
+        }
+        
+        
+        margin-top:30px;
+        margin-left:29px;
+        
+        &:nth-child(6n-5){
+            margin-left:0px;
+        }
+    }
 }
 
 .payments{
@@ -1848,6 +2015,131 @@ footer{
 }
 
 
+.page-affiliates{
+    .content-box{
+        min-height:290px;
+        background-image:url(../img/banners/Bonus_image.png);
+        background-repeat:no-repeat;
+        background-position:right -115px;
+        
+        padding-right:400px;
+    }
+}
+
+
+.page-help-orders{
+    .content-box{
+        padding:0px;
+        position:relative;
+        overflow:hidden;
+        margin-bottom:30px;
+        
+        h2{
+            font-size:28px;
+        }
+        
+        display:flex;
+    }
+    
+    .help-orders-description{
+        display:inline-block;
+        padding:30px;
+        width:auto;
+    }
+    
+    
+    .help-orders-img{
+        display:inline-block;
+        max-width:250px;
+        vertical-align:middle;align-self:center;
+        
+        img{
+            width:250px;
+        }
+    }
+}
+
+
+.page-vaks{
+    select{
+        width:100%;
+        background: #ddedff;
+    }
+    
+    textarea{
+        margin-top:30px;
+        width:100%;
+        height:180px;
+    }
+    
+    input[type=submit]{
+        width:100%;
+        margin-top:30px;
+    }
+}
+
+
+.page-bonuses{
+    .content-box{
+        padding:0px;
+        margin-bottom:30px;
+        
+        display:flex;
+        justify-content:stretch;
+        height:184px;
+        
+        .bonus-img{
+            width:270px;
+            
+            flex-shrink: 0;
+
+            display:block;
+            /*text-align:center;
+            justify-content:center;
+            flex-direction:column;*/
+            
+            overflow: hidden;
+            position:relative;
+            
+            img{
+                display:block;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+                
+                width:100%;
+                height:100%;
+            }
+        }
+        
+        .bonus-info{
+            width:100%;
+            flex-grow:1;
+            flex-shrink: 2;
+            
+            padding:30px;
+            
+            .bonus-name{
+                
+            }
+            
+            .bonus-date{
+                color:#9f9f9f;
+            }
+            
+            
+            .bonus-text{
+                height:60px;
+                color:black;
+                
+                overflow-y:hidden;
+            }
+            
+            
+        }
+    }
+}
+
+
 .profile-adreses{
     h1{
         margin-bottom:20px;
@@ -1974,6 +2266,17 @@ div.field-star{
         input{
             width:50%;
         }
+    }
+}
+
+
+@keyframes slide_right{
+    from{
+       padding-left:0px; 
+    }
+    
+    to{
+        padding-left:15px; 
     }
 }
 

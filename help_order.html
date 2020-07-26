@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SMM BANDA</title>
+    
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/popup.css"/>
+    <link rel="stylesheet" href="css/radio-img.css"/>
+    <link rel="stylesheet" href="css/wnoty.css"/>
+    
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.popupoverlay.js"></script>
+    <script src="js/input_number.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wnoty.js"></script>
+    <script src="js/custom_range.js"></script>
+    
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <ul>
+     <li><a href="news.html">Новости</a></li>
+     <li><a href="feedback.html">Отзывы</a></li>
+     <li><a href="faq.html">Faq</a></li>
+     <li><a href="refs.html">Рефералы</a></li>
+     <li><a href="orders.html">История заказов</a></li>
+     <li><a href="blog.html">Блог</a></li>
+     <li><a href="profile.html">Личный кабинет</a></li>
+     <li><a href="auth.html">Выйти</a></li>
+    </ul>
+  </nav>
+  
+  <div class="header-socials">
+    <div class="header-socials-main"><img src='img/gamburger.png'>Услуги</div>
+    
+    <div class="main-page-socials">
+        <div><a href="youtube.html"><img src='img/socials/YouTube.png'> <span>YouTube</span></a></div>
+        <div><a href="youtube.html"><img src='img/socials/Facebook.png'> <span>Facebook</span></a></div>
+        <div><a href="youtube.html"><img src='img/socials/Instagram.png'> <span>Instagram</span></a></div>
+        <div><a href="youtube.html"><img src='img/socials/Vkontakte.png'> <span>Vkontakte</span></a></div>
+        <div><a href="youtube.html"><img src='img/socials/Twitter.png'> <span>Twitter</span></a></div>
+        <div><a href="youtube.html"><img src='img/socials/Ok.ru.png'> <span>Ok.ru</span></a></div>
+        <div><a href="youtube.html"><img src='img/socials/Telegram.png'> <span>Telegram</span></a></div>
+        <div><a href="youtube.html"><img src='img/socials/Tik_Tok.png'> <span>Tik Tok</span></a></div>
+        <div><a href="youtube.html"><img src='img/socials/Feedbacks.png'> <span>Отзывы</span></a></div>
+        <div><a href="youtube.html"><img src='img/socials/Dailmotion.png'> <span>Dailmotion</span></a></div>
+        <div><a href="youtube.html"><img src='img/socials/Twitch.png'> <span>Twitch</span></a></div>
+        <div><a href="youtube.html"><img src='img/socials/Periscope.png'> <span>Periscope</span></a></div>
+        <div><a href="youtube.html"><img src='img/socials/Traffic.png'> <span>Traffic</span></a></div>
+    </div>
+  </div>
+  
+  <div class="header-main-wrapper">
+   <div class="header-main">
+    <div class="header-main-box logo">
+     <a href="index.html"><img src='img/logo.svg' width="300" height="81"></a>
+    </div>
+    
+    <div class="header-main-box profile">
+     <div class="container">
+       <div class="info">
+         <div class="name"><a href="notify.html" onclick="">Уведомления: 4</a></div>
+         <div class="balance">Ваш баланс: 7 200 руб</div>
+         <div class="balance-add"><a href="balance.html">Пополнить баланс</a></div>
+       </div>
+     </div>
+     
+    </div>
+    <div class="header-main-box cart">
+        <div class="container">
+          <div class="cart-usl-count">3</div>
+          <div class="info">
+            <div class="cart-sum">18 400 руб.</div>
+            <div class="cart-sum-o">Цена за все</div>
+            <div class="cart-order"><a href="cart.html">Оформить заказ</a></div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="header-main-box support">
+        <a href="tickets.html" class="link-button ask_popup_open">Техподдержка</a>
+    </div>
+    
+    
+   </div>
+   
+   
+  </div>
+</header>
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div><a href="index.html">SMM Banda</a></div>
+        <div>Как сделать заказ?</div>
+    </div>
+</div>
+
+
+
+<div class="content-wrapper">
+    <div class="content">
+    
+        <div class="page-help-orders">
+            
+            <div class="content-box">
+            
+              <div class="help-orders-description">
+                <h2>1. Что бы сделать заказ на сервисе Вы должны перейти на сайт <span class="green">SMM Banda </span> и выбрать категорию</h2>
+                
+                <p>Доступные категории: <a href="youtube.html">YouTube</a>, <a href="youtube.html">Vkontacke</a>, <a href="youtube.html">Instagram</a>, <a href="youtube.html">Telegram</a>, <a href="youtube.html">Facebook</a>, <a href="youtube.html">Odnoklasniki</a>, <a href="youtube.html">Twitter</a>, <a href="youtube.html">Отзывы</a>, <a href="youtube.html">Трафик</a>, <a href="youtube.html">TikTok</a>
+</p>
+              </div>
+            
+            
+              <div class="help-orders-img">
+                <img src="img/help-orders/Step_one.png" class="help-orders-img_one_open">
+                <div id="help-orders-img_one" class="popup popup-img" style="display: none;"><img src="img/help-orders/Step_one.png"></div>
+                <script>$("#help-orders-img_one").popup();</script>
+            
+              </div>
+
+            </div>
+            
+            
+            
+            
+            
+            <div class="content-box">
+                <div class="help-orders-description">
+                    <h2>2. Перейти в нужный подраздел с услугами, выбрать интересующую Вас услугу и нажать кнопку заказать</h2>
+                </div>
+                
+                
+                <div class="help-orders-img">
+                    <img src="img/help-orders/Step_two.png" class="help-orders-img help-orders-img_two_open">
+                    <div id="help-orders-img_two" class="popup popup-img" style="display: none;"><img src="img/help-orders/Step_two.png"></div>
+                    <script>$("#help-orders-img_two").popup();</script>
+                </div>
+
+            </div>
+            
+            
+            <div class="content-box">
+                <div class="help-orders-description">
+                    <h2>3. Вы попадаете в форму для заказа, 
+где Вас попросят вставить ссылку на видео, 
+пост либо аккаунт. После заполнения полей 
+перейдите в корзину для оплаты</h2>
+
+                </div>
+                
+                
+                <div class="help-orders-img">
+                    <img src="img/help-orders/Step_Three.png" class="help-orders-img help-orders-img_Three_open">
+                    <div id="help-orders-img_Three" class="popup popup-img" style="display: none;"><img src="img/help-orders/Step_Three.png"></div>
+                    <script>$("#help-orders-img_Three").popup();</script>
+                </div>
+            </div>
+            
+            
+            <div class="content-box">
+                <div class="help-orders-description">
+                    <h2>4. В поле покупатель заполните поле Email 
+и придумайте себе пароль</h2>
+                </div>
+                
+                
+                <div class="help-orders-img">
+                    <img src="img/help-orders/Step_four.png" class="help-orders-img help-orders-img_four_open">
+                    <div id="help-orders-img_four" class="popup popup-img" style="display: none;"><img src="img/help-orders/Step_four.png"></div>
+                    <script>$("#help-orders-img_four").popup();</script>
+                </div>
+
+            </div>
+            
+            
+            <div class="content-box">
+                <div class="help-orders-description">
+                    <h2>5. Выбирите нужный метод оплаты и оплатите заказ. </h2>
+
+                <h2><span class='green'>Готово! Ваш заказ успешно создан 
+и будет выполнен максимально оперативно.</span></h2>
+
+                <p>И помните мы не храним, не используем данные клиентов.
+Вся информация конфиденциальна и не может быть разглашена.
+
+</p>
+                </div>
+                
+                
+                <div class="help-orders-img">
+                    <img src="img/help-orders/Step_five.png" class="help-orders-img help-orders-img_five_open">
+                    <div id="help-orders-img_five" class="popup popup-img" style="display: none;"><img src="img/help-orders/Step_five.png"></div>
+                    <script>$("#help-orders-img_five").popup();</script>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+<footer>
+ <div class="container space-between">
+    <div class="footer-box">
+    Личный кабинет
+    
+     <ul>
+       <li><a href="orders.html">История заказов</a></li>
+       <li><a href="profile_adreses.html">Мои адреса</a></li>
+       <li><a href="refs.html">Рефералы</a></li>
+       <li><a href="profile_favorites.html">Мои закладки</a></li>
+       <li><a href="profile.html">Личные данные</a></li>
+       <li><a href="profile_balance.html">Баланс</a></li>
+       <li><a href="auth.html">Вход/Регистрация</a></li>
+     </ul>
+    </div>
+    
+    
+  
+    <div class="footer-box">
+    Навигация
+    
+     <ul>
+       <li><a href="index.html">Гарантия</a></li>
+       <li><a href="price_opt.html">Корпоративным клиентам</a></li>
+       <li><a href="index.html">Программа лояльности</a></li>
+       <li><a href="affiliates.html">Партнерская программа</a></li>
+       <li><a href="vaks.html">Вакансии</a></li>
+       <li><a href="price.html">Прайс-лист</a></li>
+       <li><a href="news.html">Вход/Новости</a></li>
+     </ul>
+    </div>
+    
+    
+
+
+
+
+
+
+    
+    <div class="footer-box">
+    Помощь
+    
+     <ul>
+       <li><a href="index.html">Пользовательское соглашение</a></li>
+       <li><a href="index.html">Политика конфиденциальности</a></li>
+       <li><a href="price_opt.html">Оптовые услуги</a></li>
+       <li><a href="api.html">Получение API</a></li>
+       <li><a href="tickets.html">Тех. поддержка</a></li>
+       <li><a href="help_order.html">Как сделать заказ?</a></li>
+       <li><a href="faq.html">Faq</a></li>
+     </ul>
+    </div>
+ </div>
+
+ <div class="container space-between copyright">
+     <div>Copyright ©  2010-2019 Smm Banda. All rights reserved</div>
+     <div>Дизайн - Худобин Роман</div>
+ </div>
+</footer>
+
+</body>
+</html>
