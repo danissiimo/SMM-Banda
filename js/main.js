@@ -148,4 +148,22 @@ $(document).ready(function(){
             return false;
         }
     });
+    
+    
+    ////Кнопка вверх
+    
+    $("body").append("<span id='go_up'>&uarr;</span>");
+    
+    
+    $(window).scroll(function() {     
+	    if ($(window).scrollTop() > 300) {
+	       $("#go_up").show();
+	     } else {
+	       $("#go_up").hide();
+	     }
+    });
+	$("#go_up").on('click', function(e) {
+		 e.preventDefault();
+		 $('html, body').animate({scrollTop:0}, '300');
+	});
 });

@@ -405,6 +405,14 @@ header .main-page-socials-link {
 .content-box p {
   line-height: 30px;
 }
+.content-box .uSocial-Share {
+  text-align: right;
+  position: relative;
+  top: -10px;
+}
+.content-box .uSocial-Share.after-content {
+  top: 10px;
+}
 .alert {
   border-radius: 6px;
   padding: 20px 50px;
@@ -1999,6 +2007,22 @@ div.field-star::after {
 #auth_popup .space-between input {
   width: 50%;
 }
+#go_up {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #c90a14;
+  border-radius: 6px;
+  padding: 7px 13px;
+  opacity: 0.5;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+#go_up:hover {
+  opacity: 1;
+}
 @-webkit-keyframes slide_right {
   from {
     padding-left: 0px;
@@ -3584,6 +3608,9 @@ div.field-star::after {
   }
   .page-bonuses .content-box .bonus-info .bonus-date {
     margin-top: 10px;
+  }
+  .content-box .uSocial-Share {
+    text-align: left;
   }
 }
 @media (max-width: 479px) {
