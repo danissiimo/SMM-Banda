@@ -599,6 +599,19 @@
   footer .container div {
     margin-bottom: 30px;
   }
+  .page-404 .page-404-title {
+    left: 20px;
+  }
+  .page-404 .container {
+    flex-direction: column;
+    padding: 0;
+  }
+  .page-404 .container .container-box {
+    width: 280px;
+  }
+  .page-404 .container div {
+    margin-bottom: 30px;
+  }
   .page-vaks .ajax-file-upload-statusbar {
     width: 220px !important;
     margin-left: 0px !important;

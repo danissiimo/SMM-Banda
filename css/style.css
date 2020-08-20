@@ -1909,6 +1909,61 @@ footer .footer-box li:hover a:before {
   color: black;
   overflow-y: hidden;
 }
+.body-404 {
+  background: url(../img/404.png) no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.body-404 .content-wrapper {
+  background: transparent;
+}
+.page-404 {
+  padding-top: 40px;
+}
+.page-404 .page-404-title {
+  position: relative;
+  top: 75px;
+  font-size: 36px;
+}
+.page-404 .page-404-title span {
+  color: #e40506;
+}
+.page-404 .content-box {
+  margin-top: 200px;
+}
+.page-404 .content-box h1 {
+  margin-bottom: 40px;
+}
+.page-404 .container {
+  min-height: 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 10px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.page-404 .container-box {
+  font-weight: 600;
+  width: 33%;
+}
+.page-404 .container-box ul {
+  font-weight: normal;
+  list-style-type: none;
+  position: relative;
+  left: -40px;
+}
+.page-404 .container-box li {
+  color: #76b827;
+  margin-top: 25px;
+}
+.page-404 .container-box li a {
+  color: #1a35d6;
+}
+.page-404 .container-box li:hover a {
+  color: #d42428;
+}
 .profile-adreses h1 {
   margin-bottom: 20px;
 }
@@ -2099,6 +2154,12 @@ div.field-star::after {
   }
   footer .container {
     width: 1000px;
+  }
+  .body-404 {
+    background-position-x: -300px;
+  }
+  .page-404 .page-404-title {
+    left: 20px;
   }
   .main-bottom {
     display: block;
@@ -2521,6 +2582,20 @@ div.field-star::after {
         flex-wrap: wrap;
   }
   footer .container .footer-box {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .body-404 {
+    background-position-x: -800px;
+  }
+  .page-404 .page-404-title {
+    left: 30px;
+  }
+  .page-404 .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .page-404 .container .container-box {
     width: 50%;
     margin-bottom: 30px;
   }
@@ -3505,6 +3580,24 @@ div.field-star::after {
   footer .container div {
     margin-bottom: 30px;
   }
+  .body-404 {
+    background-position-x: -1300px;
+  }
+  .page-404 .page-404-title {
+    left: 20px;
+  }
+  .page-404 .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .page-404 .container .container-box {
+    width: 300px;
+  }
+  .page-404 .container div {
+    margin-bottom: 30px;
+  }
   .page-vaks .ajax-file-upload-statusbar {
     width: 340px !important;
     margin-left: 0px !important;
@@ -4232,6 +4325,22 @@ div.field-star::after {
     margin-left: 20px;
   }
   footer .container div {
+    margin-bottom: 30px;
+  }
+  .page-404 .page-404-title {
+    left: 20px;
+  }
+  .page-404 .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .page-404 .container .container-box {
+    width: 280px;
+  }
+  .page-404 .container div {
     margin-bottom: 30px;
   }
   .page-vaks .ajax-file-upload-statusbar {
