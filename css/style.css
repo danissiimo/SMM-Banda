@@ -1964,6 +1964,78 @@ footer .footer-box li:hover a:before {
 .page-404 .container-box li:hover a {
   color: #d42428;
 }
+.page-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+.page-contacts .contacts-info {
+  padding: 45px 0px 0px 50px;
+  width: 500px;
+  background: white;
+}
+.page-contacts h1 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-top: 0px;
+}
+.page-contacts p {
+  margin-top: 30px !important;
+}
+.page-contacts .contacts-map {
+  width: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.page-contacts .icon {
+  background-size: 52px 52px;
+  line-height: 52px;
+  padding-left: 72px;
+}
+.page-contacts .phone {
+  background: url(../img/Phone.png) no-repeat top left;
+}
+.page-contacts .time {
+  background: url(../img/Time.png) no-repeat top left;
+}
+.page-contacts .email {
+  background: url(../img/Email.png) no-repeat top left;
+}
+.page-contacts .telegram {
+  background: url(../img/Telegram.png) no-repeat top left;
+}
+.page-contacts .address {
+  background: url(../img/Location.png) no-repeat top left;
+  font-size: 16px;
+  color: #494949;
+  line-height: 26px;
+}
+.page-contacts .ticket {
+  position: relative;
+  height: 100px;
+}
+.page-contacts .ticket span {
+  background: #ddedff;
+  width: 500px !important;
+  position: absolute;
+  left: -50px;
+  padding: 20px 50px;
+  line-height: 30px;
+}
+.page-contacts .socials a {
+  margin-left: 30px;
+}
+.page-contacts .socials a img {
+  width: 32px;
+  height: 32px;
+}
+.page-contacts .socials a:first-child {
+  margin-left: 0px;
+}
 .profile-adreses h1 {
   margin-bottom: 20px;
 }
@@ -2976,6 +3048,26 @@ div.field-star::after {
   .page-bonuses .content-box .bonus-info .bonus-text {
     height: 90px;
   }
+  .page-contacts {
+    display: block;
+  }
+  .page-contacts .contacts-info,
+  .page-contacts .contacts-map {
+    width: 100%;
+  }
+  .page-contacts iframe {
+    height: 500px;
+  }
+  .page-contacts .ticket {
+    height: 50px;
+  }
+  .page-contacts .ticket span {
+    width: 768px !important;
+  }
+  .page-contacts .socials {
+    margin-top: 60px !important;
+    height: 70px;
+  }
 }
 @media (max-width: 767px) and (min-width: 480px) {
   header nav ul {
@@ -3705,6 +3797,26 @@ div.field-star::after {
   .content-box .uSocial-Share {
     text-align: left;
   }
+  .page-contacts {
+    display: block;
+  }
+  .page-contacts .contacts-info,
+  .page-contacts .contacts-map {
+    width: 100%;
+  }
+  .page-contacts iframe {
+    height: 400px;
+  }
+  .page-contacts .ticket {
+    height: 75px !important;
+  }
+  .page-contacts .ticket span {
+    width: 480px !important;
+  }
+  .page-contacts .socials {
+    margin-top: 60px !important;
+    height: 70px;
+  }
 }
 @media (max-width: 479px) {
   header nav ul {
@@ -4355,6 +4467,26 @@ div.field-star::after {
   }
   .page-bonuses .content-box .bonus-img {
     width: 280px;
+  }
+  .page-contacts .contacts-info {
+    padding: 30px 0px 0px 20px;
+  }
+  .page-contacts iframe {
+    height: 400px;
+  }
+  .page-contacts .ticket {
+    height: 105px !important;
+  }
+  .page-contacts .ticket span {
+    width: 320px !important;
+    left: -20px;
+    padding: 20px 30px;
+  }
+  .page-contacts .socials {
+    height: 70px;
+  }
+  .page-contacts .socials a {
+    margin-left: 10px !important;
   }
 }
 @media (max-width: 999px) {

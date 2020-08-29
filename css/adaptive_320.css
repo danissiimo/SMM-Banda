@@ -625,4 +625,24 @@
   .page-bonuses .content-box .bonus-img {
     width: 280px;
   }
+  .page-contacts .contacts-info {
+    padding: 30px 0px 0px 20px;
+  }
+  .page-contacts iframe {
+    height: 400px;
+  }
+  .page-contacts .ticket {
+    height: 105px !important;
+  }
+  .page-contacts .ticket span {
+    width: 320px !important;
+    left: -20px;
+    padding: 20px 30px;
+  }
+  .page-contacts .socials {
+    height: 70px;
+  }
+  .page-contacts .socials a {
+    margin-left: 10px !important;
+  }
 }

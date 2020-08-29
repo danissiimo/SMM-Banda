@@ -2222,6 +2222,97 @@ footer{
 }
 
 
+
+.page-contacts{
+    display:flex;
+    justify-content: stretch;
+    
+    .contacts-info{
+        padding: 45px 0px 0px 50px;
+        width: 500px;
+        background: white;
+    }
+    
+    h1{
+        font-size:32px;
+        font-weight: normal;
+        margin-top: 0px;
+    }
+    
+    p{
+        margin-top: 30px !important;
+    }
+    
+    .contacts-map{
+        width: auto;
+        flex-grow: 1;
+    }
+    
+    .icon{
+        background-size: 52px 52px;
+        line-height: 52px;
+        padding-left: 72px;
+    }
+    
+    
+    .phone{
+        background: url(../img/Phone.png) no-repeat top left;
+    }
+    
+    
+    .time{
+        background: url(../img/Time.png) no-repeat top left;
+    }
+    
+    .email{
+        background: url(../img/Email.png) no-repeat top left;
+    }
+    
+    .telegram{
+        background: url(../img/Telegram.png) no-repeat top left;
+    }
+    
+    
+    .address{
+        background: url(../img/Location.png) no-repeat top left;
+        font-size:16px;
+        color:#494949;
+        line-height:26px;
+    }
+    
+    
+    .ticket{
+        position:relative;
+        height: 100px;
+        
+        span{
+            background: @body_bg_color;
+            width: 500px !important;
+            position:absolute;
+            left: -50px;
+            padding: 20px 50px;
+            line-height: 30px;
+        }
+    }
+    
+    
+    .socials{
+        a{
+            margin-left: 30px;
+            
+            img{
+                width: 32px;
+                height: 32px;
+            }
+            
+            &:first-child{
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
+
 .profile-adreses{
     h1{
         margin-bottom:20px;
@@ -2380,7 +2471,6 @@ div.field-star{
         padding-left:15px; 
     }
 }
-
 @import (less) "adaptive_1000.less";
 @import (less) "adaptive_768.less";  
 @import (less) "adaptive_480.less";  
