@@ -836,7 +836,7 @@ footer .footer-box li:hover a:before {
 .page-category .category-usl-list .category-usl,
 .page-balance-add .category-usl-list .category-usl {
   width: 270px;
-  height: 580px;
+  height: 620px;
   margin-left: 30px;
 }
 .page-category .category-usl-list .category-usl:nth-child(4n-3),
@@ -862,7 +862,7 @@ footer .footer-box li:hover a:before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 300px;
+  height: 340px;
 }
 .page-category .category-usl-list .category-usl a.buy-lnk,
 .page-balance-add .category-usl-list .category-usl a.buy-lnk {
@@ -1290,6 +1290,23 @@ footer .footer-box li:hover a:before {
 }
 .page-product .product-info input[type=submit] {
   width: 570px;
+}
+.page-product .product-info .availability-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  top: -20px;
+}
+.page-product .product-info .availability-rating .rating span {
+  margin-right: 10px;
+}
+.page-product .product-info .availability-rating .rating .rating-count {
+  color: #aaaaaa;
+  font-size: 14px;
 }
 .page-product.balance-add-x .product-img {
   -webkit-box-pack: start;
@@ -2166,6 +2183,12 @@ div.field-star::after {
     padding-left: 15px;
   }
 }
+.availability .yes {
+  color: #8ed43b;
+}
+.availability .not {
+  color: #d42428;
+}
 @media (max-width: 1169px) and (min-width: 1000px) {
   header nav ul {
     width: 1000px;
@@ -2565,6 +2588,17 @@ div.field-star::after {
     height: 90px;
   }
 }
+@media (max-width: 1169px) {
+  .availability-rating {
+    display: block !important;
+  }
+  .availability-rating .rating {
+    margin-top: 20px;
+  }
+  .availability-rating .rating span {
+    margin-right: 0px !important;
+  }
+}
 @media (max-width: 999px) and (min-width: 768px) {
   header nav ul {
     padding: 20px;
@@ -2867,7 +2901,7 @@ div.field-star::after {
     margin-top: 50px;
   }
   .page-product .product-info .link input {
-    width: 400px;
+    width: 278px;
   }
   .page-product .product-info .count input,
   .page-product .product-info .value {
@@ -4487,6 +4521,9 @@ div.field-star::after {
   }
   .page-contacts .socials a {
     margin-left: 10px !important;
+  }
+  .availability-rating .rating {
+    font-size: 18px;
   }
 }
 @media (max-width: 999px) {

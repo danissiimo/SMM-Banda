@@ -897,7 +897,7 @@ footer{
         
         .category-usl{
             width:270px;
-            height:580px;
+            height:620px;
             margin-left:30px;
             
             &:nth-child(4n-3){
@@ -916,7 +916,7 @@ footer{
                 display:flex;
                 flex-flow:column nowrap;
                 justify-content: space-between;
-                height:300px;
+                height:340px;
             }
             
             a.buy-lnk{
@@ -1391,6 +1391,26 @@ footer{
         
         input[type=submit]{
             width:570px;
+        }
+        
+        
+        .availability-rating{
+            display:flex;
+            justify-content: space-between;
+            position:relative;
+            top:-20px;
+            
+            
+            .rating{
+                span{
+                    margin-right: 10px;
+                }
+                
+                .rating-count{
+                    color: #aaaaaa;
+                    font-size:  14px;
+                }
+            }
         }
     }
 }
@@ -2471,6 +2491,19 @@ div.field-star{
         padding-left:15px; 
     }
 }
+
+
+.availability{
+    .yes{
+        color:#8ed43b;
+    }
+    
+    .not{
+        color:#d42428;
+    }
+}
+
+
 @import (less) "adaptive_1000.less";
 @import (less) "adaptive_768.less";  
 @import (less) "adaptive_480.less";  

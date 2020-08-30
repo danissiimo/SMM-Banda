@@ -385,3 +385,14 @@
     height: 90px;
   }
 }
+@media (max-width: 1169px) {
+  .availability-rating {
+    display: block !important;
+  }
+  .availability-rating .rating {
+    margin-top: 20px;
+  }
+  .availability-rating .rating span {
+    margin-right: 0px !important;
+  }
+}

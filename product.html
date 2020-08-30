@@ -118,6 +118,23 @@
                 <div class="product-info content-box">
                     <h1>Просмотры в результатах поиска Youtube</h1>
                     
+                    
+                    <div class="availability-rating">
+                        <div class="availability">Наличие: <span class="not">Нет</span></div>
+                        
+                        
+                        <div class="rating">
+                            <span>Рейтинг: </span>
+                            
+                            <input type="radio" id="rate_add_5" name="rating_add" value="5" /><label for="rate_add_5"></label>
+                            <input type="radio" id="rate_add_4" name="rating_add" value="4" /><label for="rate_add_4"></label>
+                            <input type="radio" id="rate_add_3" name="rating_add" value="3" /><label for="rate_add_3"></label>
+                            <input type="radio" id="rate_add_2" name="rating_add" value="2" /><label for="rate_add_2"></label>
+                            <input type="radio" id="rate_add_1" name="rating_add" value="1" /><label for="rate_add_1"></label>
+                        </div>
+                    </div>
+                    
+                    
                     <form method="get">
                     
                     
@@ -242,5 +259,14 @@ $('.add-to-cart').click(function(){
    add_to_cart();
    
    return false; 
-})
+});
+
+
+$('.rating input').change(function(){
+    new_rate = $(this).val();
+    
+    $.post('product.php?action=add_rate&product_id=1&rate='+new_rate, function(){
+        
+    });
+});
 </script>
