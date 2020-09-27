@@ -438,6 +438,7 @@ header .main-page-socials-link {
 }
 .conscience {
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 .conscience ul {
   list-style: none;
@@ -459,6 +460,7 @@ header .main-page-socials-link {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 30px;
 }
 .who-are-we {
   width: 670px;
@@ -1291,22 +1293,9 @@ footer .footer-box li:hover a:before {
 .page-product .product-info input[type=submit] {
   width: 570px;
 }
-.page-product .product-info .availability-rating {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-  top: -20px;
-}
-.page-product .product-info .availability-rating .rating span {
-  margin-right: 10px;
-}
-.page-product .product-info .availability-rating .rating .rating-count {
-  color: #aaaaaa;
-  font-size: 14px;
+.page-product .product-info .rating {
+  display: inline-block;
+  vertical-align: bottom;
 }
 .page-product.balance-add-x .product-img {
   -webkit-box-pack: start;
@@ -2189,6 +2178,43 @@ div.field-star::after {
 .availability .not {
   color: #d42428;
 }
+.table-list {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table-list td {
+  border: #ddedff solid 1px;
+  padding: 20px;
+}
+.faq-simple .ac-container label::before {
+  display: none !important;
+}
+.faq-simple .ac-container label {
+  background: transparent;
+  color: black;
+  min-height: 35px;
+  height: auto;
+  border: 0;
+  font-size: 22px;
+  line-height: 32px;
+  padding: 12px 30px;
+  font-weight: bold;
+}
+.faq-simple .ac-container label:hover {
+  color: #d42428;
+}
+.faq-simple .ac-container input:checked + label,
+.faq-simple .ac-container input:checked + label:hover {
+  background: none !important;
+}
+.faq-simple .ac-container article {
+  background: transparent !important;
+  margin-left: 70px;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  font-size: 20px;
+}
 @media (max-width: 1169px) and (min-width: 1000px) {
   header nav ul {
     width: 1000px;
@@ -2460,6 +2486,10 @@ div.field-star::after {
   .page-product .product-info .value {
     width: 360px;
   }
+  .page-product .rating {
+    display: inline-block;
+    vertical-align: bottom;
+  }
   .page-product.balance-add-x .product-img {
     width: 370px;
     margin-left: 20px;
@@ -2586,17 +2616,6 @@ div.field-star::after {
   }
   .page-bonuses .content-box .bonus-info .bonus-text {
     height: 90px;
-  }
-}
-@media (max-width: 1169px) {
-  .availability-rating {
-    display: block !important;
-  }
-  .availability-rating .rating {
-    margin-top: 20px;
-  }
-  .availability-rating .rating span {
-    margin-right: 0px !important;
   }
 }
 @media (max-width: 999px) and (min-width: 768px) {
@@ -2906,6 +2925,9 @@ div.field-star::after {
   .page-product .product-info .count input,
   .page-product .product-info .value {
     width: 278px;
+  }
+  .page-product .rating {
+    float: left;
   }
   .page-product.balance-add-x .product-img {
     display: none;
@@ -3851,6 +3873,12 @@ div.field-star::after {
     margin-top: 60px !important;
     height: 70px;
   }
+  .page-product .rating {
+    width: 150px;
+  }
+  .page-product .rating-info {
+    display: block !important;
+  }
 }
 @media (max-width: 479px) {
   header nav ul {
@@ -4521,9 +4549,6 @@ div.field-star::after {
   }
   .page-contacts .socials a {
     margin-left: 10px !important;
-  }
-  .availability-rating .rating {
-    font-size: 18px;
   }
 }
 @media (max-width: 999px) {

@@ -445,6 +445,7 @@ header{
 
 .conscience{
     margin-bottom:30px;
+    margin-top:30px;
     
     ul{
         list-style:none;
@@ -466,6 +467,7 @@ header{
 
 .main-bottom{
     .space-between;
+    margin-top:30px;
 }
 
 
@@ -1394,23 +1396,9 @@ footer{
         }
         
         
-        .availability-rating{
-            display:flex;
-            justify-content: space-between;
-            position:relative;
-            top:-20px;
-            
-            
-            .rating{
-                span{
-                    margin-right: 10px;
-                }
-                
-                .rating-count{
-                    color: #aaaaaa;
-                    font-size:  14px;
-                }
-            }
+        .rating{
+            display:inline-block;
+            vertical-align:bottom;
         }
     }
 }
@@ -2502,6 +2490,55 @@ div.field-star{
         color:#d42428;
     }
 }
+
+.table-list{
+    border-collapse: collapse;
+    width: 100%;
+    
+    td{
+        border:#ddedff solid 1px;
+        padding:20px;
+    }
+}
+
+
+.faq-simple{
+    .ac-container{
+        label::before{
+            display:none !important;
+        }
+        
+        label{
+            background:transparent;
+            color:black;
+            min-height:35px;
+            height:auto;
+            border:0;
+            font-size:22px;
+            line-height:32px;
+            padding:12px 30px;
+            font-weight:bold;
+            
+            &:hover{
+                color:#d42428;
+            }
+        }
+        
+        input:checked + label,
+        input:checked + label:hover{
+            background:none !important; 
+        }
+        
+        article{
+            background: transparent !important;
+            margin-left: 70px;
+            border: none !important;
+            box-shadow: none !important;
+            font-size: 20px;
+        }
+    }
+}
+
 
 
 @import (less) "adaptive_1000.less";

@@ -261,6 +261,10 @@
   .page-product .product-info .value {
     width: 360px;
   }
+  .page-product .rating {
+    display: inline-block;
+    vertical-align: bottom;
+  }
   .page-product.balance-add-x .product-img {
     width: 370px;
     margin-left: 20px;
@@ -383,16 +387,5 @@
   }
   .page-bonuses .content-box .bonus-info .bonus-text {
     height: 90px;
-  }
-}
-@media (max-width: 1169px) {
-  .availability-rating {
-    display: block !important;
-  }
-  .availability-rating .rating {
-    margin-top: 20px;
-  }
-  .availability-rating .rating span {
-    margin-right: 0px !important;
   }
 }
