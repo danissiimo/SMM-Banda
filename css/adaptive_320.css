@@ -599,6 +599,12 @@
   footer .container div {
     margin-bottom: 30px;
   }
+  footer .copyright {
+    width: 100% !important;
+  }
+  footer .copyright div {
+    width: 320px;
+  }
   .page-404 .page-404-title {
     left: 20px;
   }

@@ -311,7 +311,7 @@ header .main-page-socials-link {
 }
 .main-page-banners-socials .banner .opis {
   top: 150px;
-  width: 230px;
+  width: 260px;
   line-height: 30px;
 }
 .main-page-banners-socials .banner img {
@@ -2284,6 +2284,12 @@ div.field-star::after {
   footer .container {
     width: 1000px;
   }
+  footer .copyright {
+    width: 100%;
+  }
+  footer .copyright div {
+    width: 1000px;
+  }
   .body-404 {
     background-position-x: -300px;
   }
@@ -2717,6 +2723,12 @@ div.field-star::after {
   footer .container .footer-box {
     width: 50%;
     margin-bottom: 30px;
+  }
+  footer .copyright {
+    width: 100%;
+  }
+  footer .copyright div {
+    width: 768px;
   }
   .body-404 {
     background-position-x: -800px;
@@ -3736,6 +3748,12 @@ div.field-star::after {
   footer .container div {
     margin-bottom: 30px;
   }
+  footer .copyright {
+    width: 100% !important;
+  }
+  footer .copyright div {
+    width: 480px;
+  }
   .body-404 {
     background-position-x: -1300px;
   }
@@ -4508,6 +4526,12 @@ div.field-star::after {
   }
   footer .container div {
     margin-bottom: 30px;
+  }
+  footer .copyright {
+    width: 100% !important;
+  }
+  footer .copyright div {
+    width: 320px;
   }
   .page-404 .page-404-title {
     left: 20px;

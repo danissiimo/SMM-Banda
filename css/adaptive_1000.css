@@ -59,6 +59,12 @@
   footer .container {
     width: 1000px;
   }
+  footer .copyright {
+    width: 100%;
+  }
+  footer .copyright div {
+    width: 1000px;
+  }
   .body-404 {
     background-position-x: -300px;
   }
