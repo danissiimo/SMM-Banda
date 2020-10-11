@@ -114,10 +114,15 @@
     .content-box{
         margin:30px 20px;
         
-        .content-main-img img{
+        
+        .content-main-img{
             width:(@site_width - 40px);
             top:-40px;
             left:-50px;
+        }
+        
+        .content-main-img img{
+            left:-65%;
         }
     }
     
@@ -268,6 +273,31 @@
                 a.buy-lnk{
                     width:340px;
                     margin-left:50px !important;
+                }
+            }
+        }
+    }
+    
+    
+    
+    .page-authors{
+        .authors-list{
+            .author{
+                width:440px;
+                margin-left:20px !important;
+                
+                img{
+                    width:440px;
+                }
+                
+                .soc{
+                    a{
+                        margin-left:25px !important;
+                        
+                        &:nth-child(6n-5){
+                            margin-left:0px !important;
+                        }
+                    }
                 }
             }
         }
@@ -529,7 +559,7 @@
     }
     
     
-    .page-feedback{
+    .page-feedback,.page-new-article{
         textarea{
             height:230px;
         }
@@ -1037,6 +1067,53 @@
         .rating-info{
             display:block !important;
         }
+    }
+    
+    .page-new-article{
+        .article-info{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        
+        .tags{
+            a{
+                width:155px;
+                margin-right:10px;
+
+            }
+        }
+    }
+    
+    .page-news2{
+         .news-item{
+            flex-direction:column;
+            
+            img{
+                width:100%;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                border-bottom-left-radius: 0px;
+            }
+            
+            .article-info{
+                grid-template-columns: repeat(2, 1fr);
+            }
+         }
+         
+         .socials{
+            margin-left:-10px;
+            
+            a{
+                width:205px;
+                margin-left:30px;
+            }
+         }
+         
+         
+         .news-item{
+            margin:20px;
+        }
+        
+        
     }
 }
 

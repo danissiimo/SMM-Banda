@@ -53,8 +53,12 @@
   .content-box {
     margin: 0px 20px 30px;
   }
-  .content-box .content-main-img img {
+  .content-box .content-main-img {
     width: 960px;
+  }
+  .content-box .content-main-img img {
+    /*width:(@site_width - 40px);*/
+    left: -5%;
   }
   footer .container {
     width: 1000px;
@@ -139,6 +143,16 @@
   .page-category .category-usl-list a.buy-lnk,
   .page-balance-add .category-usl-list a.buy-lnk {
     margin-left: 50px !important;
+  }
+  .page-authors .authors-list .author {
+    width: 300px;
+    margin-left: 24px !important;
+  }
+  .page-authors .authors-list .author:nth-child(3n-2) {
+    margin-left: 20px !important;
+  }
+  .page-authors .authors-list .author img {
+    width: 300px;
   }
   .page-balance-add .category-usl-list .category-usl .card-name {
     background-position: 35px 27px;
@@ -294,10 +308,12 @@
   .page-product.balance-add-x .product-info .value {
     width: 200px;
   }
-  .page-feedback textarea {
+  .page-feedback textarea,
+  .page-new-article textarea {
     height: 230px;
   }
-  .page-feedback .name-email input {
+  .page-feedback .name-email input,
+  .page-new-article .name-email input {
     width: 410px;
   }
   .page-auth .pass-email input {
@@ -393,5 +409,21 @@
   }
   .page-bonuses .content-box .bonus-info .bonus-text {
     height: 90px;
+  }
+  .page-new-article .article-info,
+  .page-news2 .article-info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .page-news2 .article-info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .page-news2 .socials {
+    margin-left: -10px;
+  }
+  .page-news2 .socials a {
+    margin-left: 26px;
+  }
+  .page-news2 .news-item {
+    margin: 20px;
   }
 }

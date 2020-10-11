@@ -388,14 +388,19 @@ header{
         line-height:44px;
     }
     
-    
-    .content-main-img img{
-        margin:0; 
-        padding:0;
+    .content-main-img{
+        overflow:hidden;
         width:@site_width;
         position:relative;
         top:-40px;
         left:-50px;
+    }
+    
+    .content-main-img img{
+        margin:0; 
+        padding:0;
+        min-width:100%;
+        position:relative;
     }
     
     p{
@@ -404,7 +409,7 @@ header{
     
     
     .uSocial-Share{
-    	text-align:right;
+    	text-align:left;
     	position: relative;
     	top: -10px;
     	
@@ -1436,7 +1441,7 @@ footer{
 }
 
 
-.page-feedback{
+.page-feedback,.page-new-article{
     .content-box{
         margin-bottom:30px;
     }
@@ -2362,6 +2367,261 @@ footer{
         input.add{
             width:430px;
             margin-left:30px;
+        }
+    }
+}
+
+
+
+.page-authors{
+    .authors-list{
+        display:flex;
+        flex-wrap:wrap;
+        
+        .author{
+            width:270px;
+            height:auto;
+            margin-left:24px;
+            border-radius: 6px;
+            background:white;
+            margin-bottom:30px;
+            display:inline-block;
+            vertical-align:top;
+            
+            
+            &:nth-child(4n-3){
+                margin-left:0px;
+            }
+            
+            img{
+                width:100%;
+                height:auto;
+                display:block;
+            }
+            
+            .author-info{
+                padding:0px 30px 25px;
+                height:auto;
+                
+                
+                .name{
+                    font-size:22px;
+                    font-weight:bold;
+                    margin-top:24px;
+                }
+                
+                .type{
+                    color:#8d8d8d;
+                    margin-top:24px;
+                }
+                
+                .soc{
+                    a{
+                        margin-left:22px;
+                        border-radius: 6px;
+                        display:inline-block;
+                        margin-top:21px;
+                        
+                        &:nth-child(4n-3){
+                            margin-left:0px;
+                        }
+                        
+                        img{
+                            width:32px;
+                            height:32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.page-new-article, .page-news2{
+    .article-rating{
+        margin-top:20px;
+        
+        span{
+            color:#8d8d8d;
+        }
+        
+        .rating-info{
+            color:#202127;
+        }
+        
+        .rating{
+            display:inline-block;
+            vertical-align:bottom;
+        }
+    }
+    
+    
+    
+    .article-info{
+        display:grid;
+        width:100%;
+        grid-template-columns: repeat(5, 1fr);
+        
+        div{
+            display:inline-block;
+            margin-right:40px;
+            background-repeat: no-repeat;
+            padding-top:5px;
+            padding-left:45px;
+            height: 32px;
+            color:#8d8d8d;
+            margin-top:20px;
+            white-space:nowrap;
+            width:auto;
+        }
+        
+        .author{
+            background-image:url(../img/Author.png);
+        }
+        
+        .date{
+            background-image:url(../img/Date.png);
+        }
+        
+        .comments{
+            background-image:url(../img/Comment.png);
+        }
+        
+        .views{
+            background-image:url(../img/View.png);
+        }
+        
+        .time{
+            background-image:url(../img/NewsTime.png);
+        }
+    }
+    
+    
+    .uSocial-Share{
+        margin-top:20px;
+    }
+    
+    .article-content{
+        margin-top:40px;
+    }
+    
+    
+    .tags{
+        color:#8d8d8d;
+        /*display:flex;
+        flex-wrap:wrap;*/
+        
+        
+        span{
+            display:block;
+        }
+        
+        a{
+            display:inline-block;
+            width:165px;
+            margin-right:30px;
+            line-height:70px;
+            height:32px;
+            
+            span{
+                display:inline;
+            }
+            
+            img{
+                vertical-align:middle;
+                margin-right:10px;
+            }
+        }
+    }
+}
+
+
+
+
+
+.page-news2{
+    .socials{
+        margin-left:-30px;
+        /*margin-right:20px;*/
+        margin-bottom:30px;
+        display:flex;
+        flex-wrap:wrap;
+        
+        a{
+            display:block;
+            background:white;
+            border-radius:6px;
+            text-align:center;
+            line-height:60px;
+            width:170px;
+            margin-left:30px;
+            margin-top:25px; 
+            
+            img{
+                vertical-align:middle;
+                margin-right:10px;
+            }
+        }
+    }
+    
+    
+    .news-item{
+        background:white;
+        margin-bottom:30px;
+        border-radius:6px;
+        display:flex;
+        
+        img{
+            width:270px;
+        }
+        
+        .news-item-info{
+            padding:30px;
+            width:100%;
+            
+            .name{
+                font-weight:bold;
+                width:100%;
+                
+                a{
+                    display:block;
+                    font-size:22px;
+                    
+                    width:100%;
+                    height:25px !important;
+                    
+                    overflow:hidden;
+                    
+                    /*text-overflow: ellipsis;
+                    white-space:nowrap;*/
+                }
+                
+                
+            }
+            
+            .article-rating{
+                margin-top:10px;
+            }
+            
+            
+            .text{
+                margin-top:20px;
+                margin-bottom:10px;
+                line-height:25px;
+                height:80px;
+                overflow:hidden;
+            }
+            
+            .article-info{
+                div{
+                    margin-right:30px;
+                }
+            }
+            
+            .rating{
+                line-height:30px;
+            }
         }
     }
 }

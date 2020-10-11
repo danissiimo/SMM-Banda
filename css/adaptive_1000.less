@@ -84,8 +84,13 @@
     .content-box{
         margin:0px 20px 30px;
         
-        .content-main-img img{
+        .content-main-img{
             width:(@site_width - 40px);
+        }
+        
+        .content-main-img img{
+            /*width:(@site_width - 40px);*/
+            left:-5%;
         }
     }
     
@@ -216,6 +221,24 @@
             
             a.buy-lnk{
                 margin-left:50px !important;
+            }
+        }
+    }
+    
+    
+    .page-authors{
+        .authors-list{
+            .author{
+                width:300px;
+                margin-left:24px !important;
+                
+                &:nth-child(3n-2){
+                    margin-left:20px !important;
+                }
+                
+                img{
+                    width:300px;
+                }
             }
         }
     }
@@ -437,7 +460,7 @@
     }
     
     
-    .page-feedback{
+    .page-feedback,.page-new-article{
         textarea{
             height:230px;
         }
@@ -619,6 +642,31 @@
                 }
             }
         }
+    }
+    
+    
+    .page-new-article,.page-news2{
+        .article-info{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+    .page-news2{
+        .article-info{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        .socials{
+            margin-left:-10px;
+            
+            a{
+                margin-left:26px;
+            }
+         }
+         
+         .news-item{
+            margin:20px;
+         }
     }
 }
 

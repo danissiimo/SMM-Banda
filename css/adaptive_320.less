@@ -102,11 +102,15 @@
         margin:30px 20px;
         padding: 20px 30px 30px 30px;
         
-        .content-main-img img{
+        .content-main-img{
             width:(@site_width - 40px);
             top:-20px;
             left:-30px;
-        } 
+        }
+        
+        .content-main-img img{
+            left:-111%;
+        }
         
         h1{
             font-size:26px;
@@ -277,6 +281,20 @@
                 a.buy-lnk{
                     width:220px;
                     margin-left:30px !important;
+                }
+            }
+        }
+    }
+    
+    
+    .page-authors{
+        .authors-list{
+            .author{
+                width:280px;
+                margin-left:20px !important;
+                
+                img{
+                    width:280px;
                 }
             }
         }
@@ -493,7 +511,7 @@
     }
     
     
-    .page-feedback{
+    .page-feedback,.page-new-article{
         textarea{
             height:230px;
         }
@@ -924,5 +942,29 @@
     
     .availability-rating{
         
+    }
+    
+    .page-new-article,.page-news2{
+        .rating-info{
+            display:block;
+        }
+    }
+    
+    
+    .page-news2{
+         .news-item{
+            
+            .article-info{
+                grid-template-columns: repeat(1, 1fr);
+            }
+         }
+         
+         .socials{
+            margin-left:-10px;
+            
+            a{
+                width:280px;
+            }
+         }
     }
 }

@@ -71,10 +71,13 @@
     margin: 30px 20px;
     padding: 20px 30px 30px 30px;
   }
-  .content-box .content-main-img img {
+  .content-box .content-main-img {
     width: 280px;
     top: -20px;
     left: -30px;
+  }
+  .content-box .content-main-img img {
+    left: -111%;
   }
   .content-box h1 {
     font-size: 26px;
@@ -196,6 +199,13 @@
   .page-balance-add .category-usl-list .category-usl a.buy-lnk {
     width: 220px;
     margin-left: 30px !important;
+  }
+  .page-authors .authors-list .author {
+    width: 280px;
+    margin-left: 20px !important;
+  }
+  .page-authors .authors-list .author img {
+    width: 280px;
   }
   .page-news .content-box {
     margin-bottom: 30px;
@@ -367,49 +377,62 @@
   .page-product.balance-add-x .product-info .value {
     width: 100%;
   }
-  .page-feedback textarea {
+  .page-feedback textarea,
+  .page-new-article textarea {
     height: 230px;
   }
-  .page-feedback .name-email {
+  .page-feedback .name-email,
+  .page-new-article .name-email {
     display: block;
   }
-  .page-feedback .name-email input {
+  .page-feedback .name-email input,
+  .page-new-article .name-email input {
     width: 220px;
   }
-  .page-feedback .rate-submit {
+  .page-feedback .rate-submit,
+  .page-new-article .rate-submit {
     text-align: left;
   }
   .page-feedback .rate-submit .rating,
-  .page-feedback .rate-submit .submit {
+  .page-new-article .rate-submit .rating,
+  .page-feedback .rate-submit .submit,
+  .page-new-article .rate-submit .submit {
     vertical-align: top;
     display: inline-block;
   }
-  .page-feedback .rate-submit .rating {
+  .page-feedback .rate-submit .rating,
+  .page-new-article .rate-submit .rating {
     margin-right: 0px;
     font-size: 18px !important;
   }
-  .page-feedback .rate-submit .rating span {
+  .page-feedback .rate-submit .rating span,
+  .page-new-article .rate-submit .rating span {
     margin-right: 5px;
   }
-  .page-feedback .rate-submit .submit input {
+  .page-feedback .rate-submit .submit input,
+  .page-new-article .rate-submit .submit input {
     width: 220px;
     margin-top: 20px;
   }
-  .page-feedback .feedback-item .info .name {
+  .page-feedback .feedback-item .info .name,
+  .page-new-article .feedback-item .info .name {
     float: none;
     margin-bottom: 10px;
   }
-  .page-feedback .feedback-item .info .rating {
+  .page-feedback .feedback-item .info .rating,
+  .page-new-article .feedback-item .info .rating {
     float: none;
     margin-bottom: 50px;
     display: block;
     width: 150px;
   }
-  .page-feedback .feedback-item .info .date {
+  .page-feedback .feedback-item .info .date,
+  .page-new-article .feedback-item .info .date {
     float: none;
     padding-right: 0px;
   }
-  .page-feedback .feedback-item p {
+  .page-feedback .feedback-item p,
+  .page-new-article .feedback-item p {
     padding-right: 0px;
   }
   .page-auth .pass-email {
@@ -650,5 +673,18 @@
   }
   .page-contacts .socials a {
     margin-left: 10px !important;
+  }
+  .page-new-article .rating-info,
+  .page-news2 .rating-info {
+    display: block;
+  }
+  .page-news2 .news-item .article-info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .page-news2 .socials {
+    margin-left: -10px;
+  }
+  .page-news2 .socials a {
+    width: 280px;
   }
 }
