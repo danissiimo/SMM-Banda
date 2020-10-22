@@ -74,10 +74,19 @@
                 margin:30px 20px;
                 padding-left:0px;
                 overflow-x:hidden;
+                width:(@site_width - 40px);
                 
                 img{
                     position:relative;
                     left:177px;
+                }
+                
+                .name,.opis{
+                    width:260px;
+                }
+                
+                .opis{
+                    top:150px;
                 }
             }
         }
@@ -1114,6 +1123,18 @@
         }
         
         
+    }
+    
+    .header-socials{
+        display:none !important;
+        
+        .owl-carousel{
+            width:@site_width;
+        }
+    }
+    
+    header .header-socials{
+        display:inline-block !important;
     }
 }
 

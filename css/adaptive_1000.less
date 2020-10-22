@@ -61,7 +61,8 @@
             display:block;
             
             .banner{
-                margin:30px 20px;
+                margin:0px 20px 30px;
+                width:(@site_width - 40px);
                 
                 img{
                     position:relative;
@@ -667,6 +668,22 @@
          .news-item{
             margin:20px;
          }
+    }
+    
+    
+    .header-socials{
+        .owl-carousel{
+            width:@site_width;
+            padding:15px 60px;
+        }
+        
+        .owl-prev{
+            left: 20px !important;
+        }
+        
+        .owl-next{
+            right: 20px !important;
+        }
     }
 }
 

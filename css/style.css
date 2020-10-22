@@ -289,7 +289,9 @@ header .main-page-socials-link {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 30px;
+  width: 100%;
+  position: relative;
+  top: -30px;
 }
 .main-page-banners-socials .banner {
   cursor: pointer;
@@ -297,32 +299,41 @@ header .main-page-socials-link {
   background: white;
   border-radius: 6px;
   padding-left: 234px;
+  width: 100%;
+  height: 258px;
+  margin-bottom: 30px;
+  text-align: right;
+  overflow: hidden;
 }
 .main-page-banners-socials .banner .name,
 .main-page-banners-socials .banner .opis {
   position: absolute;
   left: 70px;
+  width: 420px;
+}
+.main-page-banners-socials .banner .name div,
+.main-page-banners-socials .banner .opis div {
+  display: inline;
 }
 .main-page-banners-socials .banner .name {
-  top: 44px;
+  top: 33px;
   line-height: 50px;
   font-size: 36px;
   font-weight: bold;
+  text-align: left;
 }
 .main-page-banners-socials .banner .opis {
-  top: 150px;
-  width: 260px;
+  top: 100px;
   line-height: 30px;
+  text-align: left;
 }
 .main-page-banners-socials .banner img {
   width: 706px;
-  display: block;
+  display: inline-block;
   margin: 0px;
   padding: 0px;
   position: relative;
-  left: 1px;
 }
-.main-page-socials,
 .main-page-banners {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -334,6 +345,7 @@ header .main-page-socials-link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 .main-page-socials {
   -webkit-box-pack: stretch;
@@ -382,6 +394,70 @@ header .main-page-socials-link {
 }
 .main-page-socials div:hover a {
   /*color:white;*/
+}
+.header-socials {
+  background: #ddedff;
+  padding: 30px 0px;
+}
+.header-socials .container {
+  height: 92px;
+  width: 100%;
+  background: white;
+}
+.header-socials .container img {
+  width: 32px !important;
+  height: 32px !important;
+  display: inline-block !important;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.header-socials .container a {
+  display: inline-block;
+  height: 62px;
+  width: 100%;
+  text-align: center;
+  margin-right: 20px;
+  line-height: 62px;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 0px 15px;
+}
+.header-socials .container a:hover {
+  background: #ddedff;
+  color: black;
+  border-radius: 6px;
+}
+.header-socials .owl-carousel {
+  height: 100%;
+  display: block;
+  margin: auto;
+  width: 1170px;
+  padding: 15px 40px;
+}
+.header-socials .owl-nav {
+  position: absolute;
+  top: 13px;
+  left: 0px;
+  width: 100%;
+}
+.header-socials .owl-nav button {
+  width: auto !important;
+}
+.header-socials .owl-nav button span {
+  background: #ddedff;
+  border-radius: 32px;
+  width: 32px;
+  height: 32px;
+  line-height: 29px;
+  display: inline-block;
+}
+.header-socials .owl-nav .owl-prev {
+  position: absolute;
+  left: 0px;
+}
+.header-socials .owl-nav .owl-next {
+  position: absolute;
+  right: 0px;
 }
 .content-box {
   background: white;
@@ -2495,7 +2571,8 @@ div.field-star::after {
     display: block;
   }
   .main-page-banners-socials .main-page-banners .banner {
-    margin: 30px 20px;
+    margin: 0px 20px 30px;
+    width: 960px;
   }
   .main-page-banners-socials .main-page-banners .banner img {
     position: relative;
@@ -2895,6 +2972,16 @@ div.field-star::after {
   .page-news2 .news-item {
     margin: 20px;
   }
+  .header-socials .owl-carousel {
+    width: 1000px;
+    padding: 15px 60px;
+  }
+  .header-socials .owl-prev {
+    left: 20px !important;
+  }
+  .header-socials .owl-next {
+    right: 20px !important;
+  }
 }
 @media (max-width: 999px) and (min-width: 768px) {
   header nav ul {
@@ -2959,13 +3046,21 @@ div.field-star::after {
     display: block;
   }
   .main-page-banners-socials .main-page-banners .banner {
-    margin: 30px 30px;
+    margin: 0px 30px 30px;
     padding-left: 0px;
     overflow-x: hidden;
+    width: 708px;
   }
   .main-page-banners-socials .main-page-banners .banner img {
     position: relative;
     left: 167px;
+  }
+  .main-page-banners-socials .main-page-banners .banner .name,
+  .main-page-banners-socials .main-page-banners .banner .opis {
+    width: 260px;
+  }
+  .main-page-banners-socials .main-page-banners .banner .opis {
+    top: 150px;
   }
   .conscience {
     margin: 30px 30px;
@@ -3443,6 +3538,16 @@ div.field-star::after {
   .page-news2 .news-item {
     margin: 30px;
   }
+  .header-socials .owl-carousel {
+    width: 768px;
+    padding: 15px 60px;
+  }
+  .header-socials .owl-prev {
+    left: 20px !important;
+  }
+  .header-socials .owl-next {
+    right: 20px !important;
+  }
 }
 @media (max-width: 767px) and (min-width: 480px) {
   header nav ul {
@@ -3496,10 +3601,18 @@ div.field-star::after {
     margin: 30px 20px;
     padding-left: 0px;
     overflow-x: hidden;
+    width: 440px;
   }
   .main-page-banners-socials .main-page-banners .banner img {
     position: relative;
     left: 177px;
+  }
+  .main-page-banners-socials .main-page-banners .banner .name,
+  .main-page-banners-socials .main-page-banners .banner .opis {
+    width: 260px;
+  }
+  .main-page-banners-socials .main-page-banners .banner .opis {
+    top: 150px;
   }
   .main-page-socials {
     display: block;
@@ -4265,6 +4378,15 @@ div.field-star::after {
   .page-news2 .news-item {
     margin: 20px;
   }
+  .header-socials {
+    display: none !important;
+  }
+  .header-socials .owl-carousel {
+    width: 1170px;
+  }
+  header .header-socials {
+    display: inline-block !important;
+  }
 }
 @media (max-width: 479px) {
   header nav ul {
@@ -4318,6 +4440,7 @@ div.field-star::after {
     margin: 30px 20px;
     padding-left: 0px;
     overflow-x: hidden;
+    width: 280px;
   }
   .main-page-banners-socials .main-page-banners .banner img {
     position: relative;
@@ -4325,9 +4448,12 @@ div.field-star::after {
   }
   .main-page-banners-socials .main-page-banners .banner .name,
   .main-page-banners-socials .main-page-banners .banner .opis {
-    position: absolute;
     left: 30px;
     margin-top: -20px;
+    width: 240px;
+  }
+  .main-page-banners-socials .main-page-banners .banner .opis {
+    top: 150px;
   }
   .conscience {
     margin: 30px 20px;

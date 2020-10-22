@@ -45,6 +45,7 @@
     margin: 30px 20px;
     padding-left: 0px;
     overflow-x: hidden;
+    width: 280px;
   }
   .main-page-banners-socials .main-page-banners .banner img {
     position: relative;
@@ -52,9 +53,12 @@
   }
   .main-page-banners-socials .main-page-banners .banner .name,
   .main-page-banners-socials .main-page-banners .banner .opis {
-    position: absolute;
     left: 30px;
     margin-top: -20px;
+    width: 240px;
+  }
+  .main-page-banners-socials .main-page-banners .banner .opis {
+    top: 150px;
   }
   .conscience {
     margin: 30px 20px;

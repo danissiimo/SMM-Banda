@@ -166,4 +166,29 @@ $(document).ready(function(){
 		 e.preventDefault();
 		 $('html, body').animate({scrollTop:0}, '300');
 	});
+    
+    
+    
+    ////Карусель социалок
+    
+    $('.owl-carousel').owlCarousel({
+      autoplay: false,
+      nav:true,
+      responsiveClass:true,
+      loop:true,
+      responsive:{
+          0:{
+            items:0
+          },
+          768:{
+            items:4
+          },
+          1000:{
+            items:6
+          },
+          1170:{
+            items:7
+          }
+        }
+    });
 });

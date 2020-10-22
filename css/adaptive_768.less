@@ -86,13 +86,22 @@
             display:block;
             
             .banner{
-                margin:30px 30px;
+                margin:0px 30px 30px;
                 padding-left:0px;
                 overflow-x:hidden;
+                width:(@site_width - 60px);
                 
                 img{
                     position:relative;
                     left:167px;
+                }
+                
+                .name,.opis{
+                    width:260px;
+                }
+                
+                .opis{
+                    top:150px;
                 }
             }
         }
@@ -795,6 +804,23 @@
         
         .news-item{
             margin:30px;
+        }
+    }
+    
+    .header-socials{
+        .owl-carousel{
+            width:@site_width;
+            padding:15px 60px;
+        }
+        
+        
+        
+        .owl-prev{
+            left: 20px !important;
+        }
+        
+        .owl-next{
+            right: 20px !important;
         }
     }
 }

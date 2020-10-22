@@ -38,7 +38,8 @@
     display: block;
   }
   .main-page-banners-socials .main-page-banners .banner {
-    margin: 30px 20px;
+    margin: 0px 20px 30px;
+    width: 960px;
   }
   .main-page-banners-socials .main-page-banners .banner img {
     position: relative;
@@ -425,5 +426,15 @@
   }
   .page-news2 .news-item {
     margin: 20px;
+  }
+  .header-socials .owl-carousel {
+    width: 1000px;
+    padding: 15px 60px;
+  }
+  .header-socials .owl-prev {
+    left: 20px !important;
+  }
+  .header-socials .owl-next {
+    right: 20px !important;
   }
 }
