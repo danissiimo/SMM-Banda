@@ -184,10 +184,10 @@ $(document).ready(function(){
             items:4
           },
           1000:{
-            items:6
+            items:5
           },
           1170:{
-            items:7
+            items:6
           }
         }
     });
