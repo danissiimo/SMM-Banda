@@ -176,6 +176,7 @@ $(document).ready(function(){
       nav:true,
       responsiveClass:true,
       loop:true,
+      autoWidth:true,
       responsive:{
           0:{
             items:0
@@ -184,10 +185,10 @@ $(document).ready(function(){
             items:4
           },
           1000:{
-            items:5
+            items:6
           },
           1170:{
-            items:6
+            items:7
           }
         }
     });

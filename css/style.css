@@ -434,6 +434,9 @@ header .main-page-socials-link {
   width: 1170px;
   padding: 15px 40px;
 }
+.header-socials .owl-carousel > div.owl-item {
+  width: auto;
+}
 .header-socials .owl-nav {
   position: absolute;
   top: 13px;
