@@ -467,6 +467,7 @@ header .main-page-socials-link {
   border-radius: 6px;
   padding: 40px 50px 50px 50px;
   line-height: 30px;
+  overflow: hidden;
 }
 .content-box h1,
 .content-box h2 {
@@ -1691,12 +1692,14 @@ footer .footer-box li:hover a:before {
   width: 100%;
 }
 .pagination,
-.profile-menu {
+.profile-menu,
+.tabs {
   text-align: center;
   padding: 20px !important;
 }
 .pagination a,
-.profile-menu a {
+.profile-menu a,
+.tabs a {
   display: inline-block;
   vertical-align: top;
   border-radius: 6px;
@@ -1705,16 +1708,19 @@ footer .footer-box li:hover a:before {
   line-height: 40px;
 }
 .pagination a:hover,
-.profile-menu a:hover {
+.profile-menu a:hover,
+.tabs a:hover {
   background: #d42428;
   color: white;
 }
 .pagination .current,
-.profile-menu .current {
+.profile-menu .current,
+.tabs .current {
   background: #76b827;
   color: white;
 }
-.profile-menu {
+.profile-menu,
+.tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1725,15 +1731,18 @@ footer .footer-box li:hover a:before {
       flex-wrap: wrap;
   padding: 50px;
 }
-.profile-menu a {
+.profile-menu a,
+.tabs a {
   width: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 60px;
-  line-height: 55px;
-  text-align: center;
+  display: inline-block;
+  padding: 15px 20px;
+  min-height: 60px;
+  line-height: 25px;
+  text-align: left;
+  height: auto;
 }
-.profile-menu div {
+.profile-menu div,
+.tabs div {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -2397,6 +2406,12 @@ footer .footer-box li:hover a:before {
 }
 .page-news2 .news-item .news-item-info .rating {
   line-height: 30px;
+}
+.page-terms .content-box {
+  margin-bottom: 30px;
+}
+.page-terms h1 {
+  margin-bottom: 30px;
 }
 #ask_popup input[type=text],
 #ask_popup textarea {
@@ -3442,15 +3457,19 @@ div.field-star::after {
     width: 320px;
     margin-left: 20px;
   }
-  .profile-menu {
+  .profile-menu,
+  .tabs {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    display: block;
   }
-  .profile-menu div {
-    width: 30%;
+  .profile-menu div,
+  .tabs div {
+    width: 100%;
   }
-  .profile-menu div a {
+  .profile-menu div a,
+  .tabs div a {
     width: 100%;
   }
   .page-api {
@@ -4389,6 +4408,18 @@ div.field-star::after {
   }
   header .header-socials {
     display: inline-block !important;
+  }
+  .profile-menu,
+  .tabs {
+    display: block;
+  }
+  .profile-menu div,
+  .tabs div {
+    width: 100%;
+  }
+  .profile-menu div a,
+  .tabs div a {
+    width: 100%;
   }
 }
 @media (max-width: 479px) {

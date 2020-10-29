@@ -479,6 +479,7 @@ header{
     border-radius:6px;
     padding: 40px 50px 50px 50px;
     line-height:30px;
+    overflow:hidden;
     
     h1,h2{
         font-size:32px;
@@ -1910,7 +1911,7 @@ footer{
     }
 }
 
-.profile-menu{
+.profile-menu, .tabs{
     &:extend(.pagination all);
     display:flex;
     justify-content:stretch;
@@ -1919,11 +1920,12 @@ footer{
     
     a{
         width:auto;
-        padding-left:20px;
-        padding-right:20px;
-        height:60px;
-        line-height: 55px;
-        text-align: center;
+        display:inline-block;
+        padding:15px 20px;
+        min-height:60px;
+        line-height: 25px;
+        text-align: left;
+        height:auto;
     }
     
     div{
@@ -2720,6 +2722,17 @@ footer{
                 line-height:30px;
             }
         }
+    }
+}
+
+
+.page-terms{
+    .content-box{
+        margin-bottom:30px;
+    }
+    
+    h1{
+        margin-bottom:30px;
     }
 }
 
