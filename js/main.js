@@ -177,6 +177,7 @@ $(document).ready(function(){
       responsiveClass:true,
       loop:true,
       autoWidth:true,
+      dots:false,
       responsive:{
           0:{
             items:0
