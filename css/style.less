@@ -218,19 +218,22 @@ header{
                 
                 .logo{
                     width:300px;
+                    line-height:0;
                 }
                 
                 .profile{
                     .container{
                         padding-left:70px;
-                        background:url(../img/profile.png) 0px 5px no-repeat;
+                        background:url(../img/profile.svg) 0px 5px no-repeat;
+                        background-size:52px;
                     }
                 }
                 
                 .cart{
                     .container{
                         padding-left:70px;
-                        background:url(../img/cart.png) 0px 5px no-repeat;
+                        background:url(../img/cart.svg) 0px 5px no-repeat;
+                        background-size:52px;
                         position:relative;
                         
                         .cart-usl-count{
@@ -268,6 +271,10 @@ header{
 }
 
 
+.best{
+    margin:30px 0px 0px;
+}
+
 .content-wrapper{
      background:@body_bg_color;
      height:auto;
@@ -301,11 +308,15 @@ header{
         text-align:right;
         overflow:hidden;
         
+        &:last-child{
+            margin-bottom:0px;
+        }
+        
         
         .name,.opis{
             position:absolute;
-            left:70px;
-            width:420px;
+            left:50px;
+            width:300px;
             
             div{
                 display:inline;
@@ -321,7 +332,7 @@ header{
         }
     
         .opis{
-            top:100px;
+            top:150px;
             line-height:30px;
             text-align:left;
         }
@@ -341,7 +352,6 @@ header{
     display:inline-flex;
     justify-content: space-between;
     flex-direction: column;
-    width:100%;
 }
 
 .main-page-socials{
@@ -350,6 +360,8 @@ header{
     background:white;
     border-radius:6px;
     padding:20px 0px;
+    display:flex;
+    flex-direction: column;
 }
 
 .main-page-socials div{
@@ -375,6 +387,7 @@ header{
     
     a{
         color:black;
+        overflow-x: hidden;
     }
     
     
@@ -559,7 +572,8 @@ header{
             width:350px;
             height:90px;
             display:inline-block;
-            background:url(../img/check_conscience.png) 0px 3px no-repeat;
+            background:url(../img/check_conscience.svg) 0px 3px no-repeat;
+            background-size:24px;
             padding-left: 44px;
             vertical-align:top;
         }
@@ -576,6 +590,14 @@ header{
 
 .who-are-we{
     width:100%;
+    
+    .content-img{
+        overflow:hidden;
+    }
+    
+    /*img{
+        max-width:100%;
+    }*/
 }
 
 
@@ -729,7 +751,7 @@ footer{
     
     .profile-input{
         display:inline-block;
-        width: (@site_width / 2 - 65px);
+        width: calc(~'50% - 15px');
         
         
         input[type=text],input[type=email]{
@@ -748,7 +770,7 @@ footer{
     
     input.full-x{
         display:block;
-        width: (@site_width - 100px);
+        width: 100%;
         margin:50px 0px 30px;
     }
     
@@ -862,6 +884,17 @@ footer{
     
     .value,input,textarea{
         margin-top:0px;
+    }
+}
+
+.field-box.col{
+    border-radius:6px;
+    color:white;
+    padding:20px;
+    margin-top:30px;
+    
+    hr{
+        background:white;
     }
 }
 
@@ -998,48 +1031,49 @@ footer{
         width:320px;
         margin-bottom:10px;
     }
+}
+
+
+
+.category-usl-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(270px, 1fr));
+    grid-column-gap: 30px;
+    margin-bottom:0px !important;
     
+    .category-usl.content-box{
+        padding:0;
+        padding-bottom:30px;
+    }
     
-    .category-usl-list{
-        display:flex;
-        justify-content: flex-start ;
-        flex-wrap:wrap;
+    .category-usl{
+        width:100%;
+        min-width:270px;
+        max-width:570px;
+        margin-bottom:30px;
         
-        .category-usl.content-box{
-            padding:0;
+        img{
+            width:100%;
+            display:block;
         }
         
-        .category-usl{
-            width:270px;
-            height:620px;
+        .category-usl-info{
+            padding:26px 34px;
+            
+            display:flex;
+            flex-flow:column nowrap;
+            justify-content: space-between;
+            height:340px;
+        }
+        
+        a.buy-lnk{
+            display:inline-block;
             margin-left:30px;
-            
-            &:nth-child(4n-3){
-                margin-left:0px;
-            }
-            
-            img{
-                width:270px;
-                height:190px;
-                display:block;
-            }
-            
-            .category-usl-info{
-                padding:26px 34px;
-                
-                display:flex;
-                flex-flow:column nowrap;
-                justify-content: space-between;
-                height:340px;
-            }
-            
-            a.buy-lnk{
-                display:inline-block;
-                margin-left:34px;
-            }
+            width:calc(~'100% - 60px');
         }
     }
 }
+
 
 .page-balance-add{
     .category-usl-list{
@@ -1047,7 +1081,8 @@ footer{
             height:510px !important;
             
             .card-name{
-                background:#beddff url(../img/add_balance_card.png) 22px 27px no-repeat;
+                background:#beddff url(../img/add_balance_card.svg) center center no-repeat;
+                background-size:251px 150px;
                 color:white;
                 width:100%;
                 height:190px !important;
@@ -1064,6 +1099,8 @@ footer{
             
             .name{
                 font-size:22px;
+                height:60px;
+                overflow:hidden;
             }
         }
     }
@@ -1077,9 +1114,11 @@ footer{
     }
     
     .news-list{
-        display:flex;
-        justify-content: flex-start ;
-        flex-wrap:wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(270px, 1fr));
+        grid-column-gap: 30px;
+        margin-left:0px;
+        margin-right:0px;
         
         .news-item.content-box{
             padding:0;
@@ -1087,22 +1126,18 @@ footer{
         
         .news-item{
             line-height:30px;
-            width:270px;
-            height:490px;
-            margin-left:30px;
-            
-            &:nth-child(4n-3){
-                margin-left:0px;
-            }
+            width:100%;
+            margin:0px;
+            margin-bottom:30px;
             
             img{
-                width:270px;
-                height:190px;
+                width:100%;
                 display:block;
             }
             
             .news-item-info{
-                padding:30px 26px 0px;
+                padding:30px 26px 03px;
+                height:320px;
                 
                 .text{
                     margin-top:30px;
@@ -1192,14 +1227,13 @@ footer{
     }
     
     .cart-item{
-        /*height:285px;*/
+        height:400px;
         
         div.field-box{
             display:inline-block;
             /*height:135px;*/
             vertical-align:top;
-            margin-left:45px;
-            max-width:260px;
+            margin-left:70px;
             
             &:first-child{
                 margin-left:0px;
@@ -1207,8 +1241,11 @@ footer{
         }
         
         .usl-name{
+            display:block !important;
+            margin-bottom:25px;
+            
            .param{
-                width:260px;
+                display:block !important;
                 overflow-x:hidden;
             } 
         }
@@ -1216,8 +1253,9 @@ footer{
         
         
         div.img{
-            height:195px;
-            display:flex;
+            height:100%;
+            width:32px;
+            display:inline-flex;
             flex-direction:column;
             justify-content:center;
             float:left;
@@ -1226,7 +1264,8 @@ footer{
         img{
             width:32px;
             height:32px;
-            border-radius:66px;vertical-align:center;
+            border-radius:66px;
+            vertical-align:center;
         }
         
         .price {
@@ -1238,10 +1277,19 @@ footer{
         
         .count{
             width:185px;
+            margin-left:40px !important;
             
             input{
                 width:185px;
                 text-align:center;
+            }
+        }
+        
+        .link{
+            width:455px;
+            
+            input{
+                width:100%;
             }
         }
         
@@ -1251,9 +1299,9 @@ footer{
         
         
         button.cancel{
-            width:987px;
-            margin-left:50px;
+            width:calc(~'100% - 90px');
             margin-top:30px;
+            margin-left:40px !important;
         }
     }
     
@@ -1339,29 +1387,26 @@ footer{
             top:96px;
         }
         
-        
-        margin-top:30px;
-        margin-left:29px;
-        
         &:nth-child(6n-5){
             margin-left:0px;
         }
     }
 }
 
-.payments{
+.payments,.page-payments{
     .payment-box{
         margin-top:40px;
-        margin-left:29px;
-        
-        &:nth-child(6n-4){
-            margin-left:0px;
-        }
     }
     
     input[type=submit]{
         width:100%;
         margin-top:30px;
+    }
+    
+    .payments-list{
+        display:grid;
+        grid-template-columns: repeat(auto-fill,minmax(148px, 1fr));
+        grid-column-gap: calc(~'(100% - 148px * 6) /5');
     }
 }
 
@@ -1386,11 +1431,7 @@ footer{
     }
     
     .cart-item{
-        /*height:190px;*/
-        
-        div.img{
-            height:105px;
-        }
+        height:290px;
     }
     
     .do-payment input[type=submit]{ 
@@ -1448,7 +1489,7 @@ footer{
     
     .container{
         display:flex;
-        justify-content:space-between;
+        justify-content:stretch;
         margin-bottom:30px;
     }
     
@@ -1459,16 +1500,17 @@ footer{
         justify-content:center;
         align-items:center;
         width:470px;
-        margin:0px 20px;
         
         img{
-            width:470px;
+            width:420px;
         }
     }
     
     .product-info{
         width:670px;
         margin-bottom:0px;
+        flex-grow:1;
+        margin-left:20px;
         
         .field-box{
             display:flex;
@@ -1504,7 +1546,7 @@ footer{
         }
         
         input[type=submit]{
-            width:570px;
+            width:100%;
         }
         
         
@@ -1771,7 +1813,7 @@ footer{
 }
 
 
-.page-faq,.page-notify{
+.page-faq,.page-notify,.faq{
     .content-box{
         margin-bottom:30px;
         padding:0px;
@@ -1797,7 +1839,11 @@ footer{
             &:hover {
                 background:#8ed43b;
                 border-bottom:#74b526 solid 4px;
-             }
+            }
+            
+            img{
+                margin-right:15px;
+            }
         }
         
         
@@ -1814,16 +1860,28 @@ footer{
     }
 }
 
+.faq{
+    label{
+        margin-top: 30px;
+    }
+    
+    article{
+        box-shadow:none !important;
+        padding:0px !important;
+        position:relative;
+        top:20px;
+        
+        &:after{
+            content:'';
+            display:block;
+            height:30px;
+        }
+    }
+}
+
 
 .page-notify{
     .ac-container{
-        .group-img{
-            width:44px !important;
-            height:44px !important;
-            position:relative;
-            top:8px;
-            margin-right:15px;
-        }
         
         .notify-date{
             color:#8d8d8d;
@@ -1976,11 +2034,12 @@ footer{
     .message{
         width:100%;
         margin-bottom:30px;
+        white-space:nowrap;
         
         .name-message{
             display:inline-block;
             vertical-align:top;
-            max-width: 80%;
+            max-width: calc(~'100% - 100px');
             
             
             .message-text{
@@ -1989,6 +2048,7 @@ footer{
                 width:auto;
                 padding:20px;
                 margin-top:15px;
+                white-space:normal;
             }
         }
         
@@ -2287,12 +2347,19 @@ footer{
     .page-404-title{
         position:relative;
         top: 75px;
+        display:block;
         
         font-size: 36px;
         
         span{
             color: #e40506;
         }
+    }
+    
+    .page-404-go-main{
+        position:relative;
+        top: 90px;
+        display:block;
     }
     
     
@@ -2370,32 +2437,32 @@ footer{
     }
     
     .icon{
-        background-size: 52px 52px;
+        background-size: 52px 52px !important;
         line-height: 52px;
         padding-left: 72px;
     }
     
     
     .phone{
-        background: url(../img/Phone.png) no-repeat top left;
+        background: url(../img/Phone.svg) no-repeat top left;
     }
     
     
     .time{
-        background: url(../img/Time.png) no-repeat top left;
+        background: url(../img/Time.svg) no-repeat top left;
     }
     
     .email{
-        background: url(../img/Email.png) no-repeat top left;
+        background: url(../img/Email.svg) no-repeat top left;
     }
     
     .telegram{
-        background: url(../img/Telegram.png) no-repeat top left;
+        background: url(../img/Telegram.svg) no-repeat top left;
     }
     
     
     .address{
-        background: url(../img/Location.png) no-repeat top left;
+        background: url(../img/Location.svg) no-repeat top left;
         font-size:16px;
         color:#494949;
         line-height:26px;
@@ -2474,23 +2541,19 @@ footer{
 
 .page-authors{
     .authors-list{
-        display:flex;
-        flex-wrap:wrap;
+        display:grid;
+        grid-template-columns: repeat(auto-fill,minmax(270px, 1fr));
+        grid-column-gap: 30px;
         
         .author{
-            width:270px;
+            min-width:270px;
+            max-width:600px;
             height:auto;
-            margin-left:24px;
             border-radius: 6px;
             background:white;
             margin-bottom:30px;
             display:inline-block;
             vertical-align:top;
-            
-            
-            &:nth-child(4n-3){
-                margin-left:0px;
-            }
             
             img{
                 width:100%;
@@ -2515,15 +2578,14 @@ footer{
                 }
                 
                 .soc{
+                    display:grid;
+                    grid-template-columns: repeat(auto-fill,minmax(32px, 1fr));
+                    grid-column-gap: 20px;
+                    
                     a{
-                        margin-left:22px;
                         border-radius: 6px;
                         display:inline-block;
                         margin-top:21px;
-                        
-                        &:nth-child(4n-3){
-                            margin-left:0px;
-                        }
                         
                         img{
                             width:32px;
@@ -2576,23 +2638,23 @@ footer{
         }
         
         .author{
-            background-image:url(../img/Author.png);
+            background-image:url(../img/Author.svg);
         }
         
         .date{
-            background-image:url(../img/Date.png);
+            background-image:url(../img/Date.svg);
         }
         
         .comments{
-            background-image:url(../img/Comment.png);
+            background-image:url(../img/Comment.svg);
         }
         
         .views{
-            background-image:url(../img/View.png);
+            background-image:url(../img/View.svg);
         }
         
         .time{
-            background-image:url(../img/NewsTime.png);
+            background-image:url(../img/NewsTime.svg);
         }
     }
     
@@ -2641,11 +2703,10 @@ footer{
 
 .page-news2{
     .socials{
-        margin-left:-30px;
-        /*margin-right:20px;*/
+        display:grid;
+        grid-template-columns: repeat(auto-fill,minmax(170px, 1fr));
+        grid-column-gap: 30px;
         margin-bottom:30px;
-        display:flex;
-        flex-wrap:wrap;
         
         a{
             display:block;
@@ -2653,9 +2714,11 @@ footer{
             border-radius:6px;
             text-align:center;
             line-height:60px;
-            width:170px;
-            margin-left:30px;
-            margin-top:25px; 
+            width:100%;
+            min-width:170px;
+            max-width:400px;
+            margin-top:25px;
+            overflow:hidden;
             
             img{
                 vertical-align:middle;
@@ -2916,6 +2979,11 @@ div.field-star{
             font-size: 20px;
         }
     }
+}
+
+.terms-agree{
+    color:#888888;
+    margin-top:20px;
 }
 
 

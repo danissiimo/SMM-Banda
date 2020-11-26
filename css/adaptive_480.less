@@ -1,5 +1,5 @@
 @media (max-width: 767px) and (min-width:480px) {
-    @site_width:480px;
+    @site_width:100%;
     
     header{
        nav ul{
@@ -13,6 +13,7 @@
                     width: @site_width;
                     position:relative;
                     padding: 0px 20px;
+                    flex-wrap:wrap;
                     
                     
                     .header-main-box{
@@ -47,6 +48,10 @@
                         top:125px;
                         margin-left: -100px;
                     }
+                    
+                    .support{
+                        width:400px;
+                    }
                 }
         }
     }
@@ -74,7 +79,7 @@
                 margin:30px 20px;
                 padding-left:0px;
                 overflow-x:hidden;
-                width:(@site_width - 40px);
+                width:calc(~'100% - 40px');
                 
                 img{
                     position:relative;
@@ -93,24 +98,6 @@
     }
     
     
-    .main-page-socials{
-        display:block;
-        width:440px;
-        margin: 0px 20px;
-        background:white;
-        border-radius:6px;
-        padding:20px 0px;
-        margin-bottom:30px;
-        
-        
-        div{
-            display:inline-block;
-            width:210px;
-            height:80px;
-        }
-    }
-    
-    
     .conscience{
         margin:30px 20px;
         
@@ -121,17 +108,15 @@
     
     
     .content-box{
-        margin:30px 20px;
+        margin:0px 20px 30px;
         
         
         .content-main-img{
-            width:(@site_width - 40px);
-            top:-40px;
-            left:-50px;
+            width:calc(~'100% + 110px');
         }
         
         .content-main-img img{
-            left:-65%;
+            width:100%;
         }
     }
     
@@ -142,7 +127,7 @@
     }
     
     .who-are-we{
-        width:440px;
+        width: calc(~'100% - 40px') !important;
     }
     
     .news-short{
@@ -150,7 +135,7 @@
     }
     
     .ask_popup_open{
-        width:440px !important;
+        width: calc(~'100% - 40px') !important;
         position:absolute;
         top:155px;
         left:20px;
@@ -162,10 +147,10 @@
     
     .page-profile{
         .profile-input{
-            width: (@site_width - 140px);
+            width:100%;
             
             &:nth-child(even){
-                margin-left: 0px;
+                margin-left: 0px !important;
             }
         }
         
@@ -195,7 +180,7 @@
     
     .breadcrumbs{
         .container{
-            width: (@site_width - 40px);
+            width: calc(~'100% - 40px') !important;
         }
     }
     
@@ -224,7 +209,7 @@
                 }
                 
                 .value,input{
-                    width:340px;
+                    width:100%;
                 }
             }
             
@@ -252,37 +237,26 @@
         .filter label{
             width:260px;
         }
+    }
+    
+    
+    .category-usl-list{
+        margin-left:20px;
+        margin-right:20px;
         
-        
-        .category-usl-list{
-            display:block;
+        .category-usl{
+            margin-left:0px !important;
+            margin-right:0px !important;
             
-            .category-usl{
-                width:440px;
-                margin-left:20px !important;
-                margin-right:0px !important;
-                display:block;
-                
-                img{
-                    width:440px;
-                    height:190px;
-                }
-                
-                .category-usl-info{
-                    padding:26px 50px;
-                    height:300px;
-                    
-                
-                    .field-box .value{
-                        width:340px;
-                    }
-                }
-                
-                
-                a.buy-lnk{
-                    width:340px;
-                    margin-left:50px !important;
-                }
+            .category-usl-info{
+                padding:26px 50px;
+                height:300px;
+            }
+            
+            
+            a.buy-lnk{
+                width:calc(~'100% - 100px') !important;
+                margin-left:50px !important;
             }
         }
     }
@@ -291,24 +265,8 @@
     
     .page-authors{
         .authors-list{
-            .author{
-                width:440px;
-                margin-left:20px !important;
-                
-                img{
-                    width:440px;
-                }
-                
-                .soc{
-                    a{
-                        margin-left:25px !important;
-                        
-                        &:nth-child(6n-5){
-                            margin-left:0px !important;
-                        }
-                    }
-                }
-            }
+            margin-left:20px;
+            margin-right:20px;
         }
     }
     
@@ -320,7 +278,7 @@
                     padding-bottom:0px;
                 }
                 .card-name{
-                    background-position:center 27px;
+                    /*background-position:center 27px;*/
                     padding: 60px 122px 30px 122px;
                 }
             }
@@ -334,17 +292,8 @@
         }
         
         .news-list{
-            .news-item{
-                width:440px;
-                margin-left:30px !important;
-                margin-right:0px !important;
-                display:block;
-                
-                img{
-                    width:440px;
-                    height:190px;
-                }
-            }
+            margin-left:20px;
+            margin-right:20px;
         }
     }
     
@@ -360,8 +309,11 @@
             
             div.field-box{
                 height:auto;
-                margin-left:0px;
-                max-width:333px;
+                margin-left:0px !important;
+                
+                .input_number{
+                    width:100%;
+                }
             }
             
             .usl-name{
@@ -389,7 +341,7 @@
                 margin-top:30px !important;
                 
                 .value{
-                    width:341px;
+                    width:100%;
                 }
             }
             
@@ -397,35 +349,36 @@
                 display:block !important;
                 margin-top:30px !important;
                 
-                width:341px;
+                width:100%;
                 
                 input{
-                    width:341px;
+                    width:100%;
                 }
             }
             
             .link{
                 margin-top:30px !important;
+                width:100%;
                 
                 input{
-                    width:341px;
+                    width:100%;
                 }
             } 
             
             
             button.cancel{
                 margin-top:30px !important;
-                width:341px;
-                margin-left:0px;
+                width:100%;
+                margin-left:0px !important;
             }
         }
         
         
         .info{
-            width:441px;
+            width:calc(~'100% - 40px');
             
             input[type=submit]{
-                width:341px;
+                width:100%;
             }
             
             span{
@@ -434,12 +387,12 @@
             
             .info-field .value{
                 display:block !important;
-                width:341px;
+                width:100%;
             }
             
             .info-field .info-field-param{
                 display:block !important;
-                width:341px;
+                width:100%;
             }
             
             .info-field{
@@ -448,16 +401,16 @@
         }
         
         
-        
+        .do-reg{
+            input{
+                width:32px !important;
+            }
+        }
     } 
     
     .payments,.page-payments{
-        .payment-box{
-            margin-left:38px !important;
-            
-            &:nth-child(2n-1){
-                margin-left:0px !important;
-            }
+        .payments-list{
+            grid-column-gap: calc(~'(100% - 148px * 2) /1');
         }
     }
     
@@ -472,18 +425,18 @@
         }
         
         .product-img{
-            width:440px;
+            width:calc(~'100% - 40px');
             height:auto;
             border-radius:6px;
             margin:0px 20px;
             
             img{
-                width:330px;
+                width:100%;
             }
         }
         
         .product-info{
-            width:440px;
+            width:calc(~'100% - 40px');
             height:auto;
             
             .field-box{
@@ -501,16 +454,16 @@
             }
             
             .link input{
-                width:340px;
+                width:100%;
             }
             
             .count input,.value{
-                width:340px;
+                width:100%;
             }
             
             .price,.count,input[type=submit],.sum{
                 display:block;
-                width:340px;
+                width:100%;
             }
         }
     }
@@ -522,7 +475,7 @@
         }
         
         .product-info{
-            width:440px;
+            width:calc(~'100% - 40px');
             margin-top:0px;
             
             .field-box{
@@ -535,8 +488,8 @@
                 }
             }
             
-            .count input,.value{
-               width:200px;
+            .input_number{
+               width:200px !important;
             }
         }
         
@@ -576,8 +529,12 @@
         .name-email{
             display:block;
             
+            .field-box{
+                width:100% !important; 
+            }
+            
             input{
-                width:340px; 
+                width:100% !important; 
             }
         }
         
@@ -590,6 +547,10 @@
                 display:inline-block;
             }
             
+            .captcha{
+                float:none !important; 
+            }
+            
             
             .rating{
                 margin-right: 50px;
@@ -599,9 +560,13 @@
                 }
             }
             
-            .submit input{
-                width:340px;
-                margin-top:20px; 
+            .submit{
+                width:100%;
+                
+                input{
+                    width:100%;
+                    margin-top:20px; 
+                }
             }
         }
         
@@ -692,6 +657,10 @@
             .field-box{
                 margin-bottom:30px;
                 width:100% !important;
+                
+                input{
+                    width:100%;
+                }
             }
         }
     }
@@ -773,6 +742,10 @@
                 width:100% !important;
                 flex-grow:0;
                 margin-bottom:30px;
+                
+                input{
+                    width:100%;
+                }
             }
         }
         
@@ -807,7 +780,7 @@
             }
             
             .price-minmax-orders .value,.price-id .value,button.opis,.field-box{
-                width: 162px;
+                width: 46%;
             }
             
             .field-box{
@@ -859,7 +832,7 @@
     }
     
     .page-404{
-        .page-404-title{
+        .page-404-title,.page-404-go-main{
             left: 20px;
         }
         
@@ -894,12 +867,16 @@
         display:inline-block;
         width:100%;
         
+        input{
+            width:100%;
+        }
+        
         hr{
             display:none;
         }
         
-        .value{
-            width:100%;
+        .value,.value.bg{
+            width:100% !important;
             margin-top:6px !important;
         }
     }
@@ -943,7 +920,7 @@
     }
     
     .input-error{
-       bottom:-5px !important;
+       bottom:-15px !important;
        white-space:normal;
        text-align:left;
     }
@@ -958,8 +935,8 @@
             
             
             .field-box{
-                .value{
-                    width:100%;
+                .value,.value.bg{
+                    width:100% !important;
                     
                     input[type=text],input[type=password],input[type=email]{
                         width:100%;
@@ -972,7 +949,8 @@
     
     .page-affiliates{
         .content-box{
-            background-position:300px -105px;
+            background-position:right -350px top;
+            background-position-y:-125px;
             
             padding-right:80px;
         }
@@ -1004,10 +982,10 @@
         .content-box{
             height:auto;
             display:block;
-            width:440px;
+            width:calc(~'100% - 40px');
             
             .bonus-img{
-                width:440px;
+                width:100%;
                 
                 img{
                     border-top-left-radius: 6px;
@@ -1057,7 +1035,7 @@
             height: 75px !important;
             
             span{
-                width: 480px !important;
+                width: calc(~'100% + 50px') !important;
             }
         }
         
@@ -1109,12 +1087,8 @@
          }
          
          .socials{
-            margin-left:-10px;
-            
-            a{
-                width:205px;
-                margin-left:30px;
-            }
+            margin-left:20px;
+            margin-right:20px;
          }
          
          

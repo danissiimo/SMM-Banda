@@ -1,5 +1,5 @@
 @media (max-width: 479px) {
-    @site_width:320px; 
+    @site_width:100%; 
     
     header{
        nav ul{
@@ -24,6 +24,10 @@
                     .logo img{
                         width:280px !important; 
                     }
+                    
+                    .support{
+                        width:100%;
+                    }
                 }
         }
     }
@@ -41,24 +45,6 @@
         display:block;
         
         
-        .main-page-socials{
-            display:block;
-            width:280px;
-            margin: 0px 20px;
-            background:white;
-            border-radius:6px;
-            padding:20px 0px;
-            margin-bottom:30px;
-            
-            
-            div{
-                display:inline-block;
-                width:200px;
-                height:80px;
-            }
-        }
-        
-        
         .main-page-banners{
             display:block;
             
@@ -66,7 +52,7 @@
                 margin:30px 20px;
                 padding-left:0px;
                 overflow-x:hidden;
-                width:(@site_width - 40px);
+                width:calc(~'100% - 40px');;
                 
                 img{
                     position:relative;
@@ -77,7 +63,7 @@
                 .name,.opis{
                     left:30px;
                     margin-top:-20px;
-                    width:240px;
+                    width:260px;
                 }
                 
                 .opis{
@@ -104,21 +90,19 @@
     
     
     .content-box{
-        margin:30px 20px;
+        margin:0px 20px 30px;
         padding: 20px 30px 30px 30px;
         
         .content-main-img{
-            width:(@site_width - 40px);
-            top:-20px;
-            left:-30px;
+            width:calc(~'100% + 110px');
         }
         
         .content-main-img img{
-            left:-111%;
+            width:100%;
         }
         
-        h1{
-            font-size:26px;
+        h1,.info-field-param{
+            font-size:26px !important;
             line-height:32px;
         }
         
@@ -135,7 +119,7 @@
     }
     
     .who-are-we{
-        width:280px;
+       width: calc(~'100% - 40px') !important;
     }
     
     .news-short{
@@ -147,7 +131,7 @@
     }
     
     .ask_popup_open{
-        width:280px !important;
+        width:100% !important;
         position:static;
     }
     
@@ -192,7 +176,7 @@
         padding-bottom:20px;
         
         .container{
-            width: (@site_width - 40px);
+            width: calc(~'100% - 40px') !important;
             
             div{
                 line-height: 38px;
@@ -219,7 +203,6 @@
             
             
             .field-box{
-                max-width:200px;
                 display:inline-block;
                 text-align:left;
                 margin-top:25px;
@@ -228,8 +211,8 @@
                     margin-top:0px;
                 }
                 
-                .value,input{
-                    width:220px;
+                .value,input,.value.bg{
+                    width:100% !important;
                 }
             }
             
@@ -256,37 +239,31 @@
         
         .filter label{
             width:260px;
-        }
+        } 
+    }
+    
+    
+    .category-usl-list{
+        margin-left:20px;
+        margin-right:20px;
         
-        
-        .category-usl-list{
-            display:block;
+        .category-usl{
+            margin-left:0px !important;
+            margin-right:0px !important;
             
-            .category-usl{
-                width:280px;
-                margin-left:20px !important;
-                margin-right:0px !important;
-                display:block;
+            .category-usl-info{
+                padding:26px 30px;
+                height:300px;
                 
-                img{
-                    width:280px;
-                    height:190px;
-                }
-                
-                .category-usl-info{
-                    padding:26px 30px;
-                    height:300px;
-                    
-                
-                    .field-box .value{
-                        width:220px;
-                    }
-                }
-                
-                a.buy-lnk{
+            
+                .field-box .value{
                     width:220px;
-                    margin-left:30px !important;
                 }
+            }
+            
+            a.buy-lnk{
+                width:calc(~'100% - 60px') !important;
+                margin-left:30px !important;
             }
         }
     }
@@ -294,14 +271,8 @@
     
     .page-authors{
         .authors-list{
-            .author{
-                width:280px;
-                margin-left:20px !important;
-                
-                img{
-                    width:280px;
-                }
-            }
+            margin-left:20px;
+            margin-right:20px;
         }
     }
     
@@ -311,17 +282,8 @@
         }
         
         .news-list{
-            .news-item{
-                width:280px;
-                margin-left:30px !important;
-                margin-right:0px !important;
-                display:block;
-                
-                img{
-                    width:280px;
-                    height:190px;
-                }
-            }
+            margin-left:30px;
+            margin-right:30px;
         }
     }
     
@@ -338,8 +300,12 @@
             
             div.field-box{
                 height:auto;
-                margin-left:0px;
-                max-width:220px;
+                margin-left:0px !important;
+                width:100%;
+                
+                .input_number{
+                    width:100%;
+                }
             }
             
             .usl-name{
@@ -366,7 +332,7 @@
                 margin-top:30px !important;
                 
                 .value{
-                    width:220px;
+                    width:100%;
                 }
             }
             
@@ -374,10 +340,10 @@
                 display:block !important;
                 margin-top:30px !important;
                 
-                width:220px;
+                width:100%;
                 
                 input{
-                    width:220px;
+                    width:100%;
                 }
             }
             
@@ -385,24 +351,24 @@
                 margin-top:30px !important;
                 
                 input{
-                    width:220px;
+                    width:100%;
                 }
             } 
             
             
             button.cancel{
                 margin-top:30px !important;
-                width:220px;
-                margin-left:0px;
+                width:100% !important;
+                margin-left:0px !important;
             }
         }
         
         
         .info{
-            width:280px;
+            width:calc(~'100% - 40px');
             
             input[type=submit]{
-                width:220px;
+                width:100%;
             }
             
             span{
@@ -424,15 +390,23 @@
             }
         }
         
-        
+        .do-reg{
+            input{
+                width:16px !important;
+            }
+        }
         
     }
     
     
     .payments,.page-payments{
         .payment-box{
-            width:220px !important;
+            width:100% !important;
             margin-left:0px !important;
+        }
+        
+        .payments-list{
+            display:block;
         }
     }
     
@@ -449,18 +423,18 @@
         }
         
         .product-img{
-            width:280px;
+            width:calc(~'100% - 40px');
             height:auto;
             border-radius:6px;
             margin:0px 20px;
             
             img{
-                width:240px;
+                width:100%;
             }
         }
         
         .product-info{
-            width:280px;
+            width:calc(~'100% - 40px');
             height:auto;
             
             .field-box{
@@ -478,16 +452,16 @@
             }
             
             .link input{
-                width:220px;
+                width:100%;
             }
             
             .count input,.value{
-                width:220px;
+                width:100%;
             }
             
             .price,.count,input[type=submit],.sum{
                 display:block;
-                width:220px;
+                width:100%;
             }
         }
     }
@@ -499,7 +473,7 @@
         }
         
         .product-info{
-            width:280px;
+            width:calc(~'100% - 40px');
             margin-top:0px;
             
             .field-box{
@@ -525,7 +499,7 @@
             display:block;
             
             input{
-                width:220px; 
+                width:100%; 
             }
         }
         
@@ -548,9 +522,13 @@
                 }
             }
             
-            .submit input{
-                width:220px;
-                margin-top:20px; 
+            .submit{
+                width:100%;
+                
+                input{
+                    width:100%;
+                    margin-top:20px; 
+                }
             }
         }
         
@@ -717,6 +695,10 @@
                 width:100% !important;
                 flex-grow:0;
                 margin-bottom:30px;
+                
+                input{
+                    width:100%;
+                }
             }
         }
         
@@ -854,7 +836,7 @@
             flex-direction:column;
             
             .footer-box{
-                width:280px;
+                width:260px;
                 margin-left: 20px;
             }
             
@@ -874,7 +856,7 @@
     
     
     .page-404{
-        .page-404-title{
+        .page-404-title,.page-404-go-main{
             left: 20px;
         }
         
@@ -908,10 +890,10 @@
     
     .page-bonuses{
         .content-box{
-            width:280px;
+            width:calc(~'100% - 40px');
             
             .bonus-img{
-                width:280px;
+                width:100%;
             }
         }
     }
@@ -930,7 +912,7 @@
             height: 105px !important;
             
             span{
-                width: 320px !important;
+                width: calc(~'100% + 50px') !important;
                 left: -20px;
                 padding: 20px 30px;
             }
@@ -965,11 +947,24 @@
          }
          
          .socials{
-            margin-left:-10px;
-            
-            a{
-                width:280px;
-            }
+            margin-left:20px;
+            margin-right:20px;
          }
+    }
+    
+    .input-error{
+       bottom:-5px !important;
+       white-space:normal;
+       text-align:left;
+    }
+    
+    
+    .page-ticket-chat{
+        .message{
+            .name-message{
+                width:100%;
+                max-width:100%;
+            }
+        }
     }
 }
