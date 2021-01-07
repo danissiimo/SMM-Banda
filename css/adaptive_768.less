@@ -18,39 +18,32 @@
                     
                     .header-main-box{
                         height:175px;
+                        line-height:24px;
                     }
                     
                     
                     .profile,.cart{
                         .container{
-                            width:52px;
-                            height:58px;
+                            .cart-usl-count{
+                                left:calc(~'50% + 10px');
+                            }
+                            
                             padding-left:0px;
+                            padding-top:60px;
                             display:block;
                             background-position-y:0px;
-                            
-                            &:hover .info{
-                                display:block;
-                            }
+                            background-position-x:center;
+                            text-align: center;
                         }
                     }
                     
                     
                     .info{
-                        display:none;
-                        background:@body_bg_color;
-                        border:0;
-                        border-radius:6px;
-                        width:300px;
-                        position:absolute;
-                        z-index:2;
-                        padding:20px 30px;
-                        top:125px;
-                        margin-left: -100px;
+                        font-size:16px;
                     }
                     
                     .support{
-                        width:30%;
+                        width:150px;
                     }
                 }
         }
@@ -78,17 +71,27 @@
                 overflow-x:hidden;
                 width:calc(~'100% - 60px');
                 
-                img{
-                    position:relative;
-                    left:167px;
+                .name,.opis{
+                    width:200px;
                 }
                 
-                .name,.opis{
-                    width:260px;
+                .name{
+                    top:15px;
                 }
                 
                 .opis{
-                    top:150px;
+                    top:120px;
+                }
+                
+                img.banner-bg{
+                    width:940px;
+                    right:calc(~'(100vw - 1000px) * 0.9');
+                    left:auto;
+                    position:absolute;
+                }
+                
+                img.banner-icon{
+                    top:-20px;
                 }
             }
         }
@@ -243,24 +246,14 @@
             margin-left:0px !important;
             margin-right:0px !important;
             
-            .category-usl-info{
-                padding:26px 50px;
-                height:300px;
-                
-            
-                .field-box .value{
-                    width:100% !important;
-                }
-            }
-            
             &:nth-child(2n-1){
                 margin-left:0px !important;
             }
         }
         
         a.buy-lnk{
-            margin-left:50px !important;
-            width:calc(~'100% - 100px') !important;
+            margin-left:30px !important;
+            width:calc(~'100% - 60px') !important;
         }
     }
     
@@ -802,9 +795,10 @@
     }
     
     .header-socials{
+        display:block !important;
+        
         .owl-carousel{
             width:@site_width;
-            padding:15px 60px;
         }
         
         
@@ -818,9 +812,22 @@
         }
     }
     
-    .best-title{
-        margin-top:0px;
-        margin-bottom:0px;
+    .soc-price{
+        font-size:20px;
+        
+        .value{
+            position:absolute;
+            right:20px;
+            top:5px;
+            overflow:hidden;
+            max-width:170px;
+        }
+        
+        span{
+            width:400px;
+            left:80px;
+            padding-left:20px;
+        }
     }
 }
 
@@ -829,6 +836,16 @@
     .payments,.page-payments{
         .payments-list{
             grid-column-gap: calc(~'(100% - 148px * 3) /2') !important;
+        }
+    }
+}
+
+@media (max-width: 767px) and (min-width:100px){
+    .cart{
+        .container{
+            .cart-usl-count{
+                left:calc(~'50% + 10px') !important;
+            }
         }
     }
 }

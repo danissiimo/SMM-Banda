@@ -6,54 +6,7 @@
         padding:20px;
        }
        
-       .header-main-wrapper{
-            height:271px;
-            
-                .header-main{
-                    width: @site_width;
-                    position:relative;
-                    padding: 0px 20px;
-                    flex-wrap:wrap;
-                    
-                    
-                    .header-main-box{
-                        height:175px;
-                    }
-                    
-                    
-                    .profile,.cart{
-                        .container{
-                            width:52px;
-                            height:58px;
-                            padding-left:0px;
-                            display:block;
-                            background-position-y:0px;
-                            
-                            &:hover .info{
-                                display:block;
-                            }
-                        }
-                    }
-                    
-                    
-                    .info{
-                        display:none;
-                        background:@body_bg_color;
-                        border:0;
-                        border-radius:6px;
-                        width:300px;
-                        position:absolute;
-                        z-index:2;
-                        padding:20px 30px;
-                        top:125px;
-                        margin-left: -100px;
-                    }
-                    
-                    .support{
-                        width:400px;
-                    }
-                }
-        }
+       
     }
     
     
@@ -70,28 +23,39 @@
         
         
         
-        
-        
         .main-page-banners{
             display:block;
             
             .banner{
-                margin:30px 20px;
+                margin:0px 20px 30px;
                 padding-left:0px;
                 overflow-x:hidden;
                 width:calc(~'100% - 40px');
                 
-                img{
-                    position:relative;
-                    left:177px;
+                
+                img.banner-bg{
+                    left:-700px;
+                    width:1600px;
+                }
+                
+                img.banner-icon{
+                    top:-25px;
+                    left:-250px;
                 }
                 
                 .name,.opis{
-                    width:260px;
+                    width:180px;
+                    right:20px;
                 }
                 
                 .opis{
-                    top:150px;
+                    top:127px;
+                }
+                
+                .name{
+                    top:24px;
+                    font-size:28px;
+                    line-height:38px;
                 }
             }
         }
@@ -109,6 +73,7 @@
     
     .content-box{
         margin:0px 20px 30px;
+        padding:30px;
         
         
         .content-main-img{
@@ -135,10 +100,8 @@
     }
     
     .ask_popup_open{
-        width: calc(~'100% - 40px') !important;
-        position:absolute;
-        top:155px;
-        left:20px;
+        /*width: calc(~'100% - 40px') !important;*/
+        width: 100% !important;
     }
     
     
@@ -243,20 +206,20 @@
     .category-usl-list{
         margin-left:20px;
         margin-right:20px;
+        grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
         
         .category-usl{
             margin-left:0px !important;
             margin-right:0px !important;
             
             .category-usl-info{
-                padding:26px 50px;
-                height:300px;
+                padding:26px 15px;
             }
             
             
             a.buy-lnk{
-                width:calc(~'100% - 100px') !important;
-                margin-left:50px !important;
+                width:calc(~'100% - 40px') !important;
+                margin-left:20px !important;
             }
         }
     }
@@ -859,7 +822,38 @@
     }
     
     
-    
+    .soc-price{
+        position:relative;
+        font-size:18px;
+        font-weight:normal;
+        color:black;
+        padding: 6px;
+        padding-left: 70px;
+        
+        .value{
+            position:relative;
+            overflow:hidden;
+            white-space: nowrap;
+            background:white;
+            right:0px;
+            top:-6px;
+            z-index:10;
+            padding:0px 10px;
+        }
+        
+        span{
+            display: block;
+            width:auto;
+            overflow:hidden;
+            white-space:nowrap;
+            position:static;
+            background:white;
+            height:auto;
+            line-height:25px;
+            padding-left:0px;
+            padding:0px 10px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -1100,10 +1094,10 @@
     }
     
     .header-socials{
-        display:none !important;
+        display:block !important;
         
         .owl-carousel{
-            width:@site_width;
+            width:100%;
         }
     }
     
@@ -1121,6 +1115,56 @@
             
             a{
                 width:100%;
+            }
+        }
+    }
+    
+    
+    .header-main-wrapper{   
+        height:auto !important;
+        
+            .header-main{
+                position:relative;
+                padding: 0px 20px;
+                flex-wrap:nowrap;
+                flex-direction:column;
+                height:auto !important;
+                align-items:center;
+                width:auto !important;
+                
+                
+                .header-main-box{
+                    margin-bottom:30px;
+                }
+                
+                
+                .profile,.cart{
+                    .container{
+                        padding-top: 60px !important;
+                        padding-left: 0px !important;
+                        background-position-x:center !important;
+                        background-position-y:0px !important;
+                        text-align:center;
+                    }
+                }
+                
+                
+                .info{
+                    line-height:24px;
+                    font-size: 16px;
+                }
+                
+                .support{
+                    width:100%;
+                }
+            }
+    }
+    
+    
+    .page-category{
+        .filter{            
+            a{
+                max-width:680px;
             }
         }
     }

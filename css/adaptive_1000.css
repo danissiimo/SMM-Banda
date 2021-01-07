@@ -31,10 +31,6 @@
     margin: 0px 20px 30px;
     width: calc(100% - 40px);
   }
-  .main-page-banners-socials .main-page-banners .banner img {
-    position: relative;
-    left: 20px;
-  }
   .main-page-banners-socials .main-page-banners .banner:last-child {
     margin-bottom: 0px;
   }
@@ -111,18 +107,11 @@
   .category-usl-list {
     margin-left: 20px;
     margin-right: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   }
   .category-usl-list .category-usl {
     margin-left: 0px !important;
     margin-right: 0px !important;
-  }
-  .category-usl-list .category-usl .category-usl-info {
-    padding: 26px 50px;
-    height: 300px;
-  }
-  .category-usl-list a.buy-lnk {
-    margin-left: 50px !important;
-    width: calc(100% - 100px) !important;
   }
   .page-authors .authors-list {
     margin-left: 20px;
@@ -397,15 +386,29 @@
   .page-news2 .news-item {
     margin: 20px;
   }
+  .header-socials {
+    display: block !important;
+  }
   .header-socials .owl-carousel {
     width: 100%;
-    padding: 15px 60px;
   }
   .header-socials .owl-prev {
     left: 20px !important;
   }
   .header-socials .owl-next {
     right: 20px !important;
+  }
+  .soc-price .value {
+    position: absolute;
+    right: 50px;
+    top: 5px;
+    overflow: hidden;
+    max-width: 200px;
+  }
+  .soc-price span {
+    width: 511px;
+    left: 100px;
+    padding-left: 30px;
   }
 }
 @media (max-width: 1169px) {

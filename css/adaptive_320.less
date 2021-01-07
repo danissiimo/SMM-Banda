@@ -6,30 +6,6 @@
         padding:20px;
        }
        
-       .header-main-wrapper{
-            height:555px;
-            
-                .header-main{
-                    width: @site_width;
-                    position:relative;
-                    padding: 0px 20px;
-                    flex-direction:column;
-                    align-items:start;
-                    
-                    
-                    .header-main-box{
-                        /*height:175px;*/
-                    }
-                    
-                    .logo img{
-                        width:280px !important; 
-                    }
-                    
-                    .support{
-                        width:100%;
-                    }
-                }
-        }
     }
     
     
@@ -49,25 +25,40 @@
             display:block;
             
             .banner{
-                margin:30px 20px;
+                margin:0px 20px 30px;
                 padding-left:0px;
                 overflow-x:hidden;
-                width:calc(~'100% - 40px');;
+                width:calc(~'100% - 40px');
+                height:225px;
                 
-                img{
-                    position:relative;
-                    left:167px;
+                
+                img.banner-bg{
+                    left:-700px;
+                    width:1600px;
                 }
                 
+                img.banner-icon{
+                    top:-35px;
+                    left:calc(~'-1 * (64vw - 90px)');
+                    width:44vw;
+                }
                 
                 .name,.opis{
-                    left:30px;
-                    margin-top:-20px;
-                    width:260px;
+                    width:155px;
+                    right:20px;
+                    
                 }
                 
                 .opis{
-                    top:150px;
+                    top:95px;
+                    font-size:16px;
+                    line-height:28px;
+                }
+                
+                .name{
+                    top:14px;
+                    font-size:26px;
+                    line-height:38px;
                 }
             }
         }
@@ -91,10 +82,10 @@
     
     .content-box{
         margin:0px 20px 30px;
-        padding: 20px 30px 30px 30px;
+        padding: 20px 20px 30px 20px;
         
         .content-main-img{
-            width:calc(~'100% + 110px');
+            width:calc(~'100% + 40px');
         }
         
         .content-main-img img{
@@ -240,12 +231,28 @@
         .filter label{
             width:260px;
         } 
+        
+        
+        .filter{
+            grid-template-columns: repeat(auto-fill,minmax(240px, auto));
+            
+            a>img{
+                margin-left:10px;
+                margin-top:20px;
+            }
+            
+            a{
+                font-size:16px;
+                grid-template-columns: 124px 1fr;
+            }
+        }
     }
     
     
     .category-usl-list{
         margin-left:20px;
         margin-right:20px;
+        grid-template-columns: repeat(auto-fill,minmax(240px, 1fr));
         
         .category-usl{
             margin-left:0px !important;
@@ -253,17 +260,11 @@
             
             .category-usl-info{
                 padding:26px 30px;
-                height:300px;
-                
-            
-                .field-box .value{
-                    width:220px;
-                }
             }
             
             a.buy-lnk{
-                width:calc(~'100% - 60px') !important;
-                margin-left:30px !important;
+                width:calc(~'100% - 40px') !important;
+                margin-left:20px !important;
             }
         }
     }
@@ -729,6 +730,8 @@
     
     
     .header-socials{
+        
+        
         .header-socials-main{
             width:160px !important;
         }
@@ -965,6 +968,63 @@
                 width:100%;
                 max-width:100%;
             }
+        }
+    }
+    
+    
+    .soc-price{
+        position:relative;
+        font-size:20px;
+        font-weight:normal;
+        color:black;
+        padding: 16px !important;
+        border-radius:0px !important;
+        height:auto;
+        line-height:25px;
+        height:auto !important;
+        
+        
+        .value{
+            position:relative;
+            right:0px;
+            top:0px;
+            white-space:nowrap;
+            display: inline;
+            font-size:20px;
+            z-index:20;
+            padding: 0px !important;
+        }
+        
+        span{
+            display: inline;
+            width:auto;
+            white-space:normal;
+            position:relative;
+            height:auto;
+            background:transparent !important;
+            font-size:20px;
+            z-index:20;
+            left:0px !important;
+            padding: 0px !important;
+            line-height:inherit !important;
+            top:0px;
+        }
+        
+        img{
+            display:none !important;
+        }
+        
+        
+        &:before{
+            content:'';
+            display:block;
+            position:absolute;
+            top:6px;
+            left:6px;
+            right:6px;
+            bottom:6px;
+            z-index:10;
+            background:white !important;
         }
     }
 }

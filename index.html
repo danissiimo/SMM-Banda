@@ -71,7 +71,7 @@
   <div class="header-main-wrapper">
    <div class="header-main">
     <div class="header-main-box logo">
-     <a href="index.html"><img src='img/logo.svg' width="300" height="81"></a>
+     <a href="index.html"><img src='img/logo.svg'></a>
     </div>
     
     <div class="header-main-box profile">
@@ -107,7 +107,9 @@
 </header>
 
 
-<div class="header-socials">
+<!---  style="display: none;" - прописывается только на главной, если хотим, чтобы карусель скрывалась только на главной -->
+
+<div class="header-socials" style="display: none;">
     <div class="container">
         <div class="owl-carousel">
             <div><a href="youtube.html"><img src='img/socials/YouTube.svg'> <span>YouTube - быстрая раскрутка</span></a></div>
@@ -132,36 +134,46 @@
         
         <div class="main-page-banners-socials">
             <div class="main-page-socials">
-                <div><a href="youtube.html"><img src='img/socials/YouTube.svg'> <span>YouTube &nbsp;&nbsp;&nbsp;- быстрая раскрутка</span></a></div>
-                <div><a href="youtube.html"><img src='img/socials/Facebook.svg'> <span>Facebook</span></a></div>
-                <div><a href="youtube.html"><img src='img/socials/Instagram.svg'> <span>Instagram</span></a></div>
-                <div><a href="youtube.html"><img src='img/socials/Vkontakte.svg'> <span>Vkontakte</span></a></div>
-                <div><a href="youtube.html"><img src='img/socials/Twitter.svg'> <span>Twitter</span></a></div>
-                <div><a href="youtube.html"><img src='img/socials/Ok.svg'> <span>Ok.ru</span></a></div>
-                <div><a href="youtube.html"><img src='img/socials/Telegram.svg'> <span>Telegram</span></a></div>
-                <div><a href="youtube.html"><img src='img/socials/Tik_Tok.svg'> <span>Tik Tok</span></a></div>
-                <div><a href="youtube.html"><img src='img/socials/Feedbacks.svg'> <span>Отзывы</span></a></div>
-                <div><a href="youtube.html"><img src='img/socials/Traffic.svg'> <span>Traffic</span></a></div>
+                <div><a href="youtube.html"><span><img src='img/socials/YouTube.svg'></span> <span>YouTube &nbsp;&nbsp;&nbsp;- быстрая раскрутка</span></a></div>
+                <div><a href="youtube.html"><span><img src='img/socials/Facebook.svg'></span> <span>Facebook</span></a></div>
+                <div><a href="youtube.html"><span><img src='img/socials/Instagram.svg'></span> <span>Instagram</span></a></div>
+                <div><a href="youtube.html"><span><img src='img/socials/Vkontakte.svg'></span> <span>Vkontakte</span></a></div>
+                <div><a href="youtube.html"><span><img src='img/socials/Twitter.svg'></span> <span>Twitter</span></a></div>
+                <div><a href="youtube.html"><span><img src='img/socials/Ok.svg'></span> <span>Ok.ru</span></a></div>
+                <div><a href="youtube.html"><span><img src='img/socials/Telegram.svg'></span> <span>Telegram</span></a></div>
+                <div><a href="youtube.html"><span><img src='img/socials/Tik_Tok.svg'></span> <span>Tik Tok</span></a></div>
+                <div><a href="youtube.html"><span><img src='img/socials/Feedbacks.svg'></span> <span>Отзывы</span></a></div>
+                <div><a href="youtube.html"><span><img src='img/socials/Traffic.svg'></span> <span>Traffic</span></a></div>
             </div>
         
         
             
             <div class="main-page-banners">
                 <div class="banner" data-link-url='youtube.html'>
-                    <img src='img/banners/YouTube.png'>
-                    <div class="name">Раскрутка 
-                    <div style="color: #e40506;">YouTube!</div></div><div class="opis">Больше активной аудитории = ТОП позиции = Высокий доход</div>
+                    <img src='img/banners/youtube_background.svg' class="banner-bg" alt="youtube">
+                    
+                    <div class="name">
+                        <img src='img/banners/youtube_icon.svg' class="banner-icon" alt="youtube">
+                        Раскрутка <div>YouTube!</div>
+                    </div>
+                    <div class="opis">Больше активной аудитории = ТОП позиции = Высокий доход</div>
                 </div>
                 
                 <div class="banner" data-link-url='youtube.html'>
-                    <img src='img/banners/Instagram.png'>
-                    <div class="name">Продвижение <div style="color: #ce2da6;">Instagram!</div></div>
+                    <img src='img/banners/instagram_background.svg' class="banner-bg" alt="instagram">
+                    
+                    <div class="name">
+                        <img src='img/banners/instagram_icon.svg' class="banner-icon" alt="instagram">Продвижение <div>Instagram!</div>
+                    </div>
                     <div class="opis">Привлечение подписчиков = Получение новых клиентов</div>
                 </div>
                 
                 <div class="banner" data-link-url='youtube.html'>
-                    <img src='img/banners/Vkontakte.png'>
-                    <div class="name">Активность <div style="color: #135299;">Вконтакте</div></div>
+                    <img src='img/banners/vkontakte_background.svg' class="banner-bg" alt="vkontakte">
+                    
+                    <div class="name">
+                        <img src='img/banners/vkontakte_icon.svg' class="banner-icon" alt="vkontakte">Активность <div>Вконтакте</div>
+                    </div>
                     <div class="opis">Накрутим лайки и комментарии, повысим посещаемость!!</div>
                 </div>
             </div>
@@ -176,116 +188,126 @@
         <div class="best">
             <div class="category-usl-list">
                 <div class="category-usl content-box">
-                    <img src='img/category/YouTube.svg'>
+                    <img src='img/category/youtube_1.svg'>
                     <div class="category-usl-info">
                         <div class="name"><a href="product.html">Youtube - Просмотры видео YouTube (140 руб. за 1.000 просмотров)
-</a></div>              <div class="availability">Наличие: <span class="yes">Есть</span></div>
+</a></div>              <div class="price">Цена за 100 подписчиков: <span style="border-color: #ff0200;">350 руб.</span></div>
                     </div>
-                    <a href="product.html" class="buy-lnk link-button">Заказать</a>
+                    <a href="product.html" class="buy-lnk link-button" style="background-color: #ff0200 ;">Купить</a>
                 </div>
                 
                 
                 <div class="category-usl content-box">
-                    <img src='img/category/YouTube.svg'>
+                    <img src='img/category/youtube_2.svg'>
+
                     <div class="category-usl-info">
                         <div class="name"><a href="product.html">Youtube - Просмотры видео YouTube живые Россия (200 руб. за 500 просмотров)
 </a></div>
                         <div class="availability">Наличие: <span class="not">Нет</span></div>
                     </div>
-                    <a href="product.html" class="buy-lnk link-button">Заказать</a>
+                    <a href="product.html" class="buy-lnk link-button" style="background-color: #ff0000 ;">Купить</a>
                 </div>
                 
                 <div class="category-usl content-box">
-                    <img src='img/category/YouTube.svg'>
+                    <img src='img/category/youtube_3.svg'>
+
                     <div class="category-usl-info">
                         <div class="name"><a href="product.html">Youtube - Просмотры видео YouTube ЖИВЫЕ с рекламы (с монетизацией) (минимум 50.000) (290 руб. за 1.000 просмотров)</a></div>
+                         <div class="price">Цена за 100 подписчиков: <span style="border-color: #ff0200;">350 руб.</span></div>
                     </div>
-                    <a href="product.html" class="buy-lnk link-button">Заказать</a>
+                    <a href="product.html" class="buy-lnk link-button" style="background-color: #ff0000 ;">Купить</a>
                 </div>
                 
                 <div class="category-usl content-box">
-                    <img src='img/category/YouTube.svg'>
+                    <img src='img/category/youtube_4.svg'>
                     <div class="category-usl-info">
                         <div class="name"><a href="product.html">Youtube - Просмотры видео YouTube (140 руб. за 1.000 просмотров)
 </a></div>
+                        <div class="price">Цена за 100 подписчиков: <span style="border-color: #ff0200;">350 руб.</span></div>
                     </div>
-                    <a href="product.html" class="buy-lnk link-button">Заказать</a>
+                    <a href="product.html" class="buy-lnk link-button" style="background-color: #ff0000 ;">Купить</a>
                 </div>
                 
                 
                 <div class="category-usl content-box">
-                    <img src='img/category/Vkontakte.svg'>
+                    <img src='img/category/vkontakte.svg'>
                     <div class="category-usl-info">
                         <div class="name"><a href="product.html">Youtube - Просмотры видео YouTube (140 руб. за 1.000 просмотров)
 </a></div>              <div class="availability">Наличие: <span class="yes">Есть</span></div>
                     </div>
-                    <a href="product.html" class="buy-lnk link-button">Заказать</a>
+                    <a href="product.html" class="buy-lnk link-button" style="background-color: #4b729f ;">Купить</a>
                 </div>
                 
                 
                 <div class="category-usl content-box">
-                    <img src='img/category/Vkontakte.svg'>
+                    <img src='img/category/vkontakte.svg'>
                     <div class="category-usl-info">
                         <div class="name"><a href="product.html">Youtube - Просмотры видео YouTube живые Россия (200 руб. за 500 просмотров)
 </a></div>
-                        <div class="availability">Наличие: <span class="not">Нет</span></div>
+                        <div class="price">Цена за 100 подписчиков: <span style="border-color: #4b729f;">350 руб.</span></div>
                     </div>
-                    <a href="product.html" class="buy-lnk link-button">Заказать</a>
+                    <a href="product.html" class="buy-lnk link-button" style="background-color: #4b729f ;">Купить</a>
                 </div>
                 
                 <div class="category-usl content-box">
-                    <img src='img/category/Vkontakte.svg'>
+                    <img src='img/category/vkontakte.svg'>
                     <div class="category-usl-info">
                         <div class="name"><a href="product.html">Youtube - Просмотры видео YouTube ЖИВЫЕ с рекламы (с монетизацией) (минимум 50.000) (290 руб. за 1.000 просмотров)</a></div>
+                        <div class="price">Цена за 100 подписчиков: <span style="border-color: #4b729f;">350 руб.</span></div>
                     </div>
-                    <a href="product.html" class="buy-lnk link-button">Заказать</a>
+                    <a href="product.html" class="buy-lnk link-button" style="background-color: #4b729f ;">Купить</a>
                 </div>
                 
                 <div class="category-usl content-box">
-                    <img src='img/category/Vkontakte.svg'>
+                    <img src='img/category/vkontakte.svg'>
                     <div class="category-usl-info">
                         <div class="name"><a href="product.html">Youtube - Просмотры видео YouTube (140 руб. за 1.000 просмотров)
 </a></div>
+                        <div class="price">Цена за 100 подписчиков: <span style="border-color: #4b729f;">350 руб.</span></div>
                     </div>
-                    <a href="product.html" class="buy-lnk link-button">Заказать</a>
+                    <a href="product.html" class="buy-lnk link-button" style="background-color: #4b729f ;">Купить</a>
                 </div>
                 
                 
                 <div class="category-usl content-box">
-                    <img src='img/category/Instagram.svg'>
+                    <img src='img/category/instagram.svg'>
+                    
                     <div class="category-usl-info">
                         <div class="name"><a href="product.html">Youtube - Просмотры видео YouTube (140 руб. за 1.000 просмотров)
 </a></div>              <div class="availability">Наличие: <span class="yes">Есть</span></div>
                     </div>
-                    <a href="product.html" class="buy-lnk link-button">Заказать</a>
+                    <a href="product.html" class="buy-lnk link-button" style="background-color: #df437e ;">Купить</a>
                 </div>
                 
                 
                 <div class="category-usl content-box">
-                    <img src='img/category/Instagram.svg'>
+                    <img src='img/category/instagram.svg'>
+                    
                     <div class="category-usl-info">
                         <div class="name"><a href="product.html">Youtube - Просмотры видео YouTube живые Россия (200 руб. за 500 просмотров)
 </a></div>
-                        <div class="availability">Наличие: <span class="not">Нет</span></div>
+                        <div class="price">Цена за 100 подписчиков: <span style="border-color: #df437e;">350 руб.</span></div>
                     </div>
-                    <a href="product.html" class="buy-lnk link-button">Заказать</a>
+                    <a href="product.html" class="buy-lnk link-button" style="background-color: #df437e ;">Купить</a>
                 </div>
                 
                 <div class="category-usl content-box">
-                    <img src='img/category/Instagram.svg'>
+                    <img src='img/category/instagram.svg'>
                     <div class="category-usl-info">
                         <div class="name"><a href="product.html">Youtube - Просмотры видео YouTube ЖИВЫЕ с рекламы (с монетизацией) (минимум 50.000) (290 руб. за 1.000 просмотров)</a></div>
+                        <div class="price">Цена за 100 подписчиков: <span style="border-color: #df437e;">350 руб.</span></div>
                     </div>
-                    <a href="product.html" class="buy-lnk link-button">Заказать</a>
+                    <a href="product.html" class="buy-lnk link-button" style="background-color: #df437e ;">Купить</a>
                 </div>
                 
                 <div class="category-usl content-box">
-                    <img src='img/category/Instagram.svg'>
+                    <img src='img/category/instagram.svg'>
                     <div class="category-usl-info">
                         <div class="name"><a href="product.html">Youtube - Просмотры видео YouTube (140 руб. за 1.000 просмотров)
 </a></div>
+                        <div class="price">Цена за 100 подписчиков: <span style="border-color: #df437e;">350 руб.</span></div>
                     </div>
-                    <a href="product.html" class="buy-lnk link-button">Заказать</a>
+                    <a href="product.html" class="buy-lnk link-button" style="background-color: #df437e ;">Купить</a>
                 </div>
             </div>
         </div>
@@ -294,34 +316,40 @@
         <div class="content-box">
             <h2>Наши цены за 1000 просмотров видео</h2>
             
-            <div class="field-box hor col" style="background-color:#d42428;">
-                1000 просмотров видео YouTube:
-                <hr>
+            <div class="field-box soc-price" style="background-color:#ed1c24">
+                <img src='img/socials/youtube_bubble.svg' alt="youtube">
+                <span>1000 просмотров YouTube:</span>
                 <div class="value">от 100 рублей</div> 
             </div>
             
-            <div class="field-box hor col" style="background-color:#4a76a8;">
-                1000 просмотров видео Вконтакте:
-                <hr>
+            <div class="field-box soc-price" style="background-color:#4a76a8;">
+                <img src='img/socials/vkontakte_bubble.svg' alt="youtube">
+                <span>1000 просмотров Вконтакте:</span>
                 <div class="value">от 50 рублей</div> 
             </div>
             
-            <div class="field-box hor col" style="background-color:#f37421;">
-                1000 просмотров видео Одноклассники:
-                <hr>
+            <div class="field-box soc-price" style="background-color:#f37421;">
+            <img src='img/socials/ok.ru_bubble.svg' alt="youtube">
+                <span>1000 просмотров Одноклассники:</span>
                 <div class="value">от 20 рублей</div> 
             </div>
             
-            <div class="field-box hor col" style="background-color:#157dc3;">
-                1000 просмотров видео Facebook:
-                <hr>
+            <div class="field-box soc-price" style="background-color:#157dc3;">
+            <img src='img/socials/facebook_bubble.svg' alt="youtube">
+                <span>1000 просмотров Facebook:</span>
                 <div class="value">от 30 рублей</div> 
             </div>
             
-            <div class="field-box hor col" style="background-color:#c33878;">
-                1000 просмотров видео Instagram:
-                <hr>
+            <div class="field-box soc-price" style="background-color:#c33878;">
+                <img src='img/socials/instagram_bubble.svg' alt="youtube">
+                <span>1000 просмотров Instagram:</span>
                 <div class="value">от 200 рублей</div> 
+            </div>
+            
+            <div class="field-box soc-price" style="background-color:#393939;">
+                <img src='img/socials/tiktok_bubble.svg' alt="youtube">
+                <span>1000 просмотров TikTok:</span>
+                <div class="value">от 500 рублей</div> 
             </div>
         </div>
         
@@ -384,7 +412,7 @@
         
         <div class="main-bottom">
             <div class="content-box who-are-we">
-                <h2><p>SMM услуги по раскрутке групп и аккаунтов в социальных сетях</p></h2>
+                <h2>SMM услуги по раскрутке групп и аккаунтов в социальных сетях</h2>
             <p>Больше 6 лет сервис SMM Banda предоставляет SMM услуги на территории России и стран СНГ. Владельцам аккаунтов и групп в социальных сетях мы предлагаем безопасное увеличение трафика за счет накрутки подписчиков, лайков, дизлайков, репостов, комментариев, зрителей на стримы. Мы работаем со всеми популярными площадками и привлекаем к сотрудничеству живую аудиторию, а не ботов. Это позволяет нам обеспечивать качество предоставляемых услуг.</p><p>SMM Banda – это профессиональная накрутка группы или аккаунта в любой социальной сети. Сервис доступен пользователям в онлайн-режиме круглосуточно. Заказать услуги сайта можно в несколько кликов, без регистрации и без заданий. У нас нет ограничений, мы даем возможность заказать как отдельные виды услуг, так и в комплексе.</p><h2>Профессиональная раскрутка соц сетей</h2><p>Сайт для накрутки SMM Banda будет полезен малому бизнесу и крупным компаниям, известным личностям и обычным пользователям. Все, кто хочет стать популярным, продавать свои услуги/товары или зарабатывать с помощью социальных сетей, нуждаются в раскрутке группы, канала или своего аккаунта. Наш сервис в автоматическом режиме сможет помочь вам достичь желаемых результатов. Мы обеспечиваем профессиональное ведение социальных сетей, высокую скорость накрутки любых показателей, контролируем естественность их добавления и гарантируем безопасность вашей площадки.</p><p>Мы хорошо знаем особенности работы каждой социальной сети, поэтому используем только проверенные методы накрутки. Никаких задержек, собачек и прочих нюансов с нашей стороны не будет.</p><p>Заказывая у нас продвижение в соц сетях, вы получаете:</p><ul>
 	
 <li>защиту от блокировок;</li>	
