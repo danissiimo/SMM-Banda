@@ -495,7 +495,7 @@ header .main-page-socials-link {
 }
 .header-socials {
   background: #ddedff;
-  padding: 30px 0px 0px 0px;
+  padding: 30px 0px;
 }
 .header-socials .container {
   height: 92px;
@@ -3275,6 +3275,7 @@ div.field-star::after {
   }
   .main-page-banners {
     display: block;
+    margin-top: -30px;
   }
   .main-page-banners .banner:last-child {
     margin-bottom: 0px !important;
