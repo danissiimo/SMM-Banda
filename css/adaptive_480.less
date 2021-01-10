@@ -137,7 +137,7 @@
     .ask_popup_open{
         width: calc(~'100% - 40px') !important;
         position:absolute;
-        top:155px;
+        top:170px;
         left:20px;
     }
     
@@ -859,7 +859,38 @@
     }
     
     
-    
+    .soc-price{
+        position:relative;
+        font-size:18px;
+        font-weight:normal;
+        color:black;
+        padding: 6px;
+        padding-left: 70px;
+        
+        .value{
+            position:relative;
+            overflow:hidden;
+            white-space: nowrap;
+            background:white;
+            right:0px;
+            top:-6px;
+            z-index:10;
+            padding:0px 10px;
+        }
+        
+        span{
+            display: block;
+            width:auto;
+            overflow:hidden;
+            white-space:nowrap;
+            position:static;
+            background:white;
+            height:auto;
+            line-height:25px;
+            padding-left:0px;
+            padding:0px 10px;
+        }
+    }
 }
 
 @media (max-width: 767px) {

@@ -967,4 +967,61 @@
             }
         }
     }
+    
+    
+    .soc-price{
+        position:relative;
+        font-size:20px;
+        font-weight:normal;
+        color:black;
+        padding: 16px !important;
+        border-radius:0px !important;
+        height:auto;
+        line-height:25px;
+        height:auto !important;
+        
+        
+        .value{
+            position:relative;
+            right:0px;
+            top:0px;
+            white-space:nowrap;
+            display: inline;
+            font-size:20px;
+            z-index:20;
+            padding: 0px !important;
+        }
+        
+        span{
+            display: inline;
+            width:auto;
+            white-space:normal;
+            position:relative;
+            height:auto;
+            background:transparent !important;
+            font-size:20px;
+            z-index:20;
+            left:0px !important;
+            padding: 0px !important;
+            line-height:inherit !important;
+            top:0px;
+        }
+        
+        img{
+            display:none !important;
+        }
+        
+        
+        &:before{
+            content:'';
+            display:block;
+            position:absolute;
+            top:6px;
+            left:6px;
+            right:6px;
+            bottom:6px;
+            z-index:10;
+            background:white !important;
+        }
+    }
 }

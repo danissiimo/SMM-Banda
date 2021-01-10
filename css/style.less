@@ -5,13 +5,35 @@
   
   
 @font-face {
-    font-family: 'Proxima Nova Regular';
+    font-family: 'Proxima Nova';
     src: url('../fonts/ProximaNova-Regular.eot');
     src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
     url('../fonts/ProximaNova-Regular.woff') format('woff'),
     url('../fonts/ProximaNova-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;   
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+	src: url('../fonts/proxima_nova_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/proxima_nova_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/proxima_nova_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/proxima_nova_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/proxima_nova_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/proxima_nova_bold.svg#proxima_nova_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+    font-weight:bold;   
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/proxima_nova_semibold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/proxima_nova_semibold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/proxima_nova_semibold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/proxima_nova_semibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/proxima_nova_semibold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/proxima_nova_semibold.svg#proxima_nova_semibold') format('svg'); /* Chrome < 4, Legacy iOS */
+     font-weight:700;
 }
 
 *{
@@ -29,7 +51,7 @@ h1,h2,h3{
 }
 
 body{
-    font-family: 'Proxima Nova Regular', sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
     color:#202127;
     font-size:20px;
 }
@@ -219,6 +241,11 @@ header{
                 .logo{
                     width:300px;
                     line-height:0;
+                    
+                    img{
+                        width:273px;
+                        height:150px;
+                    }
                 }
                 
                 .profile{
@@ -999,6 +1026,49 @@ footer{
         label{
             width:214px;
         }
+    }
+}
+
+
+.soc-price{
+    height:67px;
+    position:relative;
+    font-size:25px;
+    font-weight:bold;
+    color:white;
+    margin-top:30px;
+    border-top-left-radius:32px;
+    border-bottom-left-radius:32px;
+    overflow:visible;
+    
+    
+    .value{
+        position:absolute;
+        right:100px;
+        top:5px;
+        overflow:hidden;
+        white-space: nowrap;
+    }
+    
+    span{
+        width:563px;
+        overflow:hidden;
+        position:absolute;
+        left:150px;
+        top:6px;
+        background:white;
+        height:55px;
+        line-height:55px;
+        color:black;
+        padding-left:80px;
+    }
+    
+    img{
+        position:absolute;
+        top:-6px;
+        left:-15px;
+        width:80px;
+        height:80px;
     }
 }
 

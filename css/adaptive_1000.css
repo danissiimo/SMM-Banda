@@ -407,6 +407,18 @@
   .header-socials .owl-next {
     right: 20px !important;
   }
+  .soc-price .value {
+    position: absolute;
+    right: 50px;
+    top: 5px;
+    overflow: hidden;
+    max-width: 200px;
+  }
+  .soc-price span {
+    width: 511px;
+    left: 100px;
+    padding-left: 30px;
+  }
 }
 @media (max-width: 1169px) {
   .main-page-socials {
