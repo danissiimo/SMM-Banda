@@ -1,4 +1,16 @@
 $(document).ready(function(){
+    $(this).on('click',function(e){
+        if( !($(e.target).parents('.header-socials').length || $(e.target).hasClass('header-socials')) ){
+            $('.main-page-socials').slideUp(200);
+        }
+    
+        
+        if( !($(e.target).parents('nav').length || $(e.target).prop("tagName")=="NAV") ){
+            $('nav').children("ul").removeClass("menu-show");
+        }
+    });
+    
+    
     $('.banner').click(function(){
         banner_url=$(this).attr("data-link-url");
         
