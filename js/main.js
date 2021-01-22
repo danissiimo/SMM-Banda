@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(this).on('click',function(e){
         if( !($(e.target).parents('.header-socials').length || $(e.target).hasClass('header-socials')) ){
-            $('.main-page-socials').slideUp(200);
+            $('.header-socials .main-page-socials').slideUp(200);
         }
     
         
