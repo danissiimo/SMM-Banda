@@ -506,6 +506,7 @@ header .main-page-socials-link {
   padding: 40px 50px 50px 50px;
   line-height: 30px;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 .content-box h1,
 .content-box h2 {
@@ -1692,9 +1693,9 @@ footer .footer-box li:hover a:before {
   margin-top: 25px;
   margin-bottom: 40px;
 }
-.page-faq .content-box,
-.page-notify .content-box,
-.faq .content-box {
+.page-faq .content-box:not(.title),
+.page-notify .content-box:not(.title),
+.faq .content-box:not(.title) {
   margin-bottom: 30px;
   padding: 0px;
 }
