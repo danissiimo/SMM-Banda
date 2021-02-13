@@ -70,28 +70,39 @@
         
         
         
-        
-        
         .main-page-banners{
             display:block;
             
             .banner{
-                margin:30px 20px;
+                margin:0px 20px 30px;
                 padding-left:0px;
                 overflow-x:hidden;
                 width:calc(~'100% - 40px');
                 
-                img{
-                    position:relative;
-                    left:177px;
+                
+                img.banner-bg{
+                    left:-700px;
+                    width:1600px;
+                }
+                
+                img.banner-icon{
+                    top:-25px;
+                    left:-250px;
                 }
                 
                 .name,.opis{
-                    width:260px;
+                    width:180px;
+                    right:20px;
                 }
                 
                 .opis{
-                    top:150px;
+                    top:127px;
+                }
+                
+                .name{
+                    top:24px;
+                    font-size:28px;
+                    line-height:38px;
                 }
             }
         }

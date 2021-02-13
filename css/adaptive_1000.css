@@ -31,10 +31,6 @@
     margin: 0px 20px 30px;
     width: calc(100% - 40px);
   }
-  .main-page-banners-socials .main-page-banners .banner img {
-    position: relative;
-    left: 20px;
-  }
   .main-page-banners-socials .main-page-banners .banner:last-child {
     margin-bottom: 0px;
   }

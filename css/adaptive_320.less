@@ -49,25 +49,40 @@
             display:block;
             
             .banner{
-                margin:30px 20px;
+                margin:0px 20px 30px;
                 padding-left:0px;
                 overflow-x:hidden;
-                width:calc(~'100% - 40px');;
+                width:calc(~'100% - 40px');
+                height:225px;
                 
-                img{
-                    position:relative;
-                    left:167px;
+                
+                img.banner-bg{
+                    left:-700px;
+                    width:1600px;
                 }
                 
+                img.banner-icon{
+                    top:-35px;
+                    left:calc(~'-1 * (64vw - 90px)');
+                    width:44vw;
+                }
                 
                 .name,.opis{
-                    left:30px;
-                    margin-top:-20px;
-                    width:260px;
+                    width:155px;
+                    right:20px;
+                    
                 }
                 
                 .opis{
-                    top:150px;
+                    top:95px;
+                    font-size:16px;
+                    line-height:28px;
+                }
+                
+                .name{
+                    top:14px;
+                    font-size:26px;
+                    line-height:38px;
                 }
             }
         }

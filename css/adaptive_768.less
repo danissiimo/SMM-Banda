@@ -78,17 +78,27 @@
                 overflow-x:hidden;
                 width:calc(~'100% - 60px');
                 
-                img{
-                    position:relative;
-                    left:167px;
+                .name,.opis{
+                    width:200px;
                 }
                 
-                .name,.opis{
-                    width:260px;
+                .name{
+                    top:15px;
                 }
                 
                 .opis{
-                    top:150px;
+                    top:120px;
+                }
+                
+                img.banner-bg{
+                    width:940px;
+                    right:calc(~'(100vw - 1000px) * 0.9');
+                    left:auto;
+                    position:absolute;
+                }
+                
+                img.banner-icon{
+                    top:-20px;
                 }
             }
         }

@@ -31,23 +31,35 @@
     display: block;
   }
   .main-page-banners-socials .main-page-banners .banner {
-    margin: 30px 20px;
+    margin: 0px 20px 30px;
     padding-left: 0px;
     overflow-x: hidden;
     width: calc(100% - 40px);
+    height: 225px;
   }
-  .main-page-banners-socials .main-page-banners .banner img {
-    position: relative;
-    left: 167px;
+  .main-page-banners-socials .main-page-banners .banner img.banner-bg {
+    left: -700px;
+    width: 1600px;
+  }
+  .main-page-banners-socials .main-page-banners .banner img.banner-icon {
+    top: -35px;
+    left: calc(-1 * (64vw - 90px));
+    width: 44vw;
   }
   .main-page-banners-socials .main-page-banners .banner .name,
   .main-page-banners-socials .main-page-banners .banner .opis {
-    left: 30px;
-    margin-top: -20px;
-    width: 260px;
+    width: 155px;
+    right: 20px;
   }
   .main-page-banners-socials .main-page-banners .banner .opis {
-    top: 150px;
+    top: 95px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .main-page-banners-socials .main-page-banners .banner .name {
+    top: 14px;
+    font-size: 26px;
+    line-height: 38px;
   }
   .conscience {
     margin: 30px 20px;

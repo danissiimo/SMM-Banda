@@ -326,7 +326,6 @@ header .main-page-socials-link {
   position: relative;
   background: white;
   border-radius: 6px;
-  padding-left: 234px;
   width: 100%;
   height: 258px;
   margin-bottom: 30px;
@@ -339,8 +338,9 @@ header .main-page-socials-link {
 .main-page-banners-socials .banner .name,
 .main-page-banners-socials .banner .opis {
   position: absolute;
-  left: 50px;
-  width: 300px;
+  right: 50px;
+  width: 320px;
+  color: white;
 }
 .main-page-banners-socials .banner .name div,
 .main-page-banners-socials .banner .opis div {
@@ -358,12 +358,22 @@ header .main-page-socials-link {
   line-height: 30px;
   text-align: left;
 }
-.main-page-banners-socials .banner img {
-  width: 706px;
-  display: inline-block;
+.main-page-banners-socials .banner img.banner-bg {
+  width: 100%;
+  display: block;
   margin: 0px;
   padding: 0px;
   position: relative;
+}
+.main-page-banners-socials .banner img.banner-icon {
+  height: 300px;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  left: -260px;
+  top: -33px;
+  z-index: 5;
 }
 .main-page-banners {
   display: -webkit-inline-box;
@@ -2702,10 +2712,6 @@ div.field-star::after {
     margin: 0px 20px 30px;
     width: calc(100% - 40px);
   }
-  .main-page-banners-socials .main-page-banners .banner img {
-    position: relative;
-    left: 20px;
-  }
   .main-page-banners-socials .main-page-banners .banner:last-child {
     margin-bottom: 0px;
   }
@@ -3183,16 +3189,24 @@ div.field-star::after {
     overflow-x: hidden;
     width: calc(100% - 60px);
   }
-  .main-page-banners-socials .main-page-banners .banner img {
-    position: relative;
-    left: 167px;
-  }
   .main-page-banners-socials .main-page-banners .banner .name,
   .main-page-banners-socials .main-page-banners .banner .opis {
-    width: 260px;
+    width: 200px;
+  }
+  .main-page-banners-socials .main-page-banners .banner .name {
+    top: 15px;
   }
   .main-page-banners-socials .main-page-banners .banner .opis {
-    top: 150px;
+    top: 120px;
+  }
+  .main-page-banners-socials .main-page-banners .banner img.banner-bg {
+    width: 940px;
+    right: calc((100vw - 1000px) * 0.9);
+    left: auto;
+    position: absolute;
+  }
+  .main-page-banners-socials .main-page-banners .banner img.banner-icon {
+    top: -20px;
   }
   .conscience {
     margin: 30px 30px;
@@ -3769,21 +3783,31 @@ div.field-star::after {
     display: block;
   }
   .main-page-banners-socials .main-page-banners .banner {
-    margin: 30px 20px;
+    margin: 0px 20px 30px;
     padding-left: 0px;
     overflow-x: hidden;
     width: calc(100% - 40px);
   }
-  .main-page-banners-socials .main-page-banners .banner img {
-    position: relative;
-    left: 177px;
+  .main-page-banners-socials .main-page-banners .banner img.banner-bg {
+    left: -700px;
+    width: 1600px;
+  }
+  .main-page-banners-socials .main-page-banners .banner img.banner-icon {
+    top: -25px;
+    left: -250px;
   }
   .main-page-banners-socials .main-page-banners .banner .name,
   .main-page-banners-socials .main-page-banners .banner .opis {
-    width: 260px;
+    width: 180px;
+    right: 20px;
   }
   .main-page-banners-socials .main-page-banners .banner .opis {
-    top: 150px;
+    top: 127px;
+  }
+  .main-page-banners-socials .main-page-banners .banner .name {
+    top: 24px;
+    font-size: 28px;
+    line-height: 38px;
   }
   .conscience {
     margin: 30px 20px;
@@ -4625,23 +4649,35 @@ div.field-star::after {
     display: block;
   }
   .main-page-banners-socials .main-page-banners .banner {
-    margin: 30px 20px;
+    margin: 0px 20px 30px;
     padding-left: 0px;
     overflow-x: hidden;
     width: calc(100% - 40px);
+    height: 225px;
   }
-  .main-page-banners-socials .main-page-banners .banner img {
-    position: relative;
-    left: 167px;
+  .main-page-banners-socials .main-page-banners .banner img.banner-bg {
+    left: -700px;
+    width: 1600px;
+  }
+  .main-page-banners-socials .main-page-banners .banner img.banner-icon {
+    top: -35px;
+    left: calc(-1 * (64vw - 90px));
+    width: 44vw;
   }
   .main-page-banners-socials .main-page-banners .banner .name,
   .main-page-banners-socials .main-page-banners .banner .opis {
-    left: 30px;
-    margin-top: -20px;
-    width: 260px;
+    width: 155px;
+    right: 20px;
   }
   .main-page-banners-socials .main-page-banners .banner .opis {
-    top: 150px;
+    top: 95px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .main-page-banners-socials .main-page-banners .banner .name {
+    top: 14px;
+    font-size: 26px;
+    line-height: 38px;
   }
   .conscience {
     margin: 30px 20px;
