@@ -1374,6 +1374,23 @@ footer .footer-box li:hover a:before {
 .page-checkout .cart-item {
   height: 290px;
 }
+.page-checkout .do-payment {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0px;
+  z-index: 1;
+  overflow: visible;
+}
+.page-checkout .do-payment::after {
+  content: "";
+  display: block;
+  background: #ddedff;
+  height: 10px;
+  bottom: -10px;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+}
 .page-checkout .do-payment input[type=submit] {
   width: 100%;
 }

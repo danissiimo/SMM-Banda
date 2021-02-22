@@ -1516,6 +1516,25 @@ footer{
         height:290px;
     }
     
+    .do-payment{
+        position:sticky !important;
+        top:0px;
+        z-index:1;
+        overflow:visible;
+        
+        
+        &::after{
+            content:"";
+            display:block;
+            background:@body_bg_color;
+            height:10px;
+            bottom:-10px;
+            position:absolute;
+            width:100%;
+            left:0px;
+        }
+    }
+    
     .do-payment input[type=submit]{ 
         width:100%;
     }
