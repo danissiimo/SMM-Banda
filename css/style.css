@@ -2619,7 +2619,7 @@ div.field-star::after {
 #go_up {
   position: fixed;
   right: 30px;
-  bottom: 30px;
+  bottom: 40px;
   background: #c90a14;
   border-radius: 6px;
   padding: 7px 13px;
@@ -2694,6 +2694,25 @@ div.field-star::after {
 .terms-agree {
   color: #888888;
   margin-top: 20px;
+}
+.bottom-cart {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0.6;
+  height: 35px;
+  background: #76b827 url(../img/cart.svg) no-repeat 15px center;
+  background-size: auto 24px;
+  padding-left: 50px;
+  color: white;
+  padding-right: 30px;
+  padding-top: 6px;
+  border-top-left-radius: 6px;
+  cursor: pointer;
+  display: none;
+}
+.bottom-cart:hover {
+  opacity: 1;
 }
 @media (max-width: 1169px) and (min-width: 1000px) {
   header nav ul {

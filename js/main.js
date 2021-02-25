@@ -170,13 +170,22 @@ $(document).ready(function(){
     $(window).scroll(function() {     
 	    if ($(window).scrollTop() > 300) {
 	       $("#go_up").show();
+           
+	       $(".bottom-cart").show(500);
 	     } else {
 	       $("#go_up").hide();
+	       $(".bottom-cart").hide(200);
 	     }
     });
+    
 	$("#go_up").on('click', function(e) {
 		 e.preventDefault();
 		 $('html, body').animate({scrollTop:0}, '300');
+	});
+    
+    $(".bottom-cart").on('click', function(e) {
+		 e.preventDefault();
+		 location.href="/cart";
 	});
     
     
