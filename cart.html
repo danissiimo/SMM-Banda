@@ -421,9 +421,22 @@
                  
                  </div>
                  
-                 <div><input type="submit" value="Перейти к оплате"></div>
+                 <div class="terms-agree">
+                    <div>
+                        <input type="checkbox" id="terms_agree_1">
+                        <label for="terms_agree_1">Подтверждая заказ, я принимаю условия <a href="terms.html">пользовательского соглашения</a></label>
+                        
+                        <input type="checkbox" id="terms_agree_2">
+                        <label for="terms_agree_2">Подтверждая заказ, я принимаю условия <a href="terms.html">политики конфиденциальности</a></label>
+                        
+                        <input type="checkbox" id="terms_agree_3">
+                        <label for="terms_agree_3">Подтверждая заказ, я принимаю условия <a href="terms.html">правила сайта</a></label>
+                    </div>
+                 </div>
                  
-                 <div class="terms-agree">Подтверждая заказ, я принимаю условия <a href="terms.html">пользовательского соглашения</a></div>
+                 <div><input type="submit" value="Перейти к оплате" disabled="true"> </div>
+                 
+                 
                 
             </div>
             
@@ -543,6 +556,16 @@ $('#payments_form').submit(function(){
             return false;
         }
     }
+    
+    if($('.terms-agree input:not(:checked)').length){
+        $.wnoty({
+          type: 'error',
+          message: 'Вы должны согласиться со всеми правилами',
+          autohideDelay: 5000
+        });
+        
+        return false;
+    }
 });
 
 
@@ -555,6 +578,17 @@ $('.customer input[name=do_reg]').change(function(){
         $('.customer-not-reg').show();
     }
 }).change();
+
+
+$(function(){
+   $('.terms-agree').change(function(){
+       if($('.terms-agree input:not(:checked)').length){
+         $('.payments input:submit').attr('disabled','true');
+       }else{
+         $('.payments input:submit').removeAttr('disabled');
+       }
+   }) ;
+});
 
 
 

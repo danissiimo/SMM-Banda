@@ -35,3 +35,7 @@ input[type="checkbox"]+ label{
     display:flex;
     flex-wrap:nowrap;
 }
+
+input[type="checkbox"]+ label a{
+    margin-left:10px;
+}
