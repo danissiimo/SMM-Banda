@@ -1313,7 +1313,7 @@ footer{
     }
     
     .cart-item{
-        height:400px;
+        height:300px;
         
         div.field-box{
             display:inline-block;
@@ -1372,7 +1372,7 @@ footer{
         }
         
         .link{
-            width:455px;
+            width:369px;
             
             input{
                 width:100%;
@@ -1385,9 +1385,23 @@ footer{
         
         
         button.cancel{
-            width:calc(~'100% - 90px');
-            margin-top:30px;
+            
             margin-left:40px !important;
+            vertical-align:bottom;
+        }
+        
+        @media (min-width:1170px) {
+            button.cancel{
+                width:60px;
+                height:60px !important;
+                font-size:0px;
+                
+                &:before{
+                    content: 'X';
+                    color:white;
+                    font-size:20px;
+                }
+            }
         }
     }
     
