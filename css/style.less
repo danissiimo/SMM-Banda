@@ -114,6 +114,24 @@ button,input[type=submit],a.link-button,input[type=button]{
 }
 
 
+span.like-btn{
+    background:#76b827;
+    height:65px !important;
+    border-radius:6px;
+    color:white;
+    border:0;
+    text-align:center;
+    line-height:60px;
+    padding:0px 20px;
+    display:inline-block;
+    
+    
+    &.not{
+        background:#76b827;
+    }
+}
+
+
 input[type=text],input[type=password],input[type=email],input[type=number],textarea,select{
     border:#ddedff solid 1px;
     border-radius:6px;
@@ -1152,6 +1170,21 @@ footer{
             flex-flow:column nowrap;
             justify-content: space-between;
             height:340px;
+            
+            
+            .availability{
+                
+                span{
+                    color:white;
+                    font-size:16px;
+                    font-weight:bold;
+                    text-align:center;
+                    width:100%;
+                    display:block;
+                    border-radius:6px;
+                    text-transform: uppercase;
+                }
+            }
         }
         
         a.buy-lnk{
@@ -3046,11 +3079,11 @@ div.field-star{
 
 .availability{
     .yes{
-        color:#8ed43b;
+        background:#8ed43b;
     }
     
     .not{
-        color:#d42428;
+        background:#d42428 !important;
     }
 }
 
