@@ -21,6 +21,7 @@ $(document).ready(function(){
     
     $("#ask_popup").popup();
     $("#auth_popup").popup();
+    $(".popup").popup();
     
     $('nav').click(function(){
          if ($(window).width() < 999) {
