@@ -25,6 +25,7 @@
     <script src="js/redactor.js"></script>
     <script src="js/file_uploader.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/live-search.js"></script>
     
 </head>
 
@@ -104,7 +105,21 @@
    
    
   </div>
+
 </header>
+
+
+
+<div class="header-search" itemscope itemtype="https://schema.org/WebSite">
+    <form action="search.html" method="GET" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+        <meta itemprop="target" content="/search?q={search_term_string}">
+        <input type="text" name="q" placeholder="Поиск..." itemprop="query-input" class="query-input">
+        <button type="submit">Найти</button>
+        
+        <ul id="search-results"></ul>
+    </form>
+</div>
+
 
 
 <div class="header-socials">
