@@ -3319,6 +3319,55 @@ div.field-star{
 }
 
 
+blockquote{
+    position:relative;
+    padding: 20px 80px;
+    background: rgba(200, 200,250, 0.4);
+    border-radius: 8px;
+    margin:20px;
+    font-style: italic;
+    color:#555555;
+
+    
+    &:before{
+        content: '';
+        display:block;
+        background:url(../img/quote.png) no-repeat center center;
+        background-size: contain;
+        position: absolute;
+        top: 0px !important;
+        left: 0px !important;
+        width:64px;
+        height:64px;
+        opacity:0.1;
+        transform: scale(-1, 1);
+    }
+    
+    
+    &:after{
+        content: '';
+        display:block;
+        background:url(../img/quote.png) no-repeat center center;
+        background-size: contain;
+        position: absolute;
+        bottom: 50px !important;
+        right: 0px !important;
+        width:64px;
+        height:64px;
+        opacity:0.1;
+    }
+    
+    
+    footer{
+        background:transparent;
+        font-style: normal;
+        text-align:right;
+        padding-top:20px;
+        color:black;
+    }
+}
+
+
 
 @import (less) "adaptive_1000.less";
 @import (less) "adaptive_768.less";  
