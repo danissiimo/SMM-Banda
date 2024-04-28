@@ -220,7 +220,7 @@ $(document).ready(function(){
     
     //// ToC
     
-    if($(".article-content").length){
+    if($(".article-content").length && $(".article-content h2").length>=2){
         $(".article-content h2").first().after('<p>Контент:</p> <ul class="toc" data-toc="div.article-content" data-toc-headings="h2,h3,h4"></ul>');
     }
 });
