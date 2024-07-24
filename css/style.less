@@ -3029,54 +3029,63 @@ footer{
 }
 
 
-.page-author{
-    .author-info{
-        display:flex;
-        justify-content:space-between;
-        
-        
-        .author-image{
-            img{
-                max-width:100%;
-                border-radius: 400px !important;
-            }
+
+
+
+
+
+
+
+.author-info{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    
+    
+    .author-image{
+        img{
+            max-width:100%;
+            border-radius: 400px !important;
         }
-         
-        .author-name{
-            text-align:center;
-            
-            .name{
-                font-weight:bold;
-            }
-            
-            
-            .knowsAbout{
-                display:none;
-            }
-        }
+    }
+     
+    .author-name{
+        text-align:center;
         
-        
-        .title-job{
-            font-style:italic;
-            color:#aaaaaa;
-            font-size:14px;
+        .name{
+            font-weight:bold;
         }
         
         
-        .author-contacts{
-            a{
-                display:block;
-                
-                img{
-                    height:16px;
-                    width:16px;
-                    position:relative;
-                    top:2px;
-                }
-            }
+        .knowsAbout{
+            display:none;
         }
     }
     
+    
+    .title-job{
+        font-style:italic;
+        color:#aaaaaa;
+        font-size:14px;
+    }
+    
+    
+    .author-contacts{
+        a{
+            display:block;
+            
+            img{
+                height:16px;
+                width:16px;
+                position:relative;
+                top:2px;
+            }
+        }
+    }
+}
+
+
+.page-author{
     .author-single .team-image img {
         width: 60%;
         display: inline-block;
@@ -3086,6 +3095,20 @@ footer{
     
     h2{
         margin-bottom:20px;
+    }
+}
+
+
+
+.article-author{
+    .author-info-personal{
+        flex-basis:200px;
+        flex-shrink:0;
+        
+        
+        a{
+            white-space:nowrap;
+        }
     }
 }
 
